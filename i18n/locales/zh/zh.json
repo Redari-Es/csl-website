@@ -1,0 +1,197 @@
+{
+  "global": {
+    "companyName": "先进能源解决方案",
+    "slogan": "创新引领更美好的明天"
+  },
+  "navigation": {
+    "home": "首页",
+    "products": "产品中心",
+    "solutions": "解决方案",
+    "cases": "成功案例",
+    "support": "技术支持",
+    "about": "关于我们",
+    "contact": "联系我们"
+  },
+  "hero": {
+    "title": "驱动未来能源",
+    "subtitle": "为工业自动化和能源效率提供尖端解决方案",
+    "ctaPrimary": "探索产品",
+    "ctaSecondary": "联系销售"
+  },
+  "products": {
+    "title": "我们的产品组合",
+    "subtitle": "为性能和可靠性而设计",
+    "categories": {
+      "powerSupplies": "电源供应器",
+      "inverters": "逆变器",
+      "controllers": "控制器",
+      "sensors": "传感器"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} 先进能源解决方案 版权所有",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "sitemap": "网站地图"
+  },
+  "solutions": {
+    "title": "行业解决方案",
+    "subtitle": "为您需求量身定制的专业技术",
+    "items": [
+      {
+        "title": "工业自动化",
+        "description": "先进的工业控制系统，提升制造效率和精度",
+        "icon": "Factory"
+      },
+      {
+        "title": "能源管理",
+        "description": "优化能源使用，降低运营成本",
+        "icon": "BatteryCharging"
+      },
+      {
+        "title": "数据中心电力",
+        "description": "为关键基础设施提供高可靠性解决方案",
+        "icon": "Server"
+      },
+      {
+        "title": "医疗设备",
+        "description": "通过认证的医疗设备电源系统",
+        "icon": "HeartPulse"
+      }
+    ],
+    "caseStudies": {
+      "title": "成功案例",
+      "subtitle": "我们如何帮助行业领导者创新",
+      "items": [
+        {
+          "title": "汽车制造业升级",
+          "description": "为领先汽车制造商实施节能解决方案",
+          "result": "在提高产量的同时降低35%的能源成本"
+        },
+        {
+          "title": "数据中心电力优化",
+          "description": "为超大规模数据中心设计定制电力分配系统",
+          "result": "实现99.999%的正常运行时间，冷却成本降低20%"
+        }
+      ]
+    }
+  },
+  "industries": {
+    "automotive": "汽车制造",
+    "aerospace": "航空航天",
+    "healthcare": "医疗健康",
+    "datacenter": "数据中心",
+    "renewable": "可再生能源",
+    "industrial": "工业制造"
+  },
+  "customSolutions": "定制解决方案",
+  "customSolutionsDescription": "当现成产品无法满足您的需求时，我们的工程团队可以开发定制解决方案来解决您的特定挑战。",
+  "customSolutionsBenefit1": "量身定制的设计，完美匹配您的规格要求",
+  "customSolutionsBenefit2": "与现有系统和基础设施无缝集成",
+  "customSolutionsBenefit3": "可扩展架构，适应未来发展",
+  "customSolutionsBenefit4": "全生命周期的专属工程支持",
+  "customSolutionProcess": "我们的定制解决方案开发流程",
+  "step1": "需求分析",
+  "step2": "设计与原型开发",
+  "step3": "实施与测试",
+  "requestConsultation": "申请咨询",
+  "viewAllCaseStudies": "查看所有案例",
+  "result": "取得成果",
+  "readCaseStudy": "阅读完整案例",
+  "learnMore": "了解更多",
+  "filterByIndustry": "按行业筛选",
+  "allIndustries": "全部行业",
+  "contactSection": {
+    "title": "准备好改变您的运营了吗？",
+    "description": "我们的解决方案专家随时准备讨论您的具体需求，并为您的业务设计定制方案。",
+    "ctaText": "联系解决方案团队"
+  },
+  "cases": {
+    "title": "成功案例",
+    "subtitle": "我们如何帮助行业领导者创新",
+    "items": [
+      {
+        "title": "汽车制造业升级",
+        "description": "为领先汽车制造商实施节能解决方案",
+        "result": "在提高产量的同时降低35%的能源成本"
+      },
+      {
+        "title": "数据中心电力优化",
+        "description": "为超大规模数据中心设计定制电力分配系统",
+        "result": "实现99.999%的正常运行时间，冷却成本降低20%"
+      }
+    ]
+  },
+  "support": {
+    "title": "技术支持",
+    "subtitle": "在您最需要时提供专家帮助",
+    "resources": {
+      "title": "资源中心",
+      "downloads": "下载中心",
+      "documentation": "技术文档",
+      "faq": "常见问题"
+    },
+    "services": {
+      "title": "服务",
+      "training": "培训服务",
+      "consulting": "咨询支持",
+      "maintenance": "维护服务"
+    },
+    "contact": {
+      "title": "联系我们",
+      "subtitle": "我们很乐意听取您的项目需求。给我们留言，我们将在24小时内回复您。",
+      "name": "姓名",
+      "namePlaceholder": "张三",
+      "email": "邮箱",
+      "emailPlaceholder": "zhangsan@example.com",
+      "company": "公司",
+      "companyPlaceholder": "某某有限公司",
+      "phone": "电话",
+      "phonePlaceholder": "+86 138 0000 0000",
+      "message": "留言",
+      "messagePlaceholder": "请详细描述您的需求...",
+      "send": "发送留言",
+      "getInTouch": "联系我们",
+      "officeHours": "周一至周五: 9:00 - 18:00 (北京时间)",
+      "followUs": "关注我们"
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "mission": {
+      "title": "我们的使命",
+      "content": "创新可持续能源解决方案，推动工业进步，同时最大限度减少环境影响。"
+    },
+    "values": {
+      "title": "核心价值观",
+      "items": [
+        "创新",
+        "可靠",
+        "可持续",
+        "客户至上"
+      ]
+    },
+    "team": {
+      "title": "领导团队"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "我们期待您的消息",
+    "form": {
+      "name": "姓名",
+      "email": "邮箱",
+      "company": "公司",
+      "phone": "电话",
+      "message": "留言",
+      "submit": "发送消息"
+    },
+    "info": {
+      "title": "联系信息",
+      "address": "中国上海市浦东新区创新大道123号",
+      "phone": "+86 21 8888 8888",
+      "email": "info@advancedsolutions.cn",
+      "hours": "周一至周五: 9:00 - 18:00"
+    }
+  }
+}
