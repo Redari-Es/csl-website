@@ -1,5 +1,5 @@
 {
-	"name": "Ablazec",
+	"name": "Csl",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
@@ -31,7 +31,7 @@
 		"jotai-devtools": "^0.12.0",
 		"lucide-react": "^0.439.0",
 		"motion": "^12.23.6",
-		"next": "^15.4.2-canary.5",
+		"next": "^15.4.2-canary.8",
 		"next-intl": "^4.3.4",
 		"next-mdx-remote": "^5.0.0",
 		"next-themes": "^0.3.0",
@@ -43,7 +43,7 @@
 		"react-hook-form": "^7.60.0",
 		"react-icons": "^5.5.0",
 		"react-toastify": "^11.0.5",
-		"resend": "^4.6.0",
+		"resend": "^4.7.0",
 		"shadcn-ui": "^0.9.5",
 		"sonner": "^1.7.4",
 		"sugar-high": "^0.7.5",

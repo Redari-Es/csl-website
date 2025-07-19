@@ -12,6 +12,14 @@
     "about": "关于我们",
     "contact": "联系我们"
   },
+
+  "error": {
+    "title": "RF SYSTEM ERROR",
+    "subtitle": "Spectrum link anomaly, please confirm and retry",
+    "digest": "Digest",
+    "retry": "Retry",
+    "home": "Home"
+  },
   "hero": {
     "title": "驱动未来能源",
     "subtitle": "为工业自动化和能源效率提供尖端解决方案",

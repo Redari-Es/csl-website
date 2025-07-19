@@ -1,44 +1,43 @@
-import { ArrowLeftIcon } from '@radix-ui/react-icons'
-import Link from 'next/link'
-import React from 'react'
+'use client';
+import CyberBackground from '@/components/CyberBackground';
+import { useEffect, useRef } from 'react';
+import {Link} from '@/i18n/navigation';
+import { ArrowLeftIcon } from '@radix-ui/react-icons';;
+import gsap from 'gsap';
 
-const NotFound = () => {
-    return (
-        <section className='pb-24 pt-40'>
-            <div className='min-h-full px-4 sm:px-6 sm:py-24 md:grid md:place-items-center lg:px-8'>
-                <div className='mx-auto max-w-max'>
-                    <main className='sm:flex'>
-                        <p className='text-4xl font-bold tracking-tight text-muted-foreground sm:text-5xl'>
-                            404
-                        </p>
-                        <div className='sm:ml-6'>
-                            <div className='sm:border-l sm:border-gray-200 sm:pl-6'>
-                                <h1 className='text-3xl font-bold tracking-tight sm:text-5xl'>
-                                    Page not found
-                                </h1>
-                                <p className='mt-1 text-base text-muted-foreground'>
-                                    Please check the URL in the address bar and try again.
-                                </p>
-                            </div>
-                            <div className='mt-10 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6'>
-                                <Link
-                                    href={'/'}
-                                    className='inline-flex items-center gap-3 text-muted-foreground transition-colors hover:text-foreground'
-                                >
-                                    <ArrowLeftIcon className='h-5 w-5' />
-                                    <span>
-                                        Go back home
-                                    </span>
-                                </Link>
-                            </div>
-                        </div>
-                    </main>
-                </div>
+export default function NotFound() {
+  const panelRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    gsap.fromTo(
+      panelRef.current,
+      { opacity: 0, scale: 0.92, y: -50 },
+      { opacity: 1, scale: 1, y: 0, duration: 1, ease: 'back.out(1.2)' }
+    );
+  }, []);
 
-            </div>
+  return (
+    
 
-        </section>
-    )
+    <CyberBackground>
+      <div
+        ref={panelRef}
+        className="w-[90%] max-w-xs rounded-2xl border border-cyan-400/40 bg-slate-900/60 p-6 text-center shadow-[0_0_30px_#00f5d4] backdrop-blur-xl"
+      >
+        <h1 className="text-6xl font-bold tracking-widest text-cyan-300">404</h1>
+        <p className="mt-2 text-lg font-semibold text-slate-200">Page Not Found</p>
+        <p className="mt-1 text-sm text-slate-400">
+          The requested spectrum frequency is out of range.
+        </p>
+        <Link
+          href="/"
+          className="mt-6 inline-flex items-center gap-2 rounded-md border border-cyan-400 px-4 py-2 text-cyan-300 shadow-[0_0_10px_#00f5d4,inset_0_0_6px_#00f5d4] transition hover:bg-cyan-400/10"
+        >
+          <ArrowLeftIcon className="h-5 w-5" />
+          Go back home
+        </Link>
+      </div>
+    </CyberBackground>
+ 
+  );
+
 }
-
-export default NotFound

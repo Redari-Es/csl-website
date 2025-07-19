@@ -24,7 +24,7 @@ export const config = {
 		// 产品页面映射
 		'/products': {
 			en: '/products',
-			zh: '/chanpin',
+			zh: '/products',
 			ja: '/seihin',
 			de: '/produkte'
 		},
@@ -32,7 +32,7 @@ export const config = {
 		// 解决方案页面映射
 		'/solutions': {
 			en: '/solutions',
-			zh: '/jiejuefangan',
+			zh: '/solutions',
 			ja: '/kaisetsu',
 			de: '/loesungen'
 		},
@@ -40,7 +40,7 @@ export const config = {
 		// 案例研究页面映射
 		'/cases': {
 			en: '/cases',
-			zh: '/anli',
+			zh: '/cases',
 			ja: '/jirei',
 			de: '/fallstudien'
 		},
@@ -48,7 +48,7 @@ export const config = {
 		// 支持页面映射
 		'/support': {
 			en: '/support',
-			zh: '/zhichi',
+			zh: '/support',
 			ja: '/sapoto',
 			de: '/unterstuetzung'
 		},
@@ -56,7 +56,7 @@ export const config = {
 		// 关于我们页面映射
 		'/about': {
 			en: '/about',
-			zh: '/guanyu',
+			zh: '/about',
 			ja: '/ni-tsuite',
 			de: '/ueber-uns'
 		},
@@ -64,7 +64,7 @@ export const config = {
 		// 联系我们页面映射
 		'/contact': {
 			en: '/contact',
-			zh: '/lianxi',
+			zh: '/contact',
 			ja: '/renraku',
 			de: '/kontakt'
 		}

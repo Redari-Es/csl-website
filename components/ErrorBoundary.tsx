@@ -1,45 +1,40 @@
-import React, { Component, ErrorInfo, ReactNode } from "react";
+'use client';
 
-interface Props {
+import { Component, ErrorInfo, ReactNode } from 'react';
+
+interface ErrorBoundaryProps {
   children: ReactNode;
-  fallbackComponent?: (error: Error) => ReactNode;
-  ignore?: (error: Error) => boolean;
 }
 
-interface State {
-  error?: Error;
+interface ErrorBoundaryState {
+  hasError: boolean;
+  error: Error | null;
 }
 
-class ErrorBoundary extends Component<Props, State> {
-  constructor(props: Props) {
+export default class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
+  constructor(props: ErrorBoundaryProps) {
     super(props);
-    // Define a state variable to track whether there is an error or not
-    this.state = { error: undefined };
+    this.state = { hasError: false, error: null };
   }
 
-  static getDerivedStateFromError(error: Error): State {
-    // Update state so the next render will show the fallback UI
-    return { error: error };
+  static getDerivedStateFromError(error: Error): ErrorBoundaryState {
+    return { hasError: true, error };
   }
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    // We can use an error logging service here
-    console.log({ error, errorInfo });
+    console.error('ErrorBoundary caught an error:', error, errorInfo);
   }
 
+  handleReset = () => {
+    this.setState({ hasError: false, error: null });
+  };
+
   render() {
-    if (this.state.error) {
-      if (this.props.ignore?.(this.state.error)) {
-        return <></>;
-      }
-      if (this.props.fallbackComponent?.(this.state.error)) {
-        return this.props.fallbackComponent(this.state.error);
-      }
+    if (this.state.hasError) {
+      // 这里会触发全局错误页面的显示
+      throw this.state.error;
     }
 
-    // Return children components in case there is no error
     return this.props.children;
   }
 }
-
-export default ErrorBoundary;

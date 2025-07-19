@@ -9,7 +9,7 @@ const MainLayout = async ({
   return (
     <main
       className={twMerge(
-        "min-h-screen bg-white text-black dark:bg-black dark:text-white",
+        "flex-grow",
         className,
       )}
       {...rest}

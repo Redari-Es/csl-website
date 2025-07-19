@@ -33,7 +33,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "app/error2.tsx_", "app/[locale]/layout.tsx_", "app/[locale]/global-error.tsx_"  ],
   "exclude": [
     "node_modules"
   ]

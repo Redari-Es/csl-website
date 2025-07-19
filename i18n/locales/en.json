@@ -1,17 +1,75 @@
 {
-	"global": {
-		"companyName": "Advanced Solutions",
-		"slogan": "Innovating for a better tomorrow"
-	},
-	"navigation": {
-		"home": "Home",
-		"products": "Products",
-		"solutions": "Solutions",
-		"cases": "Case Studies",
-		"support": "Support",
-		"about": "About Us",
-		"contact": "Contact"
-	},
+  "global": {
+    "companyName": "CSL Tec Systems",
+    "slogan": "Advanced Power & RF Solutions",
+    "title": "Shenzhen Hengyunchang Vacuum Technology Co., Ltd.",
+    "description": "Shenzhen Hengyunchang Vacuum Technology Co., Ltd., established on March 19, 2013, specializes in the technical development, consultation, and sales of vacuum equipment, vacuum plasma power supplies, new energy materials, semiconductor devices, gas mass flow meters, vacuum pumps, cathodes, targets, and electromechanical products.",
+    "keywords": "RF Power Supplies,Vacuum Technology,Hengyunchang,Next.js,React",
+    "author": "Hengyunchang Team",
+    "creator": "shonh@ablazec.com"
+  },
+"navigation": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "searchPlaceholder": "Search products, solutions...",
+    "searchResults": "Search Results",
+    "popularCategories": "Popular Categories",
+    "recentSearches": "Recent Searches",
+    
+    "products": {
+      "title": "Products",
+      "powerSupplies": "Power Supplies",
+      "rfAmplifiers": "RF Amplifiers",
+      "testEquipment": "Test Equipment",
+      "components": "Components",
+      "customSolutions": "Custom Solutions",
+      "powerSuppliesDesc": "High-efficiency power solutions for demanding applications",
+      "rfAmplifiersDesc": "High-performance amplifiers for RF applications",
+      "testEquipmentDesc": "Precision measurement and testing devices",
+      "componentsDesc": "High-reliability components for critical systems",
+      "customSolutionsDesc": "Bespoke power and RF solutions"
+    },
+    
+    "solutions": {
+      "title": "Solutions",
+      "industrialAutomation": "Industrial Automation",
+      "telecomInfrastructure": "Telecom Infrastructure",
+      "medicalDevices": "Medical Devices",
+      "defenseSystems": "Defense Systems",
+      "industrialAutomationDesc": "Power solutions for industrial control systems",
+      "telecomInfrastructureDesc": "RF solutions for 5G and telecom networks",
+      "medicalDevicesDesc": "Certified power systems for medical equipment",
+      "defenseSystemsDesc": "Ruggedized solutions for defense applications"
+    },
+    
+    "cases": {
+      "title": "Case Studies",
+      "caseStudy1": "5G Base Station Power Solution",
+      "caseStudy2": "Military Radar System",
+      "caseStudy3": "Medical Imaging Equipment",
+      "caseStudy1Desc": "Power solution for next-gen 5G base stations",
+      "caseStudy2Desc": "RF amplifier system for military radar",
+      "caseStudy3Desc": "Power supply for medical imaging devices"
+    },
+    
+    "support": {
+      "title": "Support",
+      "faq": "FAQ",
+      "docs": "Documentation",
+      "contactSupport": "Contact Support"
+    }
+},
+
+"error": {
+  "title": "System Error",
+    "description": "Spectral link anomaly, please confirm and retry",
+    "digest": "Error Digest",
+    "retry": "Try Again",
+    "home": "Home",
+    "lang": "en"
+  },
+
 	"hero": {
 		"title": "Powering the Future",
 		"subtitle": "Cutting-edge solutions for energy efficiency and industrial automation",
@@ -28,12 +86,70 @@
 			"sensors": "Sensors"
 		}
 	},
-	"footer": {
-		"copyright": "© {year} Advanced Solutions. All rights reserved.",
-		"privacy": "Privacy Policy",
-		"terms": "Terms of Service",
-		"sitemap": "Sitemap"
-	},
+	"en": {
+    "company": {
+      "name": "Shenzhen Hengyunchang Vacuum Technology Co., Ltd.",
+      "description": "Focusing on vacuum technology research and development, equipment manufacturing, and technical services, providing reliable vacuum solutions for the semiconductor, photovoltaic, and research fields.",
+      "address": "No. 12, Xinnan 7th Avenue, Shenzhen Science and Technology Park, Nanshan District, Shenzhen",
+      "phone": "+86 186 6425 9241",
+      "email": "service@ablazec.com"
+    },
+    "services": {
+      "title": "Products & Services",
+      "items": [
+        "Vacuum Pump Series",
+        "Vacuum Chambers",
+        "Vacuum Valves",
+        "Vacuum Measuring Instruments",
+        "Vacuum System Integration",
+        "Vacuum Technology Consultation"
+      ]
+    },
+    "companyInfo": {
+      "title": "Company Information",
+      "items": [
+        "About Us",
+        "Development History",
+        "Team Introduction",
+        "Certifications",
+        "News Center",
+        "Join Us"
+      ]
+    },
+    "contact": {
+      "title": "Technical Consultation",
+      "description": "Our team of engineers is always available to provide professional vacuum technology solution consultations.",
+      "form": {
+        "name": "Your Name",
+        "email": "Your Email",
+        "phone": "Phone Number",
+        "message": "Consultation Content",
+        "submit": "Submit Consultation"
+      }
+    },
+    "consultation": {
+      "title": "Technical Consultation Hotline",
+      "phone": "+86 186 6425 9241"
+    },
+    "business": {
+      "title": "Business Cooperation Email",
+      "email": "service@ablazec.com"
+    },
+    "brochure": "Get Product Brochure",
+    "copyright": {
+      "text": "Shenzhen Hengyunchang Vacuum Technology Co., Ltd.",
+      "icp": "ICP备案 No. 20240523001",
+      "certification": "High-Tech Enterprise Certification"
+    },
+    "socialMedia": [
+      "WeChat Official Account",
+      "Bilibili",
+      "LinkedIn",
+      "YouTube"
+    ]
+  },
+
+
 	"solutions": {
     "title": "Industry Solutions",
     "subtitle": "Tailored technologies for your specific needs",
@@ -157,42 +273,128 @@
     }
   },
   "about": {
-    "title": "About Our Company",
-    "mission": {
-      "title": "Our Mission",
-      "content": "To innovate sustainable power solutions that drive industrial progress while minimizing environmental impact."
+    "hero": {
+      "title": "About Us",
+      "subtitle": "Discover who we are and what makes us unique in the industry"
+    },
+    "stats": {
+      "title": "Our Achievements",
+      "countries": "Countries",
+      "employees": "Team Members",
+      "customers": "Satisfied Clients",
+      "awards": "Industry Awards"
     },
     "values": {
-      "title": "Core Values",
-      "items": [
-        "Innovation",
-        "Reliability",
-        "Sustainability",
-        "Customer Focus"
-      ]
+      "title": "Our Core Values",
+      "innovation": "Innovation",
+      "innovationDesc": "We constantly push boundaries to create groundbreaking solutions.",
+      "quality": "Quality",
+      "qualityDesc": "Excellence in everything we do, from concept to execution.",
+      "integrity": "Integrity",
+      "integrityDesc": "Honesty and ethical behavior guide all our decisions.",
+      "customer": "Customer-Centric",
+      "customerDesc": "We prioritize understanding and exceeding client expectations."
+    },
+    "milestones": {
+      "title": "Our Journey",
+      "2010": {
+        "title": "Company Founded",
+        "desc": "We began our journey with a small team of visionaries in a garage."
+      },
+      "2013": {
+        "title": "First Product Launch",
+        "desc": "Our revolutionary product changed the industry landscape overnight."
+      },
+      "2016": {
+        "title": "Global Expansion",
+        "desc": "We opened offices in five continents to serve our international clients."
+      },
+      "2019": {
+        "title": "Innovation Center",
+        "desc": "Established our state-of-the-art R&D facility to accelerate innovation."
+      },
+      "2022": {
+        "title": "New Headquarters",
+        "desc": "Moved to our custom-built campus designed for collaboration and creativity."
+      }
+    },
+    "culture": {
+      "title": "Our Company Culture",
+      "innovation": {
+        "title": "Culture of Innovation",
+        "description": "We foster an environment where creative thinking is encouraged and rewarded. Our innovation lab allows employees to explore cutting-edge ideas without constraints."
+      },
+      "quality": {
+        "title": "Commitment to Quality",
+        "description": "Quality is non-negotiable at our company. We have implemented rigorous testing protocols and quality assurance measures throughout our workflow."
+      },
+      "integrity": {
+        "title": "Integrity in Everything",
+        "description": "We maintain the highest ethical standards in all business dealings. Our transparent practices have earned us trust and long-term partnerships."
+      },
+      "responsibility": {
+        "title": "Social Responsibility",
+        "description": "We actively contribute to community development and environmental sustainability. Our CSR initiatives have positively impacted over 100,000 lives globally."
+      }
     },
     "team": {
-      "title": "Leadership Team"
+      "title": "Meet Our Leadership",
+      "viewAll": "View All Team Members",
+      "ceo": {
+        "name": "Alex Morgan",
+        "title": "Chief Executive Officer",
+        "bio": "Strategic visionary with 20 years of experience in tech leadership.",
+        "image": "@/public/images/team/ceo.jpg"
+      },
+      "cto": {
+        "name": "Sam Carter",
+        "title": "Chief Technology Officer",
+        "bio": "Pioneering engineer who has filed over 15 patents in AI and machine learning.",
+        "image": "@/public/images/team/cto.jpg"
+      },
+      "cfo": {
+        "name": "Jones Wilson",
+        "title": "Chief Financial Officer",
+        "bio": "Financial mastermind who optimized our operations to achieve 300% growth.",
+        "image": "@/public/images/team/cfo.jpg"
+      },
+      "cmo": {
+        "name": "Lisa Chen",
+        "title": "Chief Marketing Officer",
+        "bio": "Creative genius behind our award-winning campaigns that redefined our brand.",
+        "image": "@/public/images/team/cmo.jpg"
+      }
     }
   },
-  "contact": {
-    "title": "Get in Touch",
-    "subtitle": "We'd love to hear from you",
+"contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team to learn more about our products and services.",
     "form": {
+      "title": "Send Message",
       "name": "Name",
       "email": "Email",
       "company": "Company",
       "phone": "Phone",
       "message": "Message",
+      "yourName": "Your Name",
+      "yourEmail": "Your Email",
+      "companyName": "Company Name",
+      "phoneNumber": "Phone Number",
+      "yourMessage": "Your Message",
       "submit": "Send Message"
     },
     "info": {
       "title": "Contact Information",
-      "address": "123 Innovation Blvd, Tech City, TC 10001",
+      "address": "123 Technology Drive, Suite 456, San Francisco, CA 94107, USA",
       "phone": "+1 (555) 123-4567",
       "email": "info@advancedsolutions.com",
-      "hours": "Mon-Fri: 9:00 AM - 6:00 PM"
-    }
+      "hours": "Mon-Fri: 9:00 AM - 5:00 PM (UTC+8)"
+    },
+    "visitUs": "Visit Us",
+    "mapPlaceholder": "Map will be displayed here",
+    "salesDepartment": "Sales Department",
+    "salesContactDescription": "Contact our sales team for product inquiries and pricing details.",
+    "supportDepartment": "Support Department",
+    "supportContactDescription": "Get in touch with our support team for technical assistance."
   }
-
 }

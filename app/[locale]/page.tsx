@@ -2,9 +2,6 @@
 import { useTranslations } from 'next-intl'
 import Hero from '@/components/Hero';
 import ProductShowcase from '@/components/ProductShowcase';
-import Testimonials from '@/components/Testimonials';
-
-import ContactForm from '@/components/ContactForm';
 import SolutionsSection from '@/components/SolutionsSection';
 
 
@@ -28,11 +25,11 @@ export default function Home() {
         title={productsT('title')}
         subtitle={productsT('subtitle')}
         categories={Object.values(productsT.raw('categories'))}
-      //products={productsT.raw('items')}
+      products={productsT.raw('items')}
       />
       
       {/* 解决方案区域 */}
-      <SolutionsSection 
+      {/* <SolutionsSection 
         title={t('solutions.title')}
         subtitle={t('solutions.subtitle')}
         items={[
@@ -52,7 +49,7 @@ export default function Home() {
             icon: 'Shield'
           }
         ]}
-      />
+      /> */}
       
       {/* 客户评价区域 */}
       {/* <Testimonials 

@@ -1,17 +1,69 @@
 {
-	"global": {
-		"companyName": "Advanced Solutions",
-		"slogan": "Innovating for a better tomorrow"
-	},
-	"navigation": {
-		"home": "Home",
-		"products": "Products",
-		"solutions": "Solutions",
-		"cases": "Case Studies",
-		"support": "Support",
-		"about": "About Us",
-		"contact": "Contact"
-	},
+  "global": {
+  "companyName": "RF Power Systems",
+  "slogan": "Advanced Power & RF Solutions"
+},
+"navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact",
+    "searchPlaceholder": "Search products, solutions...",
+    "searchResults": "Search Results",
+    "popularCategories": "Popular Categories",
+    "recentSearches": "Recent Searches",
+    
+    "products": {
+      "title": "Products",
+      "powerSupplies": "Power Supplies",
+      "rfAmplifiers": "RF Amplifiers",
+      "testEquipment": "Test Equipment",
+      "components": "Components",
+      "customSolutions": "Custom Solutions",
+      "powerSuppliesDesc": "High-efficiency power solutions for demanding applications",
+      "rfAmplifiersDesc": "High-performance amplifiers for RF applications",
+      "testEquipmentDesc": "Precision measurement and testing devices",
+      "componentsDesc": "High-reliability components for critical systems",
+      "customSolutionsDesc": "Bespoke power and RF solutions"
+    },
+    
+    "solutions": {
+      "title": "Solutions",
+      "industrialAutomation": "Industrial Automation",
+      "telecomInfrastructure": "Telecom Infrastructure",
+      "medicalDevices": "Medical Devices",
+      "defenseSystems": "Defense Systems",
+      "industrialAutomationDesc": "Power solutions for industrial control systems",
+      "telecomInfrastructureDesc": "RF solutions for 5G and telecom networks",
+      "medicalDevicesDesc": "Certified power systems for medical equipment",
+      "defenseSystemsDesc": "Ruggedized solutions for defense applications"
+    },
+    
+    "cases": {
+      "title": "Case Studies",
+      "caseStudy1": "5G Base Station Power Solution",
+      "caseStudy2": "Military Radar System",
+      "caseStudy3": "Medical Imaging Equipment",
+      "caseStudy1Desc": "Power solution for next-gen 5G base stations",
+      "caseStudy2Desc": "RF amplifier system for military radar",
+      "caseStudy3Desc": "Power supply for medical imaging devices"
+    },
+    
+    "support": {
+      "title": "Support",
+      "faq": "FAQ",
+      "docs": "Documentation",
+      "contactSupport": "Contact Support"
+    }
+},
+
+"error": {
+    "title": "RF SYSTEM ERROR",
+    "subtitle": "Spectrum link abnormal, please retry after confirmation",
+    "digest": "Digest",
+    "retry": "Retry",
+    "home": "Home"
+  },
+
 	"hero": {
 		"title": "Powering the Future",
 		"subtitle": "Cutting-edge solutions for energy efficiency and industrial automation",
@@ -156,25 +208,81 @@
     "followUs": "Follow Us"
     }
   },
+  
   "about": {
-    "title": "About Our Company",
-    "mission": {
-      "title": "Our Mission",
-      "content": "To innovate sustainable power solutions that drive industrial progress while minimizing environmental impact."
+    "hero": {
+      "title": "Shenzhen Hengyunchang Vacuum Technology Co., Ltd.",
+      "subtitle": "Leading the future of RF power & vacuum solutions since 2010."
+    },
+    "countries": "Countries Served",
+    "employees": "Employees",
+    "customers": "Customers",
+    "awards": "Industry Awards",
+    "companyJourney": "Company Journey",
+    "timeline": {
+      "title": "Development Timeline"
+    },
+    "milestones": {
+      "founded": {
+        "title": "Company Founded",
+        "desc": "Hengyunchang was established in Shenzhen with the mission to deliver cutting-edge vacuum & RF power supplies."
+      },
+      "firstProduct": {
+        "title": "First RF Generator",
+        "desc": "Launched the HY-10kW series, quickly adopted by domestic panel manufacturers."
+      },
+      "international": {
+        "title": "Global Expansion",
+        "desc": "Opened European office and secured OEM partnerships in Korea & Japan."
+      },
+      "innovation": {
+        "title": "Innovation Award",
+        "desc": "Received the National High-Tech Innovation Award for ultra-stable 13.56 MHz RF sources."
+      },
+      "newHq": {
+        "title": "New HQ & R&D Center",
+        "desc": "Moved to a 12,000 m² facility in Bao’an District to boost R&D and production capacity."
+      }
     },
     "values": {
       "title": "Core Values",
-      "items": [
-        "Innovation",
-        "Reliability",
-        "Sustainability",
-        "Customer Focus"
-      ]
+      "innovation": "Innovation",
+      "innovationDesc": "Continuously pushing the boundaries of RF & vacuum technology.",
+      "quality": "Quality",
+      "qualityDesc": "Zero-defect mindset, ISO 9001 & CE certified processes.",
+      "integrity": "Integrity",
+      "integrityDesc": "Transparent, honest and responsible in every partnership.",
+      "customer": "Customer First",
+      "customerDesc": "Delivering tailor-made solutions that exceed expectations."
     },
     "team": {
-      "title": "Leadership Team"
+      "title": "Leadership Team",
+      "viewAll": "View All",
+      "ceo": {
+        "name": "Dr. Li Wei",
+        "position": "CEO & Founder"
+      },
+      "cto": {
+        "name": "Zhang Ming",
+        "position": "Chief Technology Officer"
+      },
+      "cfo": {
+        "name": "Wang Xiaojun",
+        "position": "Chief Financial Officer"
+      },
+      "cmo": {
+        "name": "Chen Jing",
+        "position": "Chief Marketing Officer"
+      }
+    },
+    "valueDescription": {
+      "0": "Driving breakthroughs in 13.56 MHz & 27.12 MHz RF generators.",
+      "1": "Rigorous testing to ensure 24×7 reliability in fabs.",
+      "2": "Open communication builds long-term trust.",
+      "3": "24-hour global support and on-site service."
     }
   },
+
   "contact": {
     "title": "Get in Touch",
     "subtitle": "We'd love to hear from you",
