@@ -48,7 +48,7 @@ const Footer = () => {
 	return (
 		<footer className='py-8'>
 			<div className='container max-w-3xl'>
-				<div className='md:flex md:items-center md:justify-between'>
+				<div className='flex flex-col gap-4 md:flex md:items-center md:justify-between'>
 					<div className='flex justify-center space-x-6 md:order-2'>
 						{navigation.map(item => (
 							<a key={item.name}
@@ -66,7 +66,7 @@ const Footer = () => {
 
 					<div className='flex flex-col font-thin'>
 						<span>邮箱：<b>service@ablazec.com</b></span>
-						<span>电话：<b>18664259241</b></span>
+						<span>电话：<b>18823353886</b></span>
 
 					</div>
 				</div>

@@ -3,19 +3,22 @@
 import { useTranslations } from 'next-intl';
 import Hero from '@/components/Hero';
 import ProductShowcase from '@/components/ProductShowcase';
-import SolutionsSection from '@/components/SolutionsSection';
+import SolutionsShowcase from '@/components/SolutionsShowcase';
 import Testimonials from '@/components/Testimonials';
 import ContactForm from '@/components/ContactForm';
-
+import {useTheme} from "next-themes"
+import {themeColors} from '@/config/themeConfig'
 
 export default function Home() {
 	const t = useTranslations();
 	const heroT = useTranslations('homeHero');
 	const productsT = useTranslations('homeProduct');
 	const commonT = useTranslations('commonPage');
+const { theme, setTheme } = useTheme();
+const themeConfig=themeColors[theme as 'dark' |'ligth']
 
 	return (
-		<div className="space-y-20 pb-20 bg-gradient-to-b from-gray-900 to-black text-white">
+		<div className="space-y-20 pb-20 ${themeConfig.background">
 			<Hero
 				title={heroT('title')}
 				subtitle={heroT('subtitle')}
@@ -32,7 +35,7 @@ export default function Home() {
 			/>
 
 			{/* 解决方案区域 */}
-			<SolutionsSection
+			<SolutionsShowcase
 				title={commonT('solutions.title')}
 				subtitle={commonT('solutions.subtitle')}
 				items={[

@@ -1,12 +1,22 @@
 'use client';
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { useState } from 'react';
+import { Card, CardContent } from '@/components/ui/card';
+import { useTheme } from 'next-themes';
 import { useTranslations } from 'next-intl';
+import { themeColors } from '@/config/themeConfig';
+import { cn } from '@/lib/utils';
+import { Heart } from 'lucide-react';
+import { Star } from 'lucide-react';
 
 interface Testimonial {
+  company: string;
   quote: string;
-  author: string;
+  name: string;
   position: string;
+  avatar: string;
+  rating: number;
+  likes: number;
 }
 
 interface TestimonialsProps {
@@ -16,28 +26,130 @@ interface TestimonialsProps {
 
 export default function Testimonials({ title, items }: TestimonialsProps) {
   const t = useTranslations();
+  const { theme } = useTheme();
+  const themeConfig = themeColors[theme as 'dark' | 'light'];
+  const [liked, setLiked] = useState<number[]>([]);
 
   return (
     <section className="container mx-auto px-4 py-12">
       <div className="text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-cyan-400 mb-4">{title}</h2>
+        <h2 className={`text-3xl md:text-4xl font-bold ${themeConfig.textPrimary} mb-4`}>{title}</h2>
       </div>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {items.map((testimonial, index) => (
-          <Card key={index} className="bg-gradient-to-b from-black to-gray-800 text-white border-cyan-500">
-            <CardContent>
-              <p className="text-gray-300 italic mb-4">{testimonial.quote}</p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full bg-cyan-500 mr-4"></div>
-                <div>
-                  <h4 className="font-medium">{testimonial.author}</h4>
-                  <p className="text-gray-400">{testimonial.position}</p>
+
+      <div className="relative overflow-hidden">
+        {/* 左右滑动控件 */}
+        <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
+          <button
+            onClick={() => {
+              // 实现左滑逻辑
+            }}
+            className="p-2 bg-transparent text-white hover:text-cyan-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              className="w-6 h-6"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+        </div>
+
+        <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
+          <button
+            onClick={() => {
+              // 实现右滑逻辑
+            }}
+            className="p-2 bg-transparent text-white hover:text-cyan-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              className="w-6 h-6"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+
+        {/* 水平滑动的客户评价卡片 */}
+        <div className="flex overflow-x-auto scrollbar-hide">
+          {items.map((testimonial, index) => (
+            <Card
+              key={index}
+              className={cn('shadow-lg', themeConfig.testimonialCard, 'w-full min-w-[300px] max-w-[350px] mx-4')}
+            >
+              <CardContent className="p-6 relative">
+                {/* 人物头像在左上角 */}
+                <div className="absolute left-4 top-4 flex items-center">
+                  <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-300 dark:bg-gray-600 mr-4">
+                    <img
+                      src={testimonial.avatar}
+                      alt={`${testimonial.name} avatar`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="font-medium">{testimonial.name}</h4>
+                    <p className={`${themeConfig.textSecondary} text-sm opacity-80`}>
+                      {testimonial.position}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-        ))}
+
+                {/* 爱心点赞图标在右上角与姓名同行 */}
+                <div className="absolute right-4 top-4">
+                  <button
+                    onClick={() => {
+                      if (liked.includes(index)) {
+                        setLiked(liked.filter((i) => i !== index));
+                      } else {
+                        setLiked([...liked, index]);
+                      }
+                    }}
+                    className="flex items-center"
+                  >
+                    <Heart
+                      className={`w-5 h-5 ${
+                        liked.includes(index)
+                          ? themeConfig.accent.replace('text-', '') + ' animate-pulse'
+                          : 'text-gray-400 dark:text-gray-500'
+                      }`}
+                    />
+                  </button>
+                </div>
+
+                {/* 公司名称在右上角 */}
+                <div className="absolute right-4 top-12">
+                  <p className={`${themeConfig.textSecondary} text-sm opacity-80`}>
+                    {testimonial.company}
+                  </p>
+                </div>
+
+                {/* 评价内容 */}
+                <p className={`${themeConfig.textSecondary} italic mb-8 mt-16`}>{testimonial.quote}</p>
+
+                {/* 星星评分 */}
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star
+                      key={i}
+                      className={`w-5 h-5 ${
+                        i < testimonial.rating
+                          ? themeConfig.accent
+                          : 'text-gray-300 dark:text-gray-500'
+                      }`}
+                    />
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
     </section>
   );

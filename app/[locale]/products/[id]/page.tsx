@@ -1,3 +1,5 @@
+'use client'
+import {useState} from 'react'
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -11,12 +13,12 @@ import Image from 'next/image';
 
 export default function ProductDetailPage({ params }: { params: { id: string } }) {
   // 使用 products.detail 命名空间的翻译
-  const t = useTranslations('products.detail');
+  const t = useTranslations('productsPage.detail');
   
   // 使用 products.product 命名空间的翻译
-  const productsT = useTranslations('products.product');
+  const productsT = useTranslations('productsPage.product');
   
-  // 模拟产品数据
+  // 模拟产品数据（包含实际图片路径）
   const product = {
     id: params.id,
     name: `${productsT('items.0.name')} ${params.id}`,
@@ -35,12 +37,17 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
       { name: t('specificationsList.dimensions'), value: "150 x 80 x 40 mm" },
       { name: t('specificationsList.weight'), value: "0.8 kg" }
     ],
-    images: [
-      "/images/pic-2.png",
-      "/images/pic-2.png", 
-      "/images/pic-2.png",
-    ]
+  //主图：1200x1200像素
+  //缩略图：300x300像素
+   images: [
+  "/images/pic-8.png",
+  "/images/pic-8.png", 
+  "/images/pic-8.png",
+  "/images/pic-8.png"
+]
   };
+
+  const [selectedImage, setSelectedImage] = useState(product.images[0]);
 
   return (
     <div className="container mx-auto px-4 py-12">
@@ -48,36 +55,40 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
         {/* 左侧产品信息 */}
         <div className="lg:col-span-2">
           <div className="flex flex-col md:flex-row gap-8 mb-12">
-            {/* 产品图片 - 添加悬停放大效果 */}
+            {/* 产品图片 - 实际图片显示 */}
             <div className="w-full md:w-1/2">
               {/* 主图容器 */}
               <div className="group relative overflow-hidden rounded-xl bg-muted aspect-square w-full h-80 mb-4">
-                {/* 实际应用中替换为您的产品图片 */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10"></div>
-                
-                {/* 图片占位符 - 实际使用时替换为 Image 组件 */}
-                <div className="w-full h-full flex items-center justify-center">
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-64 h-64 transition-transform duration-500 group-hover:scale-110" />
-                </div>
+                <Image
+                  src={selectedImage}
+                  alt={product.name}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
+                />
                 
                 {/* 产品名称水印 */}
                 <div className="absolute bottom-4 left-4 bg-background/80 px-3 py-1 rounded-md backdrop-blur-sm">
-                  <span className="font-medium text-primary">{product.name}</span>
+                  <span className="font-base text-primary">{product.name}</span>
                 </div>
               </div>
               
               {/* 缩略图列表 */}
-              <div className="flex gap-3 mt-4">
+              <div className="flex gap-3 mt-4 overflow-x-auto pb-2">
                 {product.images.map((img, index) => (
                   <div 
                     key={index}
-                    className="group relative cursor-pointer rounded-md overflow-hidden w-16 h-16 border-2 border-muted"
+                    onClick={() => setSelectedImage(img)}
+                    className={`group relative cursor-pointer rounded-md overflow-hidden w-16 h-16 border-2 ${selectedImage === img ? 'border-primary' : 'border-muted'}`}
                   >
-                    {/* 实际应用中替换为缩略图 */}
-                    <div className="w-full h-full bg-gray-200 border border-muted-foreground/20 transition-transform duration-300 group-hover:scale-110" />
-                    
-                    {/* 悬停时的高亮边框 */}
-                    <div className="absolute inset-0 border-2 border-transparent group-hover:border-primary transition-colors rounded-md"></div>
+                    <Image
+                      src={img}
+                      alt={`Thumbnail ${index + 1}`}
+                      width={64}
+                      height={64}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
                   </div>
                 ))}
               </div>

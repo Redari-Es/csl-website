@@ -13,8 +13,8 @@ import Pagination from '@/components/Pagination';
 import { useTranslations } from 'next-intl';
 
 export default function ProductsPage() {
-  const t = useTranslations('product.common');
-  const productsT = useTranslations('product.products');
+  const t = useTranslations('productsPage.common');
+  const productsT = useTranslations('productsPage.product');
   const productsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

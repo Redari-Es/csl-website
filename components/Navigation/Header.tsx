@@ -259,7 +259,7 @@ export default function Header() {
 					</div>
 
 					{/* 移动端按钮 - 只在移动端显示 */}
-					<div className="md:hidden flex absolute right-0 items-center space-x-1">
+					<div className="md:hidden flex absolute right-0 items-center space-x-1 pr-2">
 						<Button
 							variant="ghost"
 							size="icon"

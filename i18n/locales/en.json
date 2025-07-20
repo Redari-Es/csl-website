@@ -81,11 +81,11 @@
     "feature2": "Rugged & Reliable",
     "feature3": "Custom Engineering"
   },
-"products": {
+"productsPage": {
     "common": {
       "searchPlaceholder": "Search products...",
-      "categoryFilter": "Select category",
-      "applyFilters": "Apply Filters"
+      "categoryFilter": "Filter by category",
+      "applyFilters": "Apply filters"
     },
     "detail": {
       "downloadDatasheet": "Download Datasheet",
@@ -114,8 +114,8 @@
       }
     },
     "product": {
-      "title": "Our Products",
-      "subtitle": "Discover our range of high-quality vacuum products designed for various applications in semiconductor, photovoltaic, and research fields.",
+      "title": "Our Vacuum Products",
+      "subtitle": "High-performance vacuum solutions for industrial and research applications",
       "categories": {
         "pump": "Vacuum Pump",
         "chamber": "Vacuum Chamber",
@@ -124,12 +124,13 @@
       },
       "items": {
         "0": {
-          "name": "Advanced Vacuum Pump",
-          "description": "High-performance vacuum pump designed for industrial and research applications.",
+          "name": "Advanced Vacuum System",
+          "description": "High-efficiency vacuum system with corrosion-resistant construction for demanding applications.",
           "features": [
-            "Efficient and reliable performance",
-            "Durable construction with corrosion-resistant materials",
-            "Easy maintenance and operation"
+            "Precision pressure control",
+            "Low maintenance design",
+            "Energy efficient operation",
+            "Compact footprint"
           ]
         }
       }
@@ -220,6 +221,7 @@
     "customSolutionTitle": "Need a Custom Solution?",
     "customSolutionSubtitle": "Our engineers specialize in creating unique power systems",
     "customSolutionCta": "Request Engineering Consultation",
+    "learnMore":"Learn More",
     
     "industries": [
       { "id": "all", "name": "All Industries" },
@@ -509,15 +511,35 @@
       "title": "What our clients say",
       "items": [
         {
-          "quote": "The products and services provided by Shenzhen Hengyunchang Vacuum Technology Co., Ltd. have significantly improved our production efficiency.",
-          "author": "John Doe",
-          "position": "CEO, TechCorp"
+          "company": "AeroSystems International",
+          "quote": "The reliability of Radiance Future's aerospace power systems is unmatched. We've deployed their solutions in 50+ satellites without a single power-related failure.",
+          "name": "Michael Rodriguez",
+          "position": "Lead Engineer",
+          "avatar": "https://via.placeholder.com/150",
+          "rating": 2,
+          "likes": 41
         },
         {
-          "quote": "I am extremely satisfied with the quality and performance of the products. Highly recommended!",
-          "author": "Jane Smith",
-          "position": "CTO, Innovatech"
-        }
+           "company": "AeroSystems International",
+          "quote": "The reliability of Radiance Future's aerospace power systems is unmatched. We've deployed their solutions in 50+ satellites without a single power-related failure.",
+          "name": "Michael Rodriguez",
+          "position": "Lead Engineer",
+          "avatar": "https://via.placeholder.com/150",
+          "rating": 2,
+          "likes": 41
+        }, { "company": "AeroSystems International",
+          "quote": "The reliability of Radiance Future's aerospace power systems is unmatched. We've deployed their solutions in 50+ satellites without a single power-related failure.",
+          "name": "Michael Rodriguez",
+          "position": "Lead Engineer",
+          "avatar": "https://via.placeholder.com/150",
+          "rating": 2,
+          "likes": 41},{ "company": "AeroSystems International",
+          "quote": "The reliability of Radiance Future's aerospace power systems is unmatched. We've deployed their solutions in 50+ satellites without a single power-related failure.",
+          "name": "Michael Rodriguez",
+          "position": "Lead Engineer",
+          "avatar": "https://via.placeholder.com/150",
+          "rating": 2,
+          "likes": 41}
       ]
     },
     "solutions": {
@@ -644,12 +666,16 @@
         "applications": ["Semiconductor manufacturing", "Vacuum coating", "Research"]
       }
     ]
-  }, "productShowcase": {
+  }, 
+  "productShowcase": {
     "title": "Our RF Power Products",
     "subtitle": "Explore our advanced RF power products designed for various industrial applications.",
     "searchPlaceholder": "Search products...",
     "categoryFilter": "Select category",
-    "applyFilters": "Apply Filters"
+    "applyFilters": "Apply Filters",
+    "feature":"Feature:",
+    "application":"Application:",
+    "learnMore":"Learn More"
   },
   "products": {
     "items": [
