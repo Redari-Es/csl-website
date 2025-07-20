@@ -1,0 +1,880 @@
+{
+	"global": {
+		"companyName": "CSL 주식회사",
+		"slogan": "컴포넌트 솔루션 리더",
+		"title": "선전 헹윈창 진공 기술 유한회사",
+		"description": "선전 헹윈창 진공 기술 유한회사는 2013년 3월 19일에 설립되었으며, 진공 장비, 진공 플라즈마 전원, 신에너지 소재, 반도체 장치, 가스 질량 유량계, 진공 펌프, 음극, 타겟 및 전기 기계 제품의 기술 개발, 컨설팅 및 판매를 전문으로 합니다.",
+		"keywords": "RF 전원,진공 기술,헹윈창,Next.js,React",
+		"website": "http://www.csl-vacuum.com/",
+		"author": "헹윈창 팀",
+		"creator": "shonh@ablazec.com"
+	},
+	"navigation": {
+		"home": "홈",
+		"about": "회사 소개",
+		"contact": "연락처",
+		"searchPlaceholder": "제품, 솔루션 검색...",
+		"searchResults": "검색 결과",
+		"popularCategories": "인기 카테고리",
+		"recentSearches": "최근 검색",
+		"learnMore": "자세히 보기",
+		"products": {
+			"title": "제품",
+			"powerSupplies": "전원 공급 장치",
+			"rfAmplifiers": "RF 증폭기",
+			"testEquipment": "테스트 장비",
+			"components": "컴포넌트",
+			"customSolutions": "맞춤형 솔루션",
+			"powerSuppliesDesc": "고성능 애플리케이션을 위한 고효율 전원 솔루션",
+			"rfAmplifiersDesc": "RF 애플리케이션을 위한 고성능 증폭기",
+			"testEquipmentDesc": "정밀 측정 및 테스트 장비",
+			"componentsDesc": "중요 시스템을 위한 고신뢰성 컴포넌트",
+			"customSolutionsDesc": "특수 제작 전원 및 RF 솔루션"
+		},
+		"solutions": {
+			"title": "솔루션",
+			"industrialAutomation": "산업 자동화",
+			"telecomInfrastructure": "통신 인프라",
+			"medicalDevices": "의료 기기",
+			"defenseSystems": "국방 시스템",
+			"industrialAutomationDesc": "산업 제어 시스템을 위한 전원 솔루션",
+			"telecomInfrastructureDesc": "5G 및 통신 네트워크를 위한 RF 솔루션",
+			"medicalDevicesDesc": "의료 기기 인증 전원 시스템",
+			"defenseSystemsDesc": "국방 애플리케이션을 위한 견고한 솔루션"
+		},
+		"cases": {
+			"title": "사례 연구",
+			"caseStudy1": "5G 기지국 전원 솔루션",
+			"caseStudy2": "군용 레이더 시스템",
+			"caseStudy3": "의료 영상 장비",
+			"caseStudy1Desc": "차세대 5G 기지국을 위한 전원 솔루션",
+			"caseStudy2Desc": "군용 레이더를 위한 RF 증폭기 시스템",
+			"caseStudy3Desc": "의료 영상 장비를 위한 전원 공급"
+		},
+		"support": {
+			"title": "지원",
+			"faq": "자주 묻는 질문",
+			"docs": "문서",
+			"contactSupport": "지원 문의"
+		}
+	},
+	"error": {
+		"title": "시스템 오류",
+		"description": "스펙트럼 링크 이상, 확인 후 다시 시도하십시오",
+		"digest": "오류 요약",
+		"retry": "다시 시도",
+		"home": "홈",
+		"lang": "ko"
+	},
+	"homeHero": {
+		"title": "미래를 위한 혁신적인 전원 솔루션",
+		"subtitle": "글로벌 산업을 위한 최첨단 RF 및 전원 변환 기술 제공",
+		"ctaPrimary": "제품 탐색",
+		"ctaSecondary": "영업 문의",
+		"feature1": "고효율 솔루션",
+		"feature2": "견고하고 신뢰할 수 있음",
+		"feature3": "맞춤형 엔지니어링"
+	},
+	"productsPage": {
+		"common": {
+			"searchPlaceholder": "제품 검색...",
+			"categoryFilter": "카테고리별 필터",
+			"applyFilters": "필터 적용"
+		},
+		"detail": {
+			"downloadDatasheet": "데이터시트 다운로드",
+			"requestQuote": "견적 요청",
+			"specifications": "사양",
+			"documentation": "문서",
+			"performance": "성능",
+			"technicalSpecifications": "기술 사양",
+			"documentationResources": "문서 자료",
+			"performanceData": "성능 데이터",
+			"performanceChartsPlaceholder": "성능 차트가 여기에 표시됩니다",
+			"supportResources": "지원",
+			"downloadSoftware": "소프트웨어 다운로드",
+			"applicationNotes": "응용 노트",
+			"configurationTool": "구성 도구",
+			"contactSales": "영업 문의",
+			"contactSalesDescription": "질문이나 맞춤형 솔루션이 필요하신가요? 영업 팀이 도와드리겠습니다.",
+			"contactSalesTeam": "영업 팀에 문의",
+			"specificationsList": {
+				"inputVoltage": "입력 전압",
+				"outputPower": "출력 전력",
+				"efficiency": "효율",
+				"operatingTemp": "작동 온도",
+				"dimensions": "치수",
+				"weight": "무게"
+			}
+		},
+		"product": {
+			"title": "당사의 진공 제품",
+			"subtitle": "산업 및 연구 애플리케이션을 위한 고성능 진공 솔루션",
+			"categories": {
+				"pump": "진공 펌프",
+				"chamber": "진공 챔버",
+				"valve": "진공 밸브",
+				"instrument": "진공 계측기"
+			},
+			"items": {
+				"0": {
+					"name": "고급 진공 시스템",
+					"description": "까다로운 애플리케이션을 위한 부식 방지 구조의 고효율 진공 시스템.",
+					"features": [
+						"정밀 압력 제어",
+						"낮은 유지보수 설계",
+						"에너지 효율적인 작동",
+						"컴팩트한 설치 공간"
+					]
+				}
+			}
+		}
+	},
+	"footer": {
+		"company": {
+			"name": "선전 헹윈창 진공 기술 유한회사",
+			"description": "반도체, 태양광 및 연구 분야를 위한 신뢰할 수 있는 진공 솔루션을 제공하는 진공 기술 연구 개발, 장비 제조 및 기술 서비스에 중점을 둡니다.",
+			"address": "선전시 남산구 과학기술원 신남로 12호",
+			"phone": "+86 186 6425 9241",
+			"email": "service@ablazec.com"
+		},
+		"services": {
+			"title": "제품 및 서비스",
+			"items": [
+				"진공 펌프 시리즈",
+				"진공 챔버",
+				"진공 밸브",
+				"진공 측정 기기",
+				"진공 시스템 통합",
+				"진공 기술 컨설팅"
+			]
+		},
+		"companyInfo": {
+			"title": "회사 정보",
+			"items": [
+				"회사 소개",
+				"발전 역사",
+				"팀 소개",
+				"인증",
+				"뉴스 센터",
+				"채용 정보"
+			]
+		},
+		"contact": {
+			"title": "기술 상담",
+			"description": "당사의 엔지니어 팀은 전문적인 진공 기술 솔루션 상담을 언제든지 제공합니다.",
+			"form": {
+				"name": "성함",
+				"email": "이메일",
+				"phone": "전화번호",
+				"message": "상담 내용",
+				"submit": "상담 제출"
+			}
+		},
+		"consultation": {
+			"title": "기술 상담 핫라인",
+			"phone": "+86 186 6425 9241"
+		},
+		"business": {
+			"title": "비즈니스 협력 이메일",
+			"email": "service@ablazec.com"
+		},
+		"brochure": "제품 브로셔 받기",
+		"copyright": {
+			"text": "선전 헹윈창 진공 기술 유한회사",
+			"icp": "ICP 등록 번호 20240523001",
+			"certification": "하이테크 기업 인증"
+		},
+		"socialMedia": [
+			"WeChat 공식 계정",
+			"Bilibili",
+			"LinkedIn",
+			"YouTube"
+		]
+	},
+	"solution": {
+		"title": "업계를 선도하는 전원 솔루션",
+		"subtitle": "세계에서 가장 까다로운 애플리케이션을 위한 첨단 전원 변환 기술",
+		"heroTag": "혁신적인 전원 솔루션",
+		"selectIndustry": "업종 선택",
+		"solutionsFor": "솔루션 대상",
+		"allSolutions": "모든 솔루션",
+		"customSolutions": "맞춤형 전원 솔루션",
+		"customSolutionsDescription": "당사의 엔지니어링 팀은 고객의 특정 기술 요구 사항을 충족하는 맞춤형 전원 솔루션을 설계 및 제조합니다.",
+		"requestConsultation": "상담 요청",
+		"relatedCaseStudies": "성공 사례",
+		"caseStudiesSubtitle": "당사의 전원 솔루션 실제 적용 사례",
+		"viewAllCaseStudies": "모든 사례 보기",
+		"readCaseStudy": "사례 연구 읽기",
+		"testimonialsTitle": "업계 리더들의 신뢰",
+		"ctaTitle": "혁신을 위한 전원 솔루션이 준비되었습니까?",
+		"ctaDescription": "당사의 엔지니어링 팀은 고객의 특정 전원 요구 사항에 대해 논의하고 요구 사항에 맞는 솔루션을 개발할 준비가 되어 있습니다.",
+		"contactSales": "영업 문의",
+		"requestDemo": "제품 데모 요청",
+		"customSolutionTitle": "맞춤형 솔루션이 필요하십니까?",
+		"customSolutionSubtitle": "당사의 엔지니어는 독특한 전원 시스템 생성에 특화되어 있습니다",
+		"customSolutionCta": "엔지니어링 상담 요청",
+		"learnMore": "자세히 보기",
+		"industries": [
+			{
+				"id": "all",
+				"name": "모든 업종"
+			},
+			{
+				"id": "automotive",
+				"name": "자동차"
+			},
+			{
+				"id": "aerospace",
+				"name": "항공우주 및 국방"
+			},
+			{
+				"id": "healthcare",
+				"name": "의료"
+			},
+			{
+				"id": "datacenter",
+				"name": "데이터 센터"
+			},
+			{
+				"id": "renewable",
+				"name": "재생 에너지"
+			},
+			{
+				"id": "industrial",
+				"name": "산업 자동화"
+			}
+		],
+		"customBenefits": [
+			"정확한 사양에 맞게 맞춤화",
+			"고유한 환경에 최적화",
+			"개발 전 과정에 걸친 완전한 기술 지원",
+			"엄격한 테스트 및 검증"
+		],
+		"items": [
+			{
+				"title": "산업 자동화",
+				"description": "제조 환경을 위한 견고한 전원 솔루션",
+				"industries": [
+					"industrial",
+					"automotive"
+				]
+			},
+			{
+				"title": "RF 증폭기",
+				"description": "통신 시스템을 위한 고주파 전원 솔루션",
+				"industries": [
+					"aerospace",
+					"datacenter"
+				]
+			},
+			{
+				"title": "의료용 전원 시스템",
+				"description": "의료 애플리케이션을 위한 인증 전원 솔루션",
+				"industries": [
+					"healthcare"
+				]
+			},
+			{
+				"title": "데이터 센터 전원",
+				"description": "서버 인프라를 위한 고효율 전원 변환",
+				"industries": [
+					"datacenter"
+				]
+			},
+			{
+				"title": "전원 공급 장치",
+				"description": "신뢰할 수 있는 AC/DC 및 DC/DC 전원 변환 솔루션",
+				"industries": [
+					"industrial",
+					"automotive",
+					"datacenter"
+				]
+			},
+			{
+				"title": "항공우주 전원 시스템",
+				"description": "항공우주 애플리케이션을 위한 견고한 전원 솔루션",
+				"industries": [
+					"aerospace"
+				]
+			},
+			{
+				"title": "국방 전원 솔루션",
+				"description": "국방 애플리케이션을 위한 안전한 전원 시스템",
+				"industries": [
+					"aerospace"
+				]
+			},
+			{
+				"title": "맞춤형 전원 시스템",
+				"description": "특수 요구 사항을 위한 맞춤형 전원 솔루션",
+				"industries": [
+					"all"
+				]
+			}
+		],
+		"caseStudies": [
+			{
+				"id": "automotive",
+				"title": "EV 충전소용 고효율 전원",
+				"description": "차세대 전기 자동차 충전 인프라를 위한 맞춤형 전원 모듈 개발로 전력 손실 35% 감소.",
+				"stats": "결과: 효율 35% 향상, 설치 공간 50% 감소"
+			},
+			{
+				"id": "aerospace",
+				"title": "위성 통신용 견고한 전원 시스템",
+				"description": "극한 환경에서 작동하는 위성 통신 시스템을 위한 방사선 강화 전원 설계 및 제조.",
+				"stats": "결과: 우주 조건에서 99.99% 신뢰성"
+			},
+			{
+				"id": "healthcare",
+				"title": "영상 장비용 의료 등급 전원",
+				"description": "초저 전자기 간섭을 구현한 MRI 기계용 특수 전원 솔루션 제작.",
+				"stats": "결과: 전자기 간섭 60% 감소"
+			},
+			{
+				"id": "datacenter",
+				"title": "클라우드 데이터 센터용 고밀도 전원",
+				"description": "초대규모 데이터 센터용 모듈식 전원 시스템 도입으로 전력 밀도 40% 개선.",
+				"stats": "결과: 전력 밀도 40% 향상, 냉각 비용 25% 절감"
+			}
+		],
+		"testimonials": [
+			{
+				"company": "테크코프 산업",
+				"quote": "래디언스 퓨처의 전원 솔루션은 우리의 제조 효율성을 혁신적으로 변화시켰습니다. 그들의 맞춤형 엔지니어링 팀은 빠듯한 기한 안에 정확히 우리가 필요로 하는 것을 제공했습니다.",
+				"name": "사라 존슨",
+				"position": "최고 기술 책임자"
+			},
+			{
+				"company": "에어로시스템즈 인터내셔널",
+				"quote": "래디언스 퓨처의 항공우주 전원 시스템의 신뢰성은 비교할 수 없습니다. 우리는 50개 이상의 위성에 그들의 솔루션을 배포했지만 전원 관련 고장은 단 한 건도 없었습니다.",
+				"name": "마이클 로드리게스",
+				"position": "수석 엔지니어"
+			}
+		]
+	},
+	"support": {
+		"title": "지원 및 자료",
+		"subtitle": "당사의 제품을 최대한 활용하는 데 필요한 자료와 지원을 찾아보세요",
+		"supportTagline": "프리미엄 지원 서비스",
+		"resources": {
+			"title": "자료",
+			"description": "당사의 제품을 최대한 활용하기 위한 포괄적인 자료에 액세스",
+			"downloads": "다운로드",
+			"downloadsDescription": "당사 제품의 매뉴얼, 소프트웨어 및 문서 액세스",
+			"documentation": "문서",
+			"documentationDescription": "포괄적인 가이드 및 기술 사양",
+			"faq": "자주 묻는 질문",
+			"faqDescription": "당사의 제품 및 서비스에 대한 일반적인 질문의 답변 찾기"
+		},
+		"services": {
+			"title": "전문 서비스",
+			"description": "경험을 향상시키고 가치를 극대화하는 전문 서비스",
+			"training": "교육",
+			"trainingDescription": "팀을 위한 맞춤형 교육 프로그램",
+			"consulting": "컨설팅",
+			"consultingDescription": "특정 요구 사항에 대한 전문가 지도",
+			"maintenance": "유지보수",
+			"maintenanceDescription": "지속적인 지원 및 유지보수 서비스"
+		},
+		"contact": {
+			"title": "지원 문의",
+			"description": "지원 팀은 귀하의 질문이나 문제를 해결하기 위해 항상 준비되어 있습니다",
+			"supportHours": "지원 시간",
+			"criticalSupport": "긴급 지원 이용 가능",
+			"businessHours": "영업 시간: 월~금 9:00-17:00",
+			"responseTime": "응답 시간",
+			"criticalResponse": "긴급 문제에 대한 응답",
+			"hours": "시간 이내",
+			"liveChat": "실시간 채팅",
+			"callSupport": "전화 지원",
+			"emailSupport": "이메일 지원",
+			"scheduleCall": "전화 예약"
+		},
+		"additionalSupport": "엔터프라이즈 지원 플랜은 영업 팀에 문의하십시오"
+	},
+	"about": {
+		"hero": {
+			"title": "회사 소개",
+			"subtitle": "우리가 누구이며 업계에서 우리를 특별하게 만드는 것 발견하기"
+		},
+		"stats": {
+			"title": "우리의 성과",
+			"countries": "국가",
+			"employees": "팀 멤버",
+			"customers": "만족한 고객",
+			"awards": "업계 수상"
+		},
+		"values": {
+			"title": "핵심 가치",
+			"innovation": "혁신",
+			"innovationDesc": "우리는 끊임없이 경계를 넓혀 획기적인 솔루션을 창출합니다.",
+			"quality": "품질",
+			"qualityDesc": "개념부터 실행까지 모든 것에서 탁월함을 추구합니다.",
+			"integrity": "진실성",
+			"integrityDesc": "정직함과 윤리적인 행동이 모든 의사 결정을 이끕니다.",
+			"customer": "고객 중심",
+			"customerDesc": "우리는 고객의 기대를 이해하고 그 이상을 달성하는 것을 우선시합니다."
+		},
+		"milestones": {
+			"title": "우리의 여정",
+			"2010": {
+				"title": "회사 설립",
+				"desc": "우리는 차고에서 소수의 비전가들과 함께 시작했습니다."
+			},
+			"2013": {
+				"title": "첫 제품 출시",
+				"desc": "우리의 혁신적인 제품이 하룻밤 사이에 업계의 풍경을 바꾸었습니다."
+			},
+			"2016": {
+				"title": "글로벌 확장",
+				"desc": "국제 고객에게 서비스를 제공하기 위해 5대륙에 사무실을 열었습니다."
+			},
+			"2019": {
+				"title": "혁신 센터",
+				"desc": "혁신을 가속화하기 위한 최첨단 R&D 시설을 설립했습니다."
+			},
+			"2022": {
+				"title": "신규 본사",
+				"desc": "협업과 창의성을 위해 설계된 맞춤형 캠퍼스로 이전했습니다."
+			}
+		},
+		"culture": {
+			"title": "기업 문화",
+			"innovation": {
+				"title": "혁신 문화",
+				"description": "우리는 창의적인 사고가 장려되고 보상받는 환경을 조성합니다. 우리의 혁신 실험실은 직원들이 제약 없이 최첨단 아이디어를 탐구할 수 있도록 합니다."
+			},
+			"quality": {
+				"title": "품질에 대한 헌신",
+				"description": "품질은 우리 회사에서 타협할 수 없습니다. 우리는 워크플로우 전반에 걸쳐 엄격한 테스트 프로토콜과 품질 보증 조치를 구현했습니다."
+			},
+			"integrity": {
+				"title": "모든 것에 진실성",
+				"description": "우리는 모든 비즈니스 거래에서 최고의 윤리 기준을 유지합니다. 우리의 투명한 실천은 신뢰와 장기적인 파트너십을 가져왔습니다."
+			},
+			"responsibility": {
+				"title": "사회적 책임",
+				"description": "우리는 지역 사회 발전과 환경 지속 가능성에 적극적으로 기여합니다. 우리의 CSR 이니셔티브는 전 세계적으로 10만 명 이상의 삶에 긍정적인 영향을 미쳤습니다."
+			}
+		},
+		"team": {
+			"title": "리더십 팀 만나기",
+			"viewAll": "모든 팀 멤버 보기",
+			"ceo": {
+				"name": "알렉스 모건",
+				"title": "최고 경영자",
+				"bio": "20년 경력의 기술 리더십 경험을 가진 전략적 비전가.",
+				"image": "@/public/images/team/ceo.jpg"
+			},
+			"cto": {
+				"name": "샘 카터",
+				"title": "최고 기술 책임자",
+				"bio": "AI 및 기계 학습 분야에서 15개 이상의 특허를 보유한 선구적인 엔지니어.",
+				"image": "@/public/images/team/cto.jpg"
+			},
+			"cfo": {
+				"name": "존스 윌슨",
+				"title": "최고 재무 책임자",
+				"bio": "300% 성장을 달성하기 위해 우리의 운영을 최적화한 재무 전문가.",
+				"image": "@/public/images/team/cfo.jpg"
+			},
+			"cmo": {
+				"name": "리사 첸",
+				"title": "최고 마케팅 책임자",
+				"bio": "우리의 브랜드를 재정의한 수상 경력에 빛나는 캠페인을 이끈 창의적인 천재.",
+				"image": "@/public/images/team/cmo.jpg"
+			}
+		}
+	},
+	"contact": {
+		"title": "연락처",
+		"subtitle": "당사의 제품 및 서비스에 대해 자세히 알아보려면 당사 팀에 문의하십시오.",
+		"form": {
+			"title": "메시지 보내기",
+			"name": "이름",
+			"email": "이메일",
+			"company": "회사",
+			"phone": "전화",
+			"message": "메시지",
+			"yourName": "귀하의 이름",
+			"yourEmail": "귀하의 이메일",
+			"companyName": "회사 이름",
+			"phoneNumber": "전화번호",
+			"yourMessage": "귀하의 메시지",
+			"submit": "메시지 보내기"
+		},
+		"info": {
+			"title": "연락처 정보",
+			"address": "선전시 남산구 과학기술원 신남로 12호",
+			"phone": "+86 186 6425 9241",
+			"email": "info@advancedsolutions.com",
+			"hours": "월~금: 9:00 - 17:00 (UTC+8)"
+		},
+		"visitUs": "방문하기",
+		"mapPlaceholder": "지도가 여기에 표시됩니다",
+		"salesDepartment": "영업 부서",
+		"salesContactDescription": "제품 문의 및 가격 세부 사항은 영업 팀에 문의하십시오.",
+		"supportDepartment": "지원 부서",
+		"supportContactDescription": "기술 지원이 필요하시면 지원 팀에 문의하십시오."
+	},
+	"commonPage": {
+		"ctaPrimary": "시작하기",
+		"ctaSecondary": "자세히 알아보기",
+		"supportHours": "24/7",
+		"criticalSupport": "24/7 긴급 지원",
+		"businessHours": "영업 시간 지원",
+		"responseTime": "응답 시간",
+		"hours": "시간 이내",
+		"liveChat": "실시간 채팅",
+		"callSupport": "전화 지원",
+		"emailSupport": "이메일 지원",
+		"scheduleCall": "전화 예약",
+		"support": "지원",
+		"Contact": {
+			"title": "연락"
+		},
+		"testimonials": {
+			"title": "고객 평가",
+			"items": [
+				{
+					"company": "에어로시스템즈 인터내셔널",
+					"quote": "래디언스 퓨처의 항공우주 전원 시스템의 신뢰성은 비교할 수 없습니다. 우리는 50개 이상의 위성에 그들의 솔루션을 배포했지만 전원 관련 고장은 단 한 건도 없었습니다.",
+					"name": "마이클 로드리게스",
+					"position": "수석 엔지니어",
+					"avatar": "https://via.placeholder.com/150",
+					"rating": 2,
+					"likes": 41
+				},
+				{
+					"company": "에어로시스템즈 인터내셔널",
+					"quote": "래디언스 퓨처의 항공우주 전원 시스템의 신뢰성은 비교할 수 없습니다. 우리는 50개 이상의 위성에 그들의 솔루션을 배포했지만 전원 관련 고장은 단 한 건도 없었습니다.",
+					"name": "마이클 로드리게스",
+					"position": "수석 엔지니어",
+					"avatar": "https://via.placeholder.com/150",
+					"rating": 2,
+					"likes": 41
+				},
+				{
+					"company": "에어로시스템즈 인터내셔널",
+					"quote": "래디언스 퓨처의 항공우주 전원 시스템의 신뢰성은 비교할 수 없습니다. 우리는 50개 이상의 위성에 그들의 솔루션을 배포했지만 전원 관련 고장은 단 한 건도 없었습니다.",
+					"name": "마이클 로드리게스",
+					"position": "수석 엔지니어",
+					"avatar": "https://via.placeholder.com/150",
+					"rating": 2,
+					"likes": 41
+				},
+				{
+					"company": "에어로시스템즈 인터내셔널",
+					"quote": "래디언스 퓨처의 항공우주 전원 시스템의 신뢰성은 비교할 수 없습니다. 우리는 50개 이상의 위성에 그들의 솔루션을 배포했지만 전원 관련 고장은 단 한 건도 없었습니다.",
+					"name": "마이클 로드리게스",
+					"position": "수석 엔지니어",
+					"avatar": "https://via.placeholder.com/150",
+					"rating": 2,
+					"likes": 41
+				}
+			]
+		},
+		"solutions": {
+			"title": "우리의 솔루션",
+			"subtitle": "귀하의 요구 사항에 대한 포괄적인 솔루션",
+			"items": [
+				{
+					"title": "RF 전원 솔루션",
+					"description": "반도체 및 산업 애플리케이션을 위한 첨단 RF 전원 솔루션."
+				},
+				{
+					"title": "진공 기술",
+					"description": "연구 및 제조를 위한 고품질 진공 기술."
+				},
+				{
+					"title": "맞춤형 엔지니어링",
+					"description": "특정 요구 사항을 충족하기 위한 맞춤형 엔지니어링 솔루션."
+				}
+			]
+		},
+		"homeContact": {
+			"title": "연락하기",
+			"subtitle": "질문이나 요구 사항이 있으시면 언제든지 도와드리겠습니다."
+		}
+	},
+	"heroPage": {
+		"title": "첨단 RF 전원 및 진공 기술 솔루션",
+		"subtitle": "우리는 반도체, 태양광 및 연구 분야를 위한 고품질 RF 전원 및 진공 기술 솔루션을 전문으로 합니다.",
+		"ctaPrimary": "제품 탐색",
+		"ctaSecondary": "연락하기"
+	},
+	"homeProduct": {
+		"title": "당사의 RF 전원 제품",
+		"subtitle": "다양한 산업 애플리케이션을 위해 설계된 첨단 RF 전원 제품을 살펴보십시오.",
+		"company": {
+			"name": "선전 헹윈창 진공 기술 유한회사",
+			"description": "반도체, 태양광 및 연구 분야를 위한 고품질 진공 및 RF 전원 제품의 개발 및 제조를 전문으로 합니다."
+		},
+		"categories": {
+			"rfPowerSupply": "RF 전원 공급 장치",
+			"vacuumPump": "진공 펌프",
+			"vacuumChamber": "진공 챔버",
+			"vacuumValve": "진공 밸브"
+		},
+		"items": [
+			{
+				"id": 1,
+				"name": "고출력 RF 발생기",
+				"description": "당사의 고출력 RF 발생기는 반도체 제조에서 플라즈마 처리를 위해 안정적이고 효율적인 RF 전력을 공급하도록 설계되었습니다.",
+				"category": "RF 전원 공급 장치",
+				"features": [
+					"최대 10,000W 출력 전력",
+					"주파수 범위:13.56MHz ± 500kHz",
+					"고효율 및 안정성",
+					"첨단 냉각 시스템",
+					"사용자 친화적인 제어 인터페이스"
+				],
+				"applications": [
+					"반도체 제조",
+					"플라즈마 에칭",
+					"재료 처리"
+				]
+			},
+			{
+				"id": 2,
+				"name": "정밀 RF 정합 네트워크",
+				"description": "정밀 RF 정합 네트워크는 다양한 RF 애플리케이션에 대해 최적의 전력 전달 및 임피던스 정합을 보장합니다.",
+				"category": "RF 전원 공급 장치",
+				"features": [
+					"광대역 정합",
+					"고출력 처리 능력",
+					"고속 튜닝",
+					"고정밀도 및 신뢰성",
+					"컴팩트 설계"
+				],
+				"applications": [
+					"RF 플라즈마 시스템",
+					"재료 처리",
+					"연구 실험실"
+				]
+			},
+			{
+				"id": 3,
+				"name": "RF 전력 측정 시스템",
+				"description": "당사의 RF 전력 측정 시스템은 RF 애플리케이션을 위한 정확하고 신뢰할 수 있는 전력 측정을 제공합니다.",
+				"category": "RF 전원 공급 장치",
+				"features": [
+					"넓은 측정 범위",
+					"고정밀도 센서",
+					"실시간 모니터링",
+					"데이터 기록 및 분석",
+					"쉬운 통합"
+				],
+				"applications": [
+					"RF 전력 제어",
+					"공정 모니터링",
+					"품질 보증"
+				]
+			},
+			{
+				"id": 4,
+				"name": "고급 진공 펌프",
+				"description": "산업 및 연구 애플리케이션을 위해 설계된 고성능 진공 펌프.",
+				"category": "진공 펌프",
+				"features": [
+					"효율적이고 신뢰할 수 있는 성능",
+					"부식 방지 소재로 제작된 내구성 있는 구조",
+					"쉬운 유지보수 및 작동"
+				],
+				"applications": [
+					"반도체 제조",
+					"진공 코팅",
+					"연구"
+				]
+			},
+			{
+				"id": 5,
+				"name": "정밀 진공 챔버",
+				"description": "다양한 진공 애플리케이션을 위해 설계된 고품질 진공 챔버.",
+				"category": "진공 챔버",
+				"features": [
+					"내구성 있고 누설 방지 구조",
+					"맞춤형 크기 및 포트",
+					"고진공 호환성",
+					"다른 시스템과의 쉬운 통합"
+				],
+				"applications": [
+					"반도체 가공",
+					"진공 코팅",
+					"연구"
+				]
+			},
+			{
+				"id": 6,
+				"name": "제어 진공 밸브",
+				"description": "정확한 압력 조절을 위한 정밀 제어 진공 밸브.",
+				"category": "진공 밸브",
+				"features": [
+					"고정밀도 제어",
+					"내구성 있는 구조",
+					"넓은 압력 범위",
+					"빠른 응답 시간"
+				],
+				"applications": [
+					"반도체 제조",
+					"진공 코팅",
+					"연구"
+				]
+			}
+		]
+	},
+	"productShowcase": {
+		"title": "당사의 RF 전원 제품",
+		"subtitle": "다양한 산업 애플리케이션을 위해 설계된 첨단 RF 전원 제품을 살펴보십시오.",
+		"searchPlaceholder": "제품 검색...",
+		"categoryFilter": "카테고리 선택",
+		"applyFilters": "필터 적용",
+		"feature": "특징:",
+		"application": "응용 분야:",
+		"learnMore": "자세히 알아보기"
+	},
+	"products": {
+		"items": [
+			{
+				"id": 1,
+				"name": "고급 진공 펌프",
+				"description": "산업 및 연구 애플리케이션을 위해 설계된 고성능 진공 펌프.",
+				"category": "진공 펌프",
+				"features": [
+					"효율적이고 신뢰할 수 있는 성능",
+					"부식 방지 소재로 제작된 내구성 있는 구조",
+					"쉬운 유지보수 및 작동"
+				],
+				"applications": [
+					"반도체 제조",
+					"진공 코팅",
+					"연구"
+				]
+			},
+			{
+				"id": 2,
+				"name": "정밀 진공 챔버",
+				"description": "다양한 진공 애플리케이션을 위해 설계된 고품질 진공 챔버.",
+				"category": "진공 챔버",
+				"features": [
+					"내구성 있고 누설 방지 구조",
+					"맞춤형 크기 및 포트",
+					"고진공 호환성",
+					"다른 시스템과의 쉬운 통합"
+				],
+				"applications": [
+					"반도체 가공",
+					"진공 코팅",
+					"연구"
+				]
+			},
+			{
+				"id": 3,
+				"name": "제어 진공 밸브",
+				"description": "정확한 압력 조절을 위한 정밀 제어 진공 밸브.",
+				"category": "진공 밸브",
+				"features": [
+					"고정밀도 제어",
+					"내구성 있는 구조",
+					"넓은 압력 범위",
+					"빠른 응답 시간"
+				],
+				"applications": [
+					"반도체 제조",
+					"진공 코팅",
+					"연구"
+				]
+			}
+		]
+	},
+	"slideHero": {
+		"prevButton": "이전",
+		"nextButton": "다음",
+		"slide1": {
+			"title": "신세대 RF 전원 시스템 출시",
+			"subtitle": "전력 밀도 40% 증가, 에너지 소비 25% 감소를 실현한 혁신적인 RF 전원 솔루션. 반도체 제조 및 재료 처리에 적합합니다.",
+			"ctaPrimary": "자세히 보기",
+			"ctaSecondary": "기술 백서"
+		},
+		"slide2": {
+			"title": "기술 혁신상 수상",
+			"subtitle": "RF 전원 기술의 획기적인 혁신으로 2025년 산업 기술 혁신 금상을 수상했습니다.",
+			"ctaPrimary": "뉴스 상세",
+			"ctaSecondary": "수상 기술"
+		},
+		"slide3": {
+			"title": "의료 기기에서의 RF 전원 응용",
+			"subtitle": "차세대 의료 등급 RF 전원 시스템은 고급 의료 기기를 위한 안정적이고 신뢰할 수 있는 에너지 솔루션을 제공합니다.",
+			"ctaPrimary": "응용 사례",
+			"ctaSecondary": "의료 솔루션"
+		},
+		"slide4": {
+			"title": "인더스트리 4.0 RF 전원 솔루션",
+			"subtitle": "원격 모니터링, 예측적 유지보수 및 에너지 효율 최적화를 가능하게 하는 지능형 RF 전원 관리 시스템.",
+			"ctaPrimary": "솔루션",
+			"ctaSecondary": "성공 사례"
+		}
+	},
+	"casesPage": {
+		"title": "사례 연구",
+		"subtitle": "당사의 RF 전원 솔루션 탐색",
+		"description": "선전 헹윈창 진공 기술 유한회사는 다양한 산업을 위한 혁신적인 RF 전원 솔루션을 제공합니다. 다음은 우리의 성공 사례입니다:",
+		"caseStudy1": {
+			"title": "5G 기지국 전원 솔루션",
+			"description": "차세대 5G 기지국을 위한 고효율 RF 전원",
+			"content": "주요 통신 장비 제조업체를 위해 5G 기지국 장비용으로 효율적이고 안정적인 RF 전원 솔루션을 개발했습니다. 이 솔루션은 첨단 전원 변환 기술을 채택하여 고온 환경에서도 95% 이상의 효율을 유지하며 기지국의 에너지 소비와 냉각 요구 사항을 크게 줄였습니다.",
+			"technologies": [
+				"고주파 전원 변환",
+				"온도 보상 기술",
+				"디지털 제어 회로"
+			]
+		},
+		"caseStudy2": {
+			"title": "군용 레이더 시스템",
+			"description": "군용 레이더를 위한 RF 증폭 시스템",
+			"content": "국방 고객을 위해 개발된 이 RF 증폭 시스템은 차세대 군용 레이더에서 사용됩니다. 이 전원 시스템은 매우 높은 전력 밀도(>1kW/L)와 우수한 전자기 호환성을 특징으로 하며 극한 환경에서 안정적으로 작동하면서 엄격한 군용 표준을 충족합니다.",
+			"technologies": [
+				"고전력 밀도 설계",
+				"EMI 차폐 기술",
+				"군용 등급 신뢰성"
+			]
+		},
+		"caseStudy3": {
+			"title": "의료 영상 장비",
+			"description": "의료 영상 장비 전용 전원",
+			"content": "고급 의료 영상 장비를 위해 개발된 이 전용 RF 전원 솔루션은 MRI 및 CT 스캐너에서 사용됩니다. 이 솔루션은 초저잡음(<0.1% 리플)과 정밀한 전력 제어를 구현하여 영상 품질을 보장하면서 의료 기기 안전 표준을 준수합니다.",
+			"technologies": [
+				"초저잡음 설계",
+				"정밀 전력 제어",
+				"의료 안전 인증"
+			]
+		},
+		"viewDetails": "자세히 보기",
+		"learnMore": "더 많은 사례 탐색",
+		"contactUs": "맞춤형 솔루션은 문의하십시오"
+	},
+	"auth": {
+		"login": {
+			"title": "로그인",
+			"email": "이메일",
+			"password": "비밀번호",
+			"signIn": "로그인"
+		},
+		"register": {
+			"title": "등록",
+			"email": "이메일",
+			"password": "비밀번호",
+			"confirmPassword": "비밀번호 확인",
+			"register": "등록",
+			"passwordMismatch": "비밀번호가 일치하지 않습니다",
+			"registrationSuccess": "등록이 성공적으로 완료되었습니다!"
+		}
+	},
+	"dashboard": {
+		"title": "대시보드",
+		"welcome": "환영합니다, {name}님!",
+		"signOut": "로그아웃"
+	}
+}

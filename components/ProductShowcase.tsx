@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { useTranslations } from 'next-intl';
 import { themeColors } from '@/config/themeConfig';
-
+import {Link} from '@/i18n/navigation'
 interface Product {
   id: number;
   name: string;
@@ -181,12 +181,13 @@ export default function ProductShowcase({ title, subtitle, categories, products 
                   ))}
                 </ul>
               </div>
-              
+              <Link href="/products" className='block'>
               <Button 
                 className={`mb-6 w-full ${themeConfig.button} text-sm font-medium`}
               >
                 {t('learnMore')}
               </Button>
+              </Link>
             </CardContent>
           </Card>
         ))}

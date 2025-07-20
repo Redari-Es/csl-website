@@ -1,4 +1,11 @@
 // 主题颜色配置
+interface ThemeConfig {
+  textPrimary: string;
+  searchBorder: string;
+  searchFocus: string;
+  searchText: string;
+  // 其他属性...
+}
 export const themeColors = {
   dark: {
     background: "#0a0e17",

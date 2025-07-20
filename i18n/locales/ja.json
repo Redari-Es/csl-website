@@ -1,0 +1,880 @@
+{
+	"global": {
+		"companyName": "CSL株式会社",
+		"slogan": "コンポーネントソリューションのリーダー",
+		"title": "深セン恒運昌真空技術有限公司",
+		"description": "深セン恒運昌真空技術有限公司は2013年3月19日に設立され、真空設備、真空プラズマ電源、新能源材料、半導体デバイス、ガスマスフローメーター、真空ポンプ、カソード、ターゲット、および電気機械製品の技術開発、コンサルティング、販売を専門としています。",
+		"keywords": "RF電源,真空技術,恒運昌,Next.js,React",
+		"website": "http://www.csl-vacuum.com/",
+		"author": "恒運昌チーム",
+		"creator": "shonh@ablazec.com"
+	},
+	"navigation": {
+		"home": "ホーム",
+		"about": "会社概要",
+		"contact": "お問い合わせ",
+		"searchPlaceholder": "製品、ソリューションを検索...",
+		"searchResults": "検索結果",
+		"popularCategories": "人気カテゴリー",
+		"recentSearches": "最近の検索",
+		"learnMore": "詳細を見る",
+		"products": {
+			"title": "製品",
+			"powerSupplies": "電源製品",
+			"rfAmplifiers": "RFアンプ",
+			"testEquipment": "テスト機器",
+			"components": "コンポーネント",
+			"customSolutions": "カスタムソリューション",
+			"powerSuppliesDesc": "高要求アプリケーション向けの高効率電源ソリューション",
+			"rfAmplifiersDesc": "RFアプリケーション向けの高性能アンプ",
+			"testEquipmentDesc": "精密測定およびテスト機器",
+			"componentsDesc": "重要システム向けの高信頼性コンポーネント",
+			"customSolutionsDesc": "特注の電源およびRFソリューション"
+		},
+		"solutions": {
+			"title": "ソリューション",
+			"industrialAutomation": "産業オートメーション",
+			"telecomInfrastructure": "通信インフラ",
+			"medicalDevices": "医療機器",
+			"defenseSystems": "防衛システム",
+			"industrialAutomationDesc": "産業制御システム向け電源ソリューション",
+			"telecomInfrastructureDesc": "5Gおよび通信ネットワーク向けRFソリューション",
+			"medicalDevicesDesc": "医療機器向け認証電源システム",
+			"defenseSystemsDesc": "防衛アプリケーション向け堅牢ソリューション"
+		},
+		"cases": {
+			"title": "事例研究",
+			"caseStudy1": "5G基地局電源ソリューション",
+			"caseStudy2": "軍事レーダーシステム",
+			"caseStudy3": "医療画像機器",
+			"caseStudy1Desc": "次世代5G基地局向け電源ソリューション",
+			"caseStudy2Desc": "軍事レーダー向けRFアンプシステム",
+			"caseStudy3Desc": "医療画像機器向け電源"
+		},
+		"support": {
+			"title": "サポート",
+			"faq": "よくある質問",
+			"docs": "ドキュメント",
+			"contactSupport": "サポートに問い合わせ"
+		}
+	},
+	"error": {
+		"title": "システムエラー",
+		"description": "スペクトルリンク異常、確認後再試行してください",
+		"digest": "エラー要約",
+		"retry": "再試行",
+		"home": "ホーム",
+		"lang": "ja"
+	},
+	"homeHero": {
+		"title": "明日のための革新的な電源ソリューション",
+		"subtitle": "グローバル産業向けに最先端のRFおよび電源変換技術を提供",
+		"ctaPrimary": "製品を見る",
+		"ctaSecondary": "営業に連絡",
+		"feature1": "高効率ソリューション",
+		"feature2": "堅牢で信頼性",
+		"feature3": "カスタムエンジニアリング"
+	},
+	"productsPage": {
+		"common": {
+			"searchPlaceholder": "製品を検索...",
+			"categoryFilter": "カテゴリーでフィルター",
+			"applyFilters": "フィルターを適用"
+		},
+		"detail": {
+			"downloadDatasheet": "データシートをダウンロード",
+			"requestQuote": "見積もりを依頼",
+			"specifications": "仕様",
+			"documentation": "ドキュメント",
+			"performance": "性能",
+			"technicalSpecifications": "技術仕様",
+			"documentationResources": "ドキュメントリソース",
+			"performanceData": "性能データ",
+			"performanceChartsPlaceholder": "性能チャートはここに表示されます",
+			"supportResources": "サポートリソース",
+			"downloadSoftware": "ソフトウェアをダウンロード",
+			"applicationNotes": "アプリケーションノート",
+			"configurationTool": "設定ツール",
+			"contactSales": "営業に連絡",
+			"contactSalesDescription": "質問やカスタムソリューションが必要ですか？営業チームがお手伝いします。",
+			"contactSalesTeam": "営業チームに連絡",
+			"specificationsList": {
+				"inputVoltage": "入力電圧",
+				"outputPower": "出力電力",
+				"efficiency": "効率",
+				"operatingTemp": "動作温度",
+				"dimensions": "寸法",
+				"weight": "重量"
+			}
+		},
+		"product": {
+			"title": "当社の真空製品",
+			"subtitle": "産業および研究アプリケーション向けの高性能真空ソリューション",
+			"categories": {
+				"pump": "真空ポンプ",
+				"chamber": "真空チャンバー",
+				"valve": "真空バルブ",
+				"instrument": "真空計器"
+			},
+			"items": {
+				"0": {
+					"name": "高度な真空システム",
+					"description": "高要求アプリケーション向けの耐食性構造を備えた高効率真空システム。",
+					"features": [
+						"精密圧力制御",
+						"低メンテナンス設計",
+						"エネルギー効率の高い操作",
+						"コンパクトな設置面積"
+					]
+				}
+			}
+		}
+	},
+	"footer": {
+		"company": {
+			"name": "深セン恒運昌真空技術有限公司",
+			"description": "半導体、太陽光発電、研究分野向けに信頼性の高い真空ソリューションを提供する真空技術の研究開発、設備製造、技術サービスに焦点を当てています。",
+			"address": "深セン市南山區科技園新南路12号",
+			"phone": "+86 186 6425 9241",
+			"email": "service@ablazec.com"
+		},
+		"services": {
+			"title": "製品＆サービス",
+			"items": [
+				"真空ポンプシリーズ",
+				"真空チャンバー",
+				"真空バルブ",
+				"真空測定機器",
+				"真空システム統合",
+				"真空技術コンサルティング"
+			]
+		},
+		"companyInfo": {
+			"title": "会社情報",
+			"items": [
+				"会社概要",
+				"発展の歴史",
+				"チーム紹介",
+				"認証",
+				"ニュースセンター",
+				"採用情報"
+			]
+		},
+		"contact": {
+			"title": "技術相談",
+			"description": "当社のエンジニアチームは、専門的な真空技術ソリューションの相談をいつでも提供します。",
+			"form": {
+				"name": "お名前",
+				"email": "メールアドレス",
+				"phone": "電話番号",
+				"message": "相談内容",
+				"submit": "相談を送信"
+			}
+		},
+		"consultation": {
+			"title": "技術相談ホットライン",
+			"phone": "+86 186 6425 9241"
+		},
+		"business": {
+			"title": "ビジネス協力メール",
+			"email": "service@ablazec.com"
+		},
+		"brochure": "製品パンフレットを入手",
+		"copyright": {
+			"text": "深セン恒運昌真空技術有限公司",
+			"icp": "ICP登録番号 20240523001",
+			"certification": "ハイテク企業認証"
+		},
+		"socialMedia": [
+			"WeChat公式アカウント",
+			"Bilibili",
+			"LinkedIn",
+			"YouTube"
+		]
+	},
+	"solution": {
+		"title": "業界をリードする電源ソリューション",
+		"subtitle": "世界で最も要求の厳しいアプリケーション向けの先進的な電源変換技術",
+		"heroTag": "革新的な電源ソリューション",
+		"selectIndustry": "業界を選択",
+		"solutionsFor": "ソリューション対象",
+		"allSolutions": "すべてのソリューション",
+		"customSolutions": "カスタム電源ソリューション",
+		"customSolutionsDescription": "当社のエンジニアリングチームは、お客様の特定の技術要件を満たす特注の電源ソリューションを設計・製造します。",
+		"requestConsultation": "相談を依頼",
+		"relatedCaseStudies": "成功事例",
+		"caseStudiesSubtitle": "当社の電源ソリューションの実際のアプリケーション",
+		"viewAllCaseStudies": "すべての事例を見る",
+		"readCaseStudy": "事例詳細を読む",
+		"testimonialsTitle": "業界リーダーからの信頼",
+		"ctaTitle": "イノベーションを推進する準備はできていますか？",
+		"ctaDescription": "当社のエンジニアリングチームは、お客様の特定の電源要件について議論し、ニーズに合わせたソリューションを開発する準備ができています。",
+		"contactSales": "営業に連絡",
+		"requestDemo": "製品デモを依頼",
+		"customSolutionTitle": "カスタムソリューションが必要ですか？",
+		"customSolutionSubtitle": "当社のエンジニアは独自の電源システムの作成を専門としています",
+		"customSolutionCta": "エンジニアリング相談を依頼",
+		"learnMore": "詳細を見る",
+		"industries": [
+			{
+				"id": "all",
+				"name": "すべての業界"
+			},
+			{
+				"id": "automotive",
+				"name": "自動車"
+			},
+			{
+				"id": "aerospace",
+				"name": "航空宇宙＆防衛"
+			},
+			{
+				"id": "healthcare",
+				"name": "医療"
+			},
+			{
+				"id": "datacenter",
+				"name": "データセンター"
+			},
+			{
+				"id": "renewable",
+				"name": "再生可能エネルギー"
+			},
+			{
+				"id": "industrial",
+				"name": "産業オートメーション"
+			}
+		],
+		"customBenefits": [
+			"お客様の正確な仕様に合わせて調整",
+			"独自の環境に最適化",
+			"開発全体を通じてのフルテクニカルサポート",
+			"厳格なテストと検証"
+		],
+		"items": [
+			{
+				"title": "産業オートメーション",
+				"description": "製造環境向けの堅牢な電源ソリューション",
+				"industries": [
+					"industrial",
+					"automotive"
+				]
+			},
+			{
+				"title": "RFアンプ",
+				"description": "通信システム向け高周波電源ソリューション",
+				"industries": [
+					"aerospace",
+					"datacenter"
+				]
+			},
+			{
+				"title": "医療用電源システム",
+				"description": "医療アプリケーション向け認証電源ソリューション",
+				"industries": [
+					"healthcare"
+				]
+			},
+			{
+				"title": "データセンター電源",
+				"description": "サーバーインフラ向け高効率電源変換",
+				"industries": [
+					"datacenter"
+				]
+			},
+			{
+				"title": "電源供給装置",
+				"description": "信頼性の高いAC/DCおよびDC/DC電源変換ソリューション",
+				"industries": [
+					"industrial",
+					"automotive",
+					"datacenter"
+				]
+			},
+			{
+				"title": "航空宇宙電源システム",
+				"description": "航空宇宙アプリケーション向け堅牢化電源ソリューション",
+				"industries": [
+					"aerospace"
+				]
+			},
+			{
+				"title": "防衛電源ソリューション",
+				"description": "防衛アプリケーション向け安全電源システム",
+				"industries": [
+					"aerospace"
+				]
+			},
+			{
+				"title": "カスタム電源システム",
+				"description": "独自の要件に合わせた特注電源ソリューション",
+				"industries": [
+					"all"
+				]
+			}
+		],
+		"caseStudies": [
+			{
+				"id": "automotive",
+				"title": "EV充電ステーション向け高効率電源",
+				"description": "次世代電気自動車充電インフラ向けにカスタム電源モジュールを開発し、電力損失を35％削減。",
+				"stats": "結果：効率35％"
+			},
+			{
+				"id": "aerospace",
+				"title": "衛星通信向け堅牢電源システム",
+				"description": "極限環境で動作する衛星通信システム向けに放射線硬化電源を設計・製造。",
+				"stats": "結果：宇宙条件下で99.99％の信頼性"
+			},
+			{
+				"id": "healthcare",
+				"title": "画像機器向け医療グレード電源",
+				"description": "超低電磁干渉を実現したMRI機器向け特殊電源ソリューションを作成。",
+				"stats": "結果：電磁干渉60％削減"
+			},
+			{
+				"id": "datacenter",
+				"title": "クラウドデータセンター向け高密度電源",
+				"description": "ハイパースケールデータセンター向けモジュラー電源システムを導入し、電力密度を40％改善。",
+				"stats": "結果：電力密度40％向上、冷却コスト25％削減"
+			}
+		],
+		"testimonials": [
+			{
+				"company": "テックコープ・インダストリーズ",
+				"quote": "ラディアンス・フューチャーの電源ソリューションは、私たちの製造効率を変革しました。彼らのカスタムエンジニアリングチームは、厳しい締め切りの中で正確に私たちが必要とするものを提供しました。",
+				"name": "サラ・ジョンソン",
+				"position": "最高技術責任者"
+			},
+			{
+				"company": "エアロシステムズ・インターナショナル",
+				"quote": "ラディアンス・フューチャーの航空宇宙電源システムの信頼性は比類がありません。私たちは50機以上の衛星に彼らのソリューションを展開しましたが、電源関連の故障は一度もありませんでした。",
+				"name": "マイケル・ロドリゲス",
+				"position": "リードエンジニア"
+			}
+		]
+	},
+	"support": {
+		"title": "サポート＆リソース",
+		"subtitle": "当社の製品を最大限に活用するために必要なリソースとサポートを見つける",
+		"supportTagline": "プレミアムサポートサービス",
+		"resources": {
+			"title": "リソース",
+			"description": "当社の製品を最大限に活用するための包括的なリソースにアクセス",
+			"downloads": "ダウンロード",
+			"downloadsDescription": "当社製品のマニュアル、ソフトウェア、ドキュメントにアクセス",
+			"documentation": "ドキュメント",
+			"documentationDescription": "包括的なガイドと技術仕様",
+			"faq": "よくある質問",
+			"faqDescription": "当社の製品とサービスに関する一般的な質問の回答を見つける"
+		},
+		"services": {
+			"title": "プロフェッショナルサービス",
+			"description": "エクスペリエンスを向上させ、価値を最大化するプロフェッショナルサービス",
+			"training": "トレーニング",
+			"trainingDescription": "チーム向けのカスタマイズされたトレーニングプログラム",
+			"consulting": "コンサルティング",
+			"consultingDescription": "特定のニーズに合わせた専門家のガイダンス",
+			"maintenance": "メンテナンス",
+			"maintenanceDescription": "継続的なサポートとメンテナンスサービス"
+		},
+		"contact": {
+			"title": "サポートに問い合わせ",
+			"description": "サポートチームは、お客様の質問や問題を解決するためにいつでも準備ができています",
+			"supportHours": "サポート時間",
+			"criticalSupport": "クリティカルサポート利用可能",
+			"businessHours": "営業時間：月～金 9:00-17:00",
+			"responseTime": "応答時間",
+			"criticalResponse": "クリティカルな問題への応答",
+			"hours": "時間以内",
+			"liveChat": "ライブチャット",
+			"callSupport": "電話サポート",
+			"emailSupport": "メールサポート",
+			"scheduleCall": "電話を予約"
+		},
+		"additionalSupport": "エンタープライズサポートプランについては、営業チームにお問い合わせください"
+	},
+	"about": {
+		"hero": {
+			"title": "会社概要",
+			"subtitle": "当社について、そして業界で私たちをユニークにしているものを発見してください"
+		},
+		"stats": {
+			"title": "私たちの実績",
+			"countries": "国",
+			"employees": "チームメンバー",
+			"customers": "満足した顧客",
+			"awards": "業界賞"
+		},
+		"values": {
+			"title": "コアバリュー",
+			"innovation": "イノベーション",
+			"innovationDesc": "私たちは常に境界を押し広げ、画期的なソリューションを作り出します。",
+			"quality": "品質",
+			"qualityDesc": "コンセプトから実行まで、すべてにおいて卓越性を追求します。",
+			"integrity": "誠実さ",
+			"integrityDesc": "正直さと倫理的行動がすべての意思決定を導きます。",
+			"customer": "顧客中心",
+			"customerDesc": "私たちは顧客の期待を理解し、それを超えることを優先します。"
+		},
+		"milestones": {
+			"title": "私たちの歩み",
+			"2010": {
+				"title": "会社設立",
+				"desc": "私たちはガレージで少数のビジョナリーから始まりました。"
+			},
+			"2013": {
+				"title": "最初の製品発売",
+				"desc": "私たちの革命的な製品が一夜にして業界の景観を変えました。"
+			},
+			"2016": {
+				"title": "グローバル展開",
+				"desc": "国際的な顧客にサービスを提供するため、五大陸にオフィスを開設しました。"
+			},
+			"2019": {
+				"title": "イノベーションセンター",
+				"desc": "イノベーションを加速するための最先端のR&D施設を設立しました。"
+			},
+			"2022": {
+				"title": "新本社",
+				"desc": "コラボレーションと創造性のために設計されたカスタムビルキャンパスに移転しました。"
+			}
+		},
+		"culture": {
+			"title": "企業文化",
+			"innovation": {
+				"title": "イノベーション文化",
+				"description": "私たちは創造的思考が奨励され、報われる環境を育んでいます。私たちのイノベーションラボでは、従業員が制約なく最先端のアイデアを探求できます。"
+			},
+			"quality": {
+				"title": "品質への取り組み",
+				"description": "品質は私たちの会社では妥協の余地がありません。ワークフロー全体にわたって厳格なテストプロトコルと品質保証対策を実施しています。"
+			},
+			"integrity": {
+				"title": "すべてにおいて誠実さ",
+				"description": "すべてのビジネス取引において最高の倫理基準を維持しています。私たちの透明な実践は、信頼と長期的なパートナーシップをもたらしました。"
+			},
+			"responsibility": {
+				"title": "社会的責任",
+				"description": "私たちは地域社会の発展と環境の持続可能性に積極的に貢献しています。私たちのCSRイニシアチブは、世界中で10万人以上の生活にポジティブな影響を与えました。"
+			}
+		},
+		"team": {
+			"title": "リーダーシップチーム",
+			"viewAll": "すべてのチームメンバーを見る",
+			"ceo": {
+				"name": "アレックス・モーガン",
+				"title": "最高経営責任者",
+				"bio": "20年の技術リーダーシップ経験を持つ戦略的ビジョナリー。",
+				"image": "@/public/images/team/ceo.jpg"
+			},
+			"cto": {
+				"name": "サム・カーター",
+				"title": "最高技術責任者",
+				"bio": "AIと機械学習分野で15以上",
+				"image": "@/public/images/team/cto.jpg"
+			},
+			"cfo": {
+				"name": "ジョーンズ・ウィルソン",
+				"title": "最高財務責任者",
+				"bio": "300％の成長を達成するために私たちの運営を最適化した財務の達人。",
+				"image": "@/public/images/team/cfo.jpg"
+			},
+			"cmo": {
+				"name": "リサ・チェン",
+				"title": "最高マーケティング責任者",
+				"bio": "私たちのブランドを再定義した受賞歴のあるキャンペーンの背後にある創造的な天才。",
+				"image": "@/public/images/team/cmo.jpg"
+			}
+		}
+	},
+	"contact": {
+		"title": "お問い合わせ",
+		"subtitle": "当社の製品とサービスについて詳しく知るために、当社のチームにお問い合わせください。",
+		"form": {
+			"title": "メッセージを送信",
+			"name": "名前",
+			"email": "メール",
+			"company": "会社",
+			"phone": "電話",
+			"message": "メッセージ",
+			"yourName": "お名前",
+			"yourEmail": "メールアドレス",
+			"companyName": "会社名",
+			"phoneNumber": "電話番号",
+			"yourMessage": "メッセージ",
+			"submit": "メッセージを送信"
+		},
+		"info": {
+			"title": "連絡先情報",
+			"address": "深セン市南山區科技園新南路12号",
+			"phone": "+86 186 6425 9241",
+			"email": "info@advancedsolutions.com",
+			"hours": "月～金: 9:00 - 17:00 (UTC+8)"
+		},
+		"visitUs": "アクセス",
+		"mapPlaceholder": "地図はここに表示されます",
+		"salesDepartment": "営業部門",
+		"salesContactDescription": "製品に関するお問い合わせや価格詳細については、営業チームにお問い合わせください。",
+		"supportDepartment": "サポート部門",
+		"supportContactDescription": "技術的なサポートが必要な場合は、サポートチームにお問い合わせください。"
+	},
+	"commonPage": {
+		"ctaPrimary": "始める",
+		"ctaSecondary": "詳細を見る",
+		"supportHours": "24/7",
+		"criticalSupport": "24/7クリティカルサポート",
+		"businessHours": "営業時間サポート",
+		"responseTime": "応答時間",
+		"hours": "時間以内",
+		"liveChat": "ライブチャット",
+		"callSupport": "電話サポート",
+		"emailSupport": "メールサポート",
+		"scheduleCall": "電話を予約",
+		"support": "サポート",
+		"Contact": {
+			"title": "連絡"
+		},
+		"testimonials": {
+			"title": "お客様の声",
+			"items": [
+				{
+					"company": "エアロシステムズ・インターナショナル",
+					"quote": "ラディアンス・フューチャーの航空宇宙電源システムの信頼性は比類がありません。私たちは50機以上の衛星に彼らのソリューションを展開しましたが、電源関連の故障は一度もありませんでした。",
+					"name": "マイケル・ロドリゲス",
+					"position": "リードエンジニア",
+					"avatar": "https://via.placeholder.com/150",
+					"rating": 2,
+					"likes": 41
+				},
+				{
+					"company": "エアロシステムズ・インターナショナル",
+					"quote": "ラディアンス・フューチャーの航空宇宙電源システムの信頼性は比類がありません。私たちは50機以上の衛星に彼らのソリューションを展開しましたが、電源関連の故障は一度もありませんでした。",
+					"name": "マイケル・ロドリゲス",
+					"position": "リードエンジニア",
+					"avatar": "https://via.placeholder.com/150",
+					"rating": 2,
+					"likes": 41
+				},
+				{
+					"company": "エアロシステムズ・インターナショナル",
+					"quote": "ラディアンス・フューチャーの航空宇宙電源システムの信頼性は比類",
+					"name": "マイケル・ロドリゲス",
+					"position": "リードエンジニア",
+					"avatar": "https://via.placeholder.com/150",
+					"rating": 2,
+					"likes": 41
+				},
+				{
+					"company": "エアロシステムズ・インターナショナル",
+					"quote": "ラディアンス・フューチャーの航空宇宙電源システムの信頼性は比類がありません。私たちは50機以上の衛星に彼らのソリューションを展開しましたが、電源関連の故障は一度もありませんでした。",
+					"name": "マイケル・ロドリゲス",
+					"position": "リードエンジニア",
+					"avatar": "https://via.placeholder.com/150",
+					"rating": 2,
+					"likes": 41
+				}
+			]
+		},
+		"solutions": {
+			"title": "私たちのソリューション",
+			"subtitle": "お客様のニーズに合わせた包括的なソリューション",
+			"items": [
+				{
+					"title": "RF電源ソリューション",
+					"description": "半導体および産業アプリケーション向けの先進的なRF電源ソリューション。"
+				},
+				{
+					"title": "真空技術",
+					"description": "研究および製造向けの高品質な真空技術。"
+				},
+				{
+					"title": "カスタムエンジニアリング",
+					"description": "特定の要件を満たすための特注エンジニアリングソリューション。"
+				}
+			]
+		},
+		"homeContact": {
+			"title": "お問い合わせ",
+			"subtitle": "ご質問やご要望がございましたら、お気軽にお問い合わせください。"
+		}
+	},
+	"heroPage": {
+		"title": "先進的なRF電源および真空技術ソリューション",
+		"subtitle": "私たちは半導体、太陽光発電、研究分野向けに高品質なRF電源および真空技術ソリューションを専門としています。",
+		"ctaPrimary": "製品を見る",
+		"ctaSecondary": "お問い合わせ"
+	},
+	"homeProduct": {
+		"title": "私たちのRF電源製品",
+		"subtitle": "さまざまな産業アプリケーション向けに設計された先進的なRF電源製品をご覧ください。",
+		"company": {
+			"name": "深セン恒運昌真空技術有限公司",
+			"description": "半導体、太陽光発電、研究分野向けに高品質な真空およびRF電源製品の開発と製造を専門としています。"
+		},
+		"categories": {
+			"rfPowerSupply": "RF電源",
+			"vacuumPump": "真空ポンプ",
+			"vacuumChamber": "真空チャンバー",
+			"vacuumValve": "真空バルブ"
+		},
+		"items": [
+			{
+				"id": 1,
+				"name": "高出力RFジェネレーター",
+				"description": "当社の高出力RFジェネレーターは、半導体製造におけるプラズマ処理のために安定した効率的なRF電力を供給するように設計されています。",
+				"category": "RF電源",
+				"features": [
+					"最大10,000Wの出力電力",
+					"周波数範囲:13.56MHz ± 500kHz",
+					"高効率と安定性",
+					"先進的な冷却システム",
+					"ユーザーフレンドリーな制御インターフェース"
+				],
+				"applications": [
+					"半導体製造",
+					"プラズマエッチング",
+					"材料処理"
+				]
+			},
+			{
+				"id": 2,
+				"name": "精密RF整合ネットワーク",
+				"description": "精密RF整合ネットワークは、さまざまなRFアプリケーションに対して最適な電力伝達とインピーダンス整合を保証します。",
+				"category": "RF電源",
+				"features": [
+					"広帯域整合",
+					"高出力処理能力",
+					"高速チューニング",
+					"高精度と信頼性",
+					"コンパクト設計"
+				],
+				"applications": [
+					"RFプラズマシステム",
+					"材料処理",
+					"研究実験室"
+				]
+			},
+			{
+				"id": 3,
+				"name": "RF電力測定システム",
+				"description": "当社のRF電力測定システムは、RFアプリケーション向けに正確で信頼性の高い電力測定を提供します。",
+				"category": "RF電源",
+				"features": [
+					"広い測定範囲",
+					"高精度センサー",
+					"リアルタイムモニタリング",
+					"データロギングと分析",
+					"簡単な統合"
+				],
+				"applications": [
+					"RF電力制御",
+					"プロセス監視",
+					"品質保証"
+				]
+			},
+			{
+				"id": 4,
+				"name": "高度な真空ポンプ",
+				"description": "産業および研究アプリケーション向けに設計された高性能真空ポンプ。",
+				"category": "真空ポンプ",
+				"features": [
+					"効率的で信頼性の高い性能",
+					"耐食性材料を使用した耐久性のある構造",
+					"簡単なメンテナンスと操作"
+				],
+				"applications": [
+					"半導体製造",
+					"真空コーティング",
+					"研究"
+				]
+			},
+			{
+				"id": 5,
+				"name": "精密真空チャンバー",
+				"description": "さまざまな真空アプリケーション向けに設計された高品質な真空チャンバー。",
+				"category": "真空チャンバー",
+				"features": [
+					"耐久性があり漏れ防止構造",
+					"カスタマイズ可能な寸法とポート",
+					"高真空互換性",
+					"他のシステムとの簡単な統合"
+				],
+				"applications": [
+					"半導体加工",
+					"真空コーティング",
+					"研究"
+				]
+			},
+			{
+				"id": 6,
+				"name": "制御真空バルブ",
+				"description": "正確な圧力調整のための精密制御真空バルブ。",
+				"category": "真空バルブ",
+				"features": [
+					"高精度制御",
+					"耐久性のある構造",
+					"広い圧力範囲",
+					"高速応答時間"
+				],
+				"applications": [
+					"半導体製造",
+					"真空コーティング",
+					"研究"
+				]
+			}
+		]
+	},
+	"productShowcase": {
+		"title": "私たちのRF電源製品",
+		"subtitle": "さまざまな産業アプリケーション向けに設計された先進的なRF電源製品をご覧ください。",
+		"searchPlaceholder": "製品を検索...",
+		"categoryFilter": "カテゴリーを選択",
+		"applyFilters": "フィルターを適用",
+		"feature": "特徴:",
+		"application": "アプリケーション:",
+		"learnMore": "詳細を見る"
+	},
+	"products": {
+		"items": [
+			{
+				"id": 1,
+				"name": "高度な真空ポンプ",
+				"description": "産業および研究アプリケーション向けに設計された高性能真空ポンプ。",
+				"category": "真空ポンプ",
+				"features": [
+					"効率的で信頼性の高い性能",
+					"耐食性材料を使用した耐久性のある構造",
+					"簡単なメンテナンスと操作"
+				],
+				"applications": [
+					"半導体製造",
+					"真空コーティング",
+					"研究"
+				]
+			},
+			{
+				"id": 2,
+				"name": "精密真空チャンバー",
+				"description": "さまざまな真空アプリケーション向けに設計された高品質な真空チャンバー。",
+				"category": "真空チャンバー",
+				"features": [
+					"耐久性があり漏れ防止構造",
+					"カスタマイズ可能な寸法とポート",
+					"高真空互換性",
+					"他のシステムとの簡単な統合"
+				],
+				"applications": [
+					"半導体加工",
+					"真空コーティング",
+					"研究"
+				]
+			},
+			{
+				"id": 3,
+				"name": "制御真空バルブ",
+				"description": "正確な圧力調整のための精密制御真空バルブ。",
+				"category": "真空バルブ",
+				"features": [
+					"高精度制御",
+					"耐久性のある構造",
+					"広い圧力範囲",
+					"高速応答時間"
+				],
+				"applications": [
+					"半導体製造",
+					"真空コーティング",
+					"研究"
+				]
+			}
+		]
+	},
+	"slideHero": {
+		"prevButton": "前へ",
+		"nextButton": "次へ",
+		"slide1": {
+			"title": "新世代RF電源システム発売",
+			"subtitle": "電力密度40％向上、エネルギー消費25％削減を実現した革新的なRF電源ソリューション。半導体製造および材料処理に適しています。",
+			"ctaPrimary": "詳細を見る",
+			"ctaSecondary": "技術白書"
+		},
+		"slide2": {
+			"title": "会社が技術革新賞を受賞",
+			"subtitle": "RF電源技術における画期的なイノベーションにより、2025年産業技術革新金賞を受賞しました。",
+			"ctaPrimary": "ニュース詳細",
+			"ctaSecondary": "受賞技術"
+		},
+		"slide3": {
+			"title": "医療機器におけるRF電源アプリケーション",
+			"subtitle": "次世代医療グレードRF電源システムは、ハイエンド医療機器向けに安定した信頼性の高いエネルギーソリューションを提供します。",
+			"ctaPrimary": "アプリケーション事例",
+			"ctaSecondary": "医療ソリューション"
+		},
+		"slide4": {
+			"title": "インダストリー4.0 RF電源ソリューション",
+			"subtitle": "リモートモニタリング、予知保全、エネルギー効率最適化を可能にするインテリジェントRF電源管理システム。",
+			"ctaPrimary": "ソリューション",
+			"ctaSecondary": "成功事例"
+		}
+	},
+	"casesPage": {
+		"title": "事例研究",
+		"subtitle": "私たちのRF電源ソリューションを探索",
+		"description": "深セン恒運昌真空技術有限公司は、さまざまな産業向けに革新的なRF電源ソリューションを提供しています。以下は私たちの成功事例です:",
+		"caseStudy1": {
+			"title": "5G基地局電源ソリューション",
+			"description": "次世代5G基地局向け高効率RF電源",
+			"content": "主要な通信機器メーカー向けに、5G基地局機器用の効率的で安定したRF電源ソリューションを開発しました。このソリューションは先進的な電源変換技術を採用し、高温環境下でも95％以上の効率を維持し、基地局のエネルギー消費と冷却要件を大幅に削減しました。",
+			"technologies": [
+				"高周波電源変換",
+				"温度補償技術",
+				"デジタル制御回路"
+			]
+		},
+		"caseStudy2": {
+			"title": "軍事レーダーシステム",
+			"description": "軍事レーダー向けRF増幅システム",
+			"content": "防衛クライアント向けに開発されたこのRF増幅システムは、次世代軍事レーダーで使用されています。この電源システムは極めて高い電力密度(>1kW/L)と優れた電磁互換性を特徴とし、極限環境で安定して動作しながら、厳格な軍事規格を満たしています。",
+			"technologies": [
+				"高出力密度設計",
+				"EMIシールド技術",
+				"軍事グレードの信頼性"
+			]
+		},
+		"caseStudy3": {
+			"title": "医療画像機器",
+			"description": "医療画像機器専用電源",
+			"content": "ハイエンド医療画像機器向けに開発されたこの専用RF電源ソリューションは、MRIおよびCTスキャナーで使用されています。このソリューションは超低ノイズ(<0.1%リップル)と精密な電力制御を実現し、画像品質を確保しながら、医療機器安全基準に準拠しています。",
+			"technologies": [
+				"超低ノイズ設計",
+				"精密電力制御",
+				"医療安全認証"
+			]
+		},
+		"viewDetails": "詳細を見る",
+		"learnMore": "さらに事例を探索",
+		"contactUs": "カスタムソリューションについてはお問い合わせください"
+	},
+	"auth": {
+		"login": {
+			"title": "ログイン",
+			"email": "メールアドレス",
+			"password": "パスワード",
+			"signIn": "ログ"
+		},
+		"register": {
+			"title": "登録",
+			"email": "メールアドレス",
+			"password": "パスワード",
+			"confirmPassword": "パスワード確認",
+			"register": "登録",
+			"passwordMismatch": "パスワードが一致しません",
+			"registrationSuccess": "登録が成功しました！"
+		}
+	},
+	"dashboard": {
+		"title": "ダッシュボード",
+		"welcome": "ようこそ、{name}さん！",
+		"signOut": "ログアウト"
+	}
+}

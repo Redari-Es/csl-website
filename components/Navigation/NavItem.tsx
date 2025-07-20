@@ -195,7 +195,6 @@ export default function NavItem({
 					</NavigationMenuContent>
 				</>
 			) : (
-
 				<NavigationMenuLink
 					href={item.href}
 					className={cn(
