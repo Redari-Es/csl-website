@@ -2,6 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 定义动画关键帧 */
+@keyframes breathe {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-3px);
+    opacity: 0.7;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes enterFromRight {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes enterFromLeft {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes exitToRight {
+  to {
+    transform: translateX(200px);
+  }
+}
+
+@keyframes exitToLeft {
+  to {
+    transform: translateX(-200px);
+  }
+}
 
 @layer base {
   :root {
@@ -73,20 +132,20 @@
     --sh-keyword: #f47067;
     --sh-string: #0fa295;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
+}
 
+
+@layer components {
+  /* 标题组件 */
   .title {
     @apply font-serif text-3xl font-bold underline decoration-border/75 decoration-2 underline-offset-8;
   }
 
+  /* Prose 内容组件 */
   .prose pre {
     @apply overflow-x-auto rounded-lg bg-accent px-5 py-4 text-sm;
   }
@@ -103,51 +162,68 @@
   .prose code span {
     @apply font-medium;
   }
-
-
-.hover-underline:hover::after {
-  width: 100%;
-}
-
-}
-
-/* 呼吸动画 */
-@keyframes breathe {
-  0%, 100% {
-    transform: translateY(0);
-    opacity: 1;
+  
+  /* 导航菜单组件 */
+  .navigation-menu-trigger,
+  .navigation-menu-link a {
+    @apply h-10 flex items-center;
   }
-  50% {
-    transform: translateY(-3px);
-    opacity: 0.7;
+
+  .navigation-menu-trigger,
+  .navigation-menu-link {
+    @apply bg-transparent;
+  }
+
+  .navigation-menu-trigger:hover,
+  .navigation-menu-link:hover {
+    @apply bg-transparent;
+  }
+
+  .navigation-menu-content {
+    @apply w-full max-w-auto;
+  }
+
+  .navigation-menu-content .group:hover {
+    @apply border-[#00f5d4] transition-colors duration-300;
+  }
+
+  /* 下划线动画组件 */
+  .hover-underline:hover::after {
+    @apply w-full;
   }
 }
 
-.animate-breathe {
-  animation: breathe 1.5s ease-in-out infinite;
+@layer utilities {
+  /* 动画实用类 */
+  .animate-breathe {
+    animation: breathe 1.5s ease-in-out infinite;
+  }
+
+  .floating {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .pulsing {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .gradient-text {
+    background: linear-gradient(90deg, #38bdf8, #22d3ee, #818cf8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* 导航栏动画 */
+  header {
+    @apply transition-transform duration-300 ease-in-out;
+  }
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 
-/* 导航栏隐藏/显示动画 */
-header {
-  transition: transform 0.3s ease-in-out;
-}
-
-/* 子菜单项悬停效果 */
-.navigation-menu-content .group:hover {
-  border-color: #00f5d4;
-  transition: border-color 0.3s ease;
-}
-
-/* 全局字体 */
-body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: #0a0e17;
-  color: #e2e8f0;
-}
-
-/* 确保菜单项高度一致 */
-.navigation-menu-trigger, .navigation-menu-link a {
-  height: 40px;
-  display: flex;
-  align-items: center;
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

@@ -133,7 +133,7 @@ export default function AboutPage() {
 
         {/* Timeline Section */}
         <section className="flex-1 max-w-6xl mx-auto px-4 py-16 md:py-24">
-          <h2 className="text-2xl font-bold text-center mb-12">{t('timeline.title')}</h2>
+          <h2 className="text-2xl font-bold text-center mb-12">{t('milestones.title')}</h2>
           <ul className="relative max-w-xl mx-auto">
             {milestones.map((milestone, i) => (
               <li key={i} className="mb-12 last:mb-0 relative">

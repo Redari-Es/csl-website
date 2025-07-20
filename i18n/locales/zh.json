@@ -1,138 +1,281 @@
 {
   "global": {
-    "companyName": "先进能源解决方案",
-    "slogan": "创新引领更美好的明天"
+    "companyName": "CSL Tec Systems",
+    "slogan": "先进电源与射频解决方案",
+    "title": "深圳市恒运昌真空技术有限公司",
+    "description": "深圳市恒运昌真空技术有限公司成立于2013年3月19日，专注于真空设备、真空等离子电源、新能源材料、半导体器件、气体质量流量计、真空泵、阴极、靶材及机电产品的技术开发、咨询与销售。",
+    "keywords": "射频电源,真空技术,恒运昌,Next.js,React",
+    "author": "恒运昌团队",
+    "creator": "shonh@ablazec.com"
   },
   "navigation": {
     "home": "首页",
-    "products": "产品中心",
-    "solutions": "解决方案",
-    "cases": "成功案例",
-    "support": "技术支持",
     "about": "关于我们",
-    "contact": "联系我们"
+    "contact": "联系我们",
+    "searchPlaceholder": "搜索产品、解决方案...",
+    "searchResults": "搜索结果",
+    "popularCategories": "热门分类",
+    "recentSearches": "最近搜索",
+    "products": {
+      "title": "产品",
+      "powerSupplies": "电源",
+      "rfAmplifiers": "射频放大器",
+      "testEquipment": "测试设备",
+      "components": "组件",
+      "customSolutions": "定制解决方案",
+      "powerSuppliesDesc": "为高要求应用提供高效电源解决方案",
+      "rfAmplifiersDesc": "适用于射频应用的高性能放大器",
+      "testEquipmentDesc": "精密测量与测试设备",
+      "componentsDesc": "关键系统高可靠性组件",
+      "customSolutionsDesc": "定制化电源与射频解决方案"
+    },
+    "solutions": {
+      "title": "解决方案",
+      "industrialAutomation": "工业自动化",
+      "telecomInfrastructure": "电信基础设施",
+      "medicalDevices": "医疗设备",
+      "defenseSystems": "国防系统",
+      "industrialAutomationDesc": "工业控制系统的电源解决方案",
+      "telecomInfrastructureDesc": "5G及电信网络的射频解决方案",
+      "medicalDevicesDesc": "医疗设备认证电源系统",
+      "defenseSystemsDesc": "国防应用的加固解决方案"
+    },
+    "cases": {
+      "title": "案例研究",
+      "caseStudy1": "5G基站电源解决方案",
+      "caseStudy2": "军用雷达系统",
+      "caseStudy3": "医疗影像设备",
+      "caseStudy1Desc": "新一代5G基站的电源解决方案",
+      "caseStudy2Desc": "军用雷达射频放大器系统",
+      "caseStudy3Desc": "医疗影像设备电源供应"
+    },
+    "support": {
+      "title": "技术支持",
+      "faq": "常见问题",
+      "docs": "技术文档",
+      "contactSupport": "联系技术支持"
+    }
+  },
+  "error": {
+    "title": "系统错误",
+    "description": "频谱链接异常，请确认后重试",
+    "digest": "错误摘要",
+    "retry": "重试",
+    "home": "返回首页",
+    "lang": "zh"
   },
 
-  "error": {
-    "title": "RF SYSTEM ERROR",
-    "subtitle": "Spectrum link anomaly, please confirm and retry",
-    "digest": "Digest",
-    "retry": "Retry",
-    "home": "Home"
-  },
   "hero": {
-    "title": "驱动未来能源",
-    "subtitle": "为工业自动化和能源效率提供尖端解决方案",
+    "title": "创新电源解决方案，引领未来科技",
+    "subtitle": "为全球工业提供前沿的射频和电源转换技术",
     "ctaPrimary": "探索产品",
-    "ctaSecondary": "联系销售"
+    "ctaSecondary": "联系销售",
+    "feature1": "高效解决方案",
+    "feature2": "坚固可靠",
+    "feature3": "定制工程"
   },
+
   "products": {
-    "title": "我们的产品组合",
-    "subtitle": "为性能和可靠性而设计",
+    "title": "产品组合",
+    "subtitle": "为性能与可靠性而设计",
     "categories": {
-      "powerSupplies": "电源供应器",
+      "powerSupplies": "电源",
       "inverters": "逆变器",
       "controllers": "控制器",
       "sensors": "传感器"
     }
   },
   "footer": {
-    "copyright": "© {year} 先进能源解决方案 版权所有",
-    "privacy": "隐私政策",
-    "terms": "服务条款",
-    "sitemap": "网站地图"
+    "company": {
+      "name": "深圳市恒运昌真空技术有限公司",
+      "description": "专注于真空技术研发、设备制造和技术服务，为半导体、光伏及研究领域提供可靠真空解决方案",
+      "address": "深圳市南山区深圳科技园新南七道12号",
+      "phone": "+86 186 6425 9241",
+      "email": "service@ablazec.com"
+    },
+    "services": {
+      "title": "产品与服务",
+      "items": [
+        "真空泵系列",
+        "真空腔体",
+        "真空阀门",
+        "真空测量仪器",
+        "真空系统集成",
+        "真空技术咨询"
+      ]
+    },
+    "companyInfo": {
+      "title": "公司信息",
+      "items": [
+        "关于我们",
+        "发展历程",
+        "团队介绍",
+        "资质认证",
+        "新闻中心",
+        "加入我们"
+      ]
+    },
+    "contact": {
+      "title": "技术咨询",
+      "description": "我们的工程师团队随时提供专业真空技术解决方案咨询",
+      "form": {
+        "name": "您的姓名",
+        "email": "您的邮箱",
+        "phone": "联系电话",
+        "message": "咨询内容",
+        "submit": "提交咨询"
+      }
+    },
+    "consultation": {
+      "title": "技术咨询热线",
+      "phone": "+86 186 6425 9241"
+    },
+    "business": {
+      "title": "商务合作邮箱",
+      "email": "service@ablazec.com"
+    },
+    "brochure": "获取产品手册",
+    "copyright": {
+      "text": "深圳市恒运昌真空技术有限公司",
+      "icp": "ICP备案号：20240523001",
+      "certification": "高新技术企业认证"
+    },
+    "socialMedia": [
+      "微信公众号",
+      "哔哩哔哩",
+      "领英",
+      "YouTube"
+    ]
   },
-  "solutions": {
-    "title": "行业解决方案",
-    "subtitle": "为您需求量身定制的专业技术",
+ 
+  "solution": {
+    "title": "行业领先的电源解决方案",
+    "subtitle": "为全球最严苛的应用提供先进的电源转换技术",
+    "heroTag": "创新电源解决方案",
+    "selectIndustry": "选择您的行业",
+    "solutionsFor": "解决方案：",
+    "allSolutions": "所有解决方案",
+    "customSolutions": "定制电源解决方案",
+    "customSolutionsDescription": "我们的工程团队设计并制造定制电源解决方案，以满足您的特定技术要求。",
+    "requestConsultation": "请求咨询",
+    "relatedCaseStudies": "成功案例",
+    "caseStudiesSubtitle": "我们电源解决方案的实际应用",
+    "viewAllCaseStudies": "查看所有案例研究",
+    "readCaseStudy": "阅读完整案例",
+    "testimonialsTitle": "行业领导者信赖之选",
+    "ctaTitle": "准备好为您的创新提供动力了吗？",
+    "ctaDescription": "我们的工程团队随时准备讨论您的具体电源需求，并开发适合您需求的解决方案。",
+    "contactSales": "联系销售",
+    "requestDemo": "请求产品演示",
+    "customSolutionTitle": "需要定制解决方案？",
+    "customSolutionSubtitle": "我们的工程师专注于创建独特的电源系统",
+    "customSolutionCta": "请求工程咨询",
+    
+    "industries": [
+      { "id": "all", "name": "所有行业" },
+      { "id": "automotive", "name": "汽车" },
+      { "id": "aerospace", "name": "航空航天与国防" },
+      { "id": "healthcare", "name": "医疗保健" },
+      { "id": "datacenter", "name": "数据中心" },
+      { "id": "renewable", "name": "可再生能源" },
+      { "id": "industrial", "name": "工业自动化" }
+    ],
+    
+    "customBenefits": [
+      "根据您的确切规格量身定制",
+      "针对您的独特环境进行优化",
+      "在整个开发过程中提供全面技术支持",
+      "严格的测试和验证"
+    ],
+    
     "items": [
       {
         "title": "工业自动化",
-        "description": "先进的工业控制系统，提升制造效率和精度",
-        "icon": "Factory"
+        "description": "为制造环境提供的稳健电源解决方案",
+        "industries": ["industrial", "automotive"]
       },
       {
-        "title": "能源管理",
-        "description": "优化能源使用，降低运营成本",
-        "icon": "BatteryCharging"
+        "title": "射频放大器",
+        "description": "用于通信系统的高频电源解决方案",
+        "industries": ["aerospace", "datacenter"]
       },
       {
-        "title": "数据中心电力",
-        "description": "为关键基础设施提供高可靠性解决方案",
-        "icon": "Server"
+        "title": "医疗电源系统",
+        "description": "为医疗应用提供的认证电源解决方案",
+        "industries": ["healthcare"]
       },
       {
-        "title": "医疗设备",
-        "description": "通过认证的医疗设备电源系统",
-        "icon": "HeartPulse"
+        "title": "数据中心电源",
+        "description": "为服务器基础设施提供高效电源转换",
+        "industries": ["datacenter"]
+      },
+      {
+        "title": "电源供应器",
+        "description": "可靠的AC/DC和DC/DC电源转换解决方案",
+        "industries": ["industrial", "automotive", "datacenter"]
+      },
+      {
+        "title": "航空航天电源系统",
+        "description": "为航空航天应用提供的坚固电源解决方案",
+        "industries": ["aerospace"]
+      },
+      {
+        "title": "国防电源解决方案",
+        "description": "为国防应用提供的安全电源系统",
+        "industries": ["aerospace"]
+      },
+      {
+        "title": "定制电源系统",
+        "description": "为独特需求量身定制的电源解决方案",
+        "industries": ["all"]
       }
     ],
-    "caseStudies": {
-      "title": "成功案例",
-      "subtitle": "我们如何帮助行业领导者创新",
-      "items": [
-        {
-          "title": "汽车制造业升级",
-          "description": "为领先汽车制造商实施节能解决方案",
-          "result": "在提高产量的同时降低35%的能源成本"
-        },
-        {
-          "title": "数据中心电力优化",
-          "description": "为超大规模数据中心设计定制电力分配系统",
-          "result": "实现99.999%的正常运行时间，冷却成本降低20%"
-        }
-      ]
-    }
-  },
-  "industries": {
-    "automotive": "汽车制造",
-    "aerospace": "航空航天",
-    "healthcare": "医疗健康",
-    "datacenter": "数据中心",
-    "renewable": "可再生能源",
-    "industrial": "工业制造"
-  },
-  "customSolutions": "定制解决方案",
-  "customSolutionsDescription": "当现成产品无法满足您的需求时，我们的工程团队可以开发定制解决方案来解决您的特定挑战。",
-  "customSolutionsBenefit1": "量身定制的设计，完美匹配您的规格要求",
-  "customSolutionsBenefit2": "与现有系统和基础设施无缝集成",
-  "customSolutionsBenefit3": "可扩展架构，适应未来发展",
-  "customSolutionsBenefit4": "全生命周期的专属工程支持",
-  "customSolutionProcess": "我们的定制解决方案开发流程",
-  "step1": "需求分析",
-  "step2": "设计与原型开发",
-  "step3": "实施与测试",
-  "requestConsultation": "申请咨询",
-  "viewAllCaseStudies": "查看所有案例",
-  "result": "取得成果",
-  "readCaseStudy": "阅读完整案例",
-  "learnMore": "了解更多",
-  "filterByIndustry": "按行业筛选",
-  "allIndustries": "全部行业",
-  "contactSection": {
-    "title": "准备好改变您的运营了吗？",
-    "description": "我们的解决方案专家随时准备讨论您的具体需求，并为您的业务设计定制方案。",
-    "ctaText": "联系解决方案团队"
-  },
-  "cases": {
-    "title": "成功案例",
-    "subtitle": "我们如何帮助行业领导者创新",
-    "items": [
+    
+    "caseStudies": [
       {
-        "title": "汽车制造业升级",
-        "description": "为领先汽车制造商实施节能解决方案",
-        "result": "在提高产量的同时降低35%的能源成本"
+        "id": "automotive",
+        "title": "电动汽车充电站的高效电源",
+        "description": "为新一代电动汽车充电基础设施开发定制电源模块，将功率损耗降低35%。",
+        "stats": "成果：效率提高35%，体积缩小50%"
       },
       {
-        "title": "数据中心电力优化",
-        "description": "为超大规模数据中心设计定制电力分配系统",
-        "result": "实现99.999%的正常运行时间，冷却成本降低20%"
+        "id": "aerospace",
+        "title": "卫星通信的坚固电源系统",
+        "description": "为在极端环境中运行的卫星通信系统设计和制造抗辐射电源。",
+        "stats": "成果：在太空条件下可靠性达99.99%"
+      },
+      {
+        "id": "healthcare",
+        "title": "医疗影像设备的医用级电源",
+        "description": "为MRI机器创建具有超低电磁干扰的专业电源解决方案。",
+        "stats": "成果：电磁干扰减少60%"
+      },
+      {
+        "id": "datacenter",
+        "title": "云数据中心的高密度电源",
+        "description": "为超大规模数据中心实施模块化电源系统，功率密度提高40%。",
+        "stats": "成果：功率密度提高40%，冷却成本降低25%"
+      }
+    ],
+    
+    "testimonials": [
+      {
+        "company": "科技工业公司",
+        "quote": "光辉未来的电源解决方案彻底改变了我们的制造效率。他们的定制工程团队在紧迫的期限内准确交付了我们所需的产品。",
+        "name": "莎拉·约翰逊",
+        "position": "首席技术官"
+      },
+      {
+        "company": "国际航空系统公司",
+        "quote": "光辉未来航空航天电源系统的可靠性无与伦比。我们已在50多颗卫星中部署了他们的解决方案，没有发生任何电源相关故障。",
+        "name": "迈克尔·罗德里格斯",
+        "position": "首席工程师"
       }
     ]
   },
   "support": {
     "title": "技术支持",
-    "subtitle": "在您最需要时提供专家帮助",
+    "subtitle": "在您最需要时提供专家协助",
     "resources": {
       "title": "资源中心",
       "downloads": "下载中心",
@@ -140,66 +283,207 @@
       "faq": "常见问题"
     },
     "services": {
-      "title": "服务",
-      "training": "培训服务",
-      "consulting": "咨询支持",
+      "title": "服务项目",
+      "training": "技术培训",
+      "consulting": "专业咨询",
       "maintenance": "维护服务"
     },
     "contact": {
       "title": "联系我们",
-      "subtitle": "我们很乐意听取您的项目需求。给我们留言，我们将在24小时内回复您。",
+      "subtitle": "我们期待了解您的项目需求，将在24小时内回复",
       "name": "姓名",
       "namePlaceholder": "张三",
       "email": "邮箱",
       "emailPlaceholder": "zhangsan@example.com",
-      "company": "公司",
+      "company": "公司名称",
       "companyPlaceholder": "某某有限公司",
-      "phone": "电话",
-      "phonePlaceholder": "+86 138 0000 0000",
-      "message": "留言",
-      "messagePlaceholder": "请详细描述您的需求...",
-      "send": "发送留言",
+      "phone": "联系电话",
+      "phonePlaceholder": "+86 138 8888 8888",
+      "message": "留言内容",
+      "messagePlaceholder": "请详细说明您的需求...",
+      "send": "发送消息",
       "getInTouch": "联系我们",
       "officeHours": "周一至周五: 9:00 - 18:00 (北京时间)",
       "followUs": "关注我们"
     }
   },
   "about": {
-    "title": "关于我们",
-    "mission": {
-      "title": "我们的使命",
-      "content": "创新可持续能源解决方案，推动工业进步，同时最大限度减少环境影响。"
+    "hero": {
+      "title": "关于我们",
+      "subtitle": "了解我们的独特之处"
+    },
+    "stats": {
+      "title": "我们的成就",
+      "countries": "服务国家",
+      "employees": "团队成员",
+      "customers": "满意客户",
+      "awards": "行业奖项"
     },
     "values": {
       "title": "核心价值观",
-      "items": [
-        "创新",
-        "可靠",
-        "可持续",
-        "客户至上"
-      ]
+      "innovation": "创新",
+      "innovationDesc": "持续突破边界，创造变革性解决方案",
+      "quality": "品质",
+      "qualityDesc": "从概念到执行贯彻卓越标准",
+      "integrity": "诚信",
+      "integrityDesc": "以诚实和道德准则指导所有决策",
+      "customer": "客户至上",
+      "customerDesc": "优先理解并超越客户期望"
+    },
+    "milestones": {
+      "title": "发展历程",
+      "2010": {
+        "title": "公司创立",
+        "desc": "由愿景家在车库开启征程"
+      },
+      "2013": {
+        "title": "首款产品发布",
+        "desc": "革命性产品一夜改变行业格局"
+      },
+      "2016": {
+        "title": "全球扩展",
+        "desc": "五大洲设立分支机构服务国际客户"
+      },
+      "2019": {
+        "title": "创新中心",
+        "desc": "建立先进研发设施加速创新"
+      },
+      "2022": {
+        "title": "新总部",
+        "desc": "迁入专为协作创新设计的园区"
+      }
+    },
+    "culture": {
+      "title": "企业文化",
+      "innovation": {
+        "title": "创新文化",
+        "description": "营造鼓励创造性思维的环境，创新实验室支持无约束探索前沿理念"
+      },
+      "quality": {
+        "title": "品质承诺",
+        "description": "品质是我们的底线，全流程实施严格测试与质量保障"
+      },
+      "integrity": {
+        "title": "诚信为本",
+        "description": "所有商业活动坚持最高道德标准，透明实践赢得长期信任"
+      },
+      "responsibility": {
+        "title": "社会责任",
+        "description": "积极贡献社区发展与环境保护，CSR项目惠及全球超10万人"
+      }
     },
     "team": {
-      "title": "领导团队"
+      "title": "领导团队",
+      "viewAll": "查看全部成员",
+      "ceo": {
+        "name": "Alex Morgan",
+        "title": "首席执行官",
+        "bio": "拥有20年科技领导经验的战略远见者",
+        "image": "@/public/images/team/ceo.jpg"
+      },
+      "cto": {
+        "name": "Sam Carter",
+        "title": "首席技术官",
+        "bio": "人工智能与机器学习领域15项专利持有者",
+        "image": "@/public/images/team/cto.jpg"
+      },
+      "cfo": {
+        "name": "Jones Wilson",
+        "title": "首席财务官",
+        "bio": "通过运营优化实现300%增长的财务专家",
+        "image": "@/public/images/team/cfo.jpg"
+      },
+      "cmo": {
+        "name": "Lisa Chen",
+        "title": "首席市场官",
+        "bio": "重塑品牌形象的获奖营销活动策划者",
+        "image": "@/public/images/team/cmo.jpg"
+      }
     }
   },
   "contact": {
     "title": "联系我们",
-    "subtitle": "我们期待您的消息",
+    "subtitle": "获取产品与服务的更多信息",
     "form": {
+      "title": "发送消息",
       "name": "姓名",
       "email": "邮箱",
-      "company": "公司",
-      "phone": "电话",
-      "message": "留言",
+      "company": "公司名称",
+      "phone": "联系电话",
+      "message": "留言内容",
+      "yourName": "您的姓名",
+      "yourEmail": "您的邮箱",
+      "companyName": "公司名称",
+      "phoneNumber": "联系电话",
+      "yourMessage": "您的留言",
       "submit": "发送消息"
     },
     "info": {
       "title": "联系信息",
-      "address": "中国上海市浦东新区创新大道123号",
-      "phone": "+86 21 8888 8888",
-      "email": "info@advancedsolutions.cn",
-      "hours": "周一至周五: 9:00 - 18:00"
+      "address": "中国深圳市南山区深圳科技园新南七道12号",
+      "phone": "+86 186 6425 9241",
+      "email": "service@ablazec.com",
+      "hours": "周一至周五: 9:00 - 17:00 (北京时间)"
+    },
+    "visitUs": "来访地址",
+    "mapPlaceholder": "地图展示区域",
+    "salesDepartment": "销售部门",
+    "salesContactDescription": "联系销售团队获取产品咨询与价格详情",
+    "supportDepartment": "技术支持部门",
+    "supportContactDescription": "联系支持团队获取技术协助"
+  },
+  "casesPage": {
+    "title": "案例研究",
+    "subtitle": "探索我们的射频电源解决方案",
+    "description": "深圳市恒运昌真空技术有限公司为各行业提供创新的射频电源解决方案。以下是我们的成功案例：",
+    "caseStudy1": {
+      "title": "5G基站电源解决方案",
+      "description": "为下一代5G基站提供高效射频电源",
+      "content": "我们为某大型通信设备制造商开发了高效、稳定的射频电源解决方案，用于其5G基站设备。该方案采用先进的功率转换技术，在高温环境下仍能保持95%以上的效率，显著降低了基站的能耗和散热需求。",
+      "technologies": ["高频功率转换", "温度补偿技术", "数字控制电路"]
+    },
+    "caseStudy2": {
+      "title": "军用雷达系统",
+      "description": "军用雷达射频放大系统",
+      "content": "为国防客户开发的射频放大系统，应用于新一代军用雷达。该电源系统具有极高的功率密度（>1kW/L）和出色的电磁兼容性，能在极端环境下稳定工作，满足严苛的军事标准要求。",
+      "technologies": ["高功率密度设计", "EMI屏蔽技术", "军用级可靠性"]
+    },
+    "caseStudy3": {
+      "title": "医疗成像设备",
+      "description": "医疗成像设备专用电源",
+      "content": "为高端医疗影像设备开发的专用射频电源，用于MRI和CT扫描设备。该方案实现了超低噪声（<0.1%纹波）和精确的功率控制，确保成像质量的同时符合医疗设备安全标准。",
+      "technologies": ["超低噪声设计", "精密功率控制", "医疗安全认证"]
+    },
+    "viewDetails": "查看详情",
+    "learnMore": "了解更多案例",
+    "contactUs": "联系我们定制解决方案"
+  },
+   "slideHero": {
+    "prevButton": "上一张",
+    "nextButton": "下一张",
+    "slide1": {
+      "title": "新一代射频电源系统发布",
+      "subtitle": "功率密度提升40%，能耗降低25%的创新型射频电源解决方案，适用于半导体制造和材料处理",
+      "ctaPrimary": "查看详情",
+      "ctaSecondary": "技术白皮书"
+    },
+    "slide2": {
+      "title": "企业荣获技术创新大奖",
+      "subtitle": "凭借在射频电源领域的突破性创新，荣获2025年度行业技术创新金奖",
+      "ctaPrimary": "新闻详情",
+      "ctaSecondary": "获奖技术"
+    },
+    "slide3": {
+      "title": "射频电源在医疗设备中的应用",
+      "subtitle": "新一代医疗级射频电源系统，为高端医疗设备提供稳定可靠的能源解决方案",
+      "ctaPrimary": "应用案例",
+      "ctaSecondary": "医疗解决方案"
+    },
+    "slide4": {
+      "title": "工业4.0射频电源解决方案",
+      "subtitle": "智能化的射频电源管理系统，实现远程监控、预测性维护和能效优化",
+      "ctaPrimary": "解决方案",
+      "ctaSecondary": "成功案例"
     }
   }
 }

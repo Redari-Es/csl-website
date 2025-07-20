@@ -1,10 +1,11 @@
 {
   "global": {
-    "companyName": "CSL Tec Systems",
-    "slogan": "Advanced Power & RF Solutions",
+    "companyName": "CSL Co.",
+    "slogan": "Components Solution Leader",
     "title": "Shenzhen Hengyunchang Vacuum Technology Co., Ltd.",
     "description": "Shenzhen Hengyunchang Vacuum Technology Co., Ltd., established on March 19, 2013, specializes in the technical development, consultation, and sales of vacuum equipment, vacuum plasma power supplies, new energy materials, semiconductor devices, gas mass flow meters, vacuum pumps, cathodes, targets, and electromechanical products.",
     "keywords": "RF Power Supplies,Vacuum Technology,Hengyunchang,Next.js,React",
+    "website":"http://www.csl-vacuum.com/",
     "author": "Hengyunchang Team",
     "creator": "shonh@ablazec.com"
   },
@@ -16,6 +17,7 @@
     "searchResults": "Search Results",
     "popularCategories": "Popular Categories",
     "recentSearches": "Recent Searches",
+    "learnMore":"Learn more",
     
     "products": {
       "title": "Products",
@@ -70,23 +72,71 @@
     "lang": "en"
   },
 
-	"hero": {
-		"title": "Powering the Future",
-		"subtitle": "Cutting-edge solutions for energy efficiency and industrial automation",
-		"ctaPrimary": "Explore Products",
-		"ctaSecondary": "Contact Sales"
-	},
-	"products": {
-		"title": "Our Product Portfolio",
-		"subtitle": "Engineered for performance and reliability",
-		"categories": {
-			"powerSupplies": "Power Supplies",
-			"inverters": "Inverters",
-			"controllers": "Controllers",
-			"sensors": "Sensors"
-		}
-	},
-	"en": {
+  "homeHero": {
+    "title": "Innovative Power Solutions for Tomorrow",
+    "subtitle": "Providing cutting-edge RF and power conversion technologies for global industries",
+    "ctaPrimary": "Explore Products",
+    "ctaSecondary": "Contact Sales",
+    "feature1": "High-Efficiency Solutions",
+    "feature2": "Rugged & Reliable",
+    "feature3": "Custom Engineering"
+  },
+"products": {
+    "common": {
+      "searchPlaceholder": "Search products...",
+      "categoryFilter": "Select category",
+      "applyFilters": "Apply Filters"
+    },
+    "detail": {
+      "downloadDatasheet": "Download Datasheet",
+      "requestQuote": "Request Quote",
+      "specifications": "Specifications",
+      "documentation": "Documentation",
+      "performance": "Performance",
+      "technicalSpecifications": "Technical Specifications",
+      "documentationResources": "Documentation Resources",
+      "performanceData": "Performance Data",
+      "performanceChartsPlaceholder": "Performance charts will be displayed here",
+      "supportResources": "Support Resources",
+      "downloadSoftware": "Download Software",
+      "applicationNotes": "Application Notes",
+      "configurationTool": "Configuration Tool",
+      "contactSales": "Contact Sales",
+      "contactSalesDescription": "Have questions or need a custom solution? Our sales team is ready to assist you.",
+      "contactSalesTeam": "Contact Sales Team",
+      "specificationsList": {
+        "inputVoltage": "Input Voltage",
+        "outputPower": "Output Power",
+        "efficiency": "Efficiency",
+        "operatingTemp": "Operating Temperature",
+        "dimensions": "Dimensions",
+        "weight": "Weight"
+      }
+    },
+    "product": {
+      "title": "Our Products",
+      "subtitle": "Discover our range of high-quality vacuum products designed for various applications in semiconductor, photovoltaic, and research fields.",
+      "categories": {
+        "pump": "Vacuum Pump",
+        "chamber": "Vacuum Chamber",
+        "valve": "Vacuum Valve",
+        "instrument": "Vacuum Instrument"
+      },
+      "items": {
+        "0": {
+          "name": "Advanced Vacuum Pump",
+          "description": "High-performance vacuum pump designed for industrial and research applications.",
+          "features": [
+            "Efficient and reliable performance",
+            "Durable construction with corrosion-resistant materials",
+            "Easy maintenance and operation"
+          ]
+        }
+      }
+    }
+  },
+
+  "footer": {
     "company": {
       "name": "Shenzhen Hengyunchang Vacuum Technology Co., Ltd.",
       "description": "Focusing on vacuum technology research and development, equipment manufacturing, and technical services, providing reliable vacuum solutions for the semiconductor, photovoltaic, and research fields.",
@@ -148,130 +198,172 @@
       "YouTube"
     ]
   },
-
-
-	"solutions": {
-    "title": "Industry Solutions",
-    "subtitle": "Tailored technologies for your specific needs",
+  "solution": {
+    "title": "Industry-Leading Power Solutions",
+    "subtitle": "Advanced power conversion technologies for the world's most demanding applications",
+    "heroTag": "Innovative Power Solutions",
+    "selectIndustry": "Select Your Industry",
+    "solutionsFor": "Solutions for",
+    "allSolutions": "All Solutions",
+    "customSolutions": "Custom Power Solutions",
+    "customSolutionsDescription": "Our engineering team designs and manufactures bespoke power solutions to meet your specific technical requirements.",
+    "requestConsultation": "Request Consultation",
+    "relatedCaseStudies": "Success Stories",
+    "caseStudiesSubtitle": "Real-world applications of our power solutions",
+    "viewAllCaseStudies": "View All Case Studies",
+    "readCaseStudy": "Read Full Case Study",
+    "testimonialsTitle": "Trusted by Industry Leaders",
+    "ctaTitle": "Ready to Power Your Innovation?",
+    "ctaDescription": "Our engineering team is ready to discuss your specific power requirements and develop a solution tailored to your needs.",
+    "contactSales": "Contact Sales",
+    "requestDemo": "Request Product Demo",
+    "customSolutionTitle": "Need a Custom Solution?",
+    "customSolutionSubtitle": "Our engineers specialize in creating unique power systems",
+    "customSolutionCta": "Request Engineering Consultation",
+    
+    "industries": [
+      { "id": "all", "name": "All Industries" },
+      { "id": "automotive", "name": "Automotive" },
+      { "id": "aerospace", "name": "Aerospace & Defense" },
+      { "id": "healthcare", "name": "Healthcare" },
+      { "id": "datacenter", "name": "Data Center" },
+      { "id": "renewable", "name": "Renewable Energy" },
+      { "id": "industrial", "name": "Industrial Automation" }
+    ],
+    
+    "customBenefits": [
+      "Tailored to your exact specifications",
+      "Optimized for your unique environment",
+      "Full technical support throughout development",
+      "Rigorous testing and validation"
+    ],
+    
     "items": [
       {
         "title": "Industrial Automation",
-        "description": "Advanced control systems for manufacturing efficiency and precision",
-        "icon": "Factory"
+        "description": "Robust power solutions for manufacturing environments",
+        "industries": ["industrial", "automotive"]
       },
       {
-        "title": "Energy Management",
-        "description": "Optimize power usage and reduce operational costs",
-        "icon": "BatteryCharging"
+        "title": "RF Amplifiers",
+        "description": "High-frequency power solutions for communication systems",
+        "industries": ["aerospace", "datacenter"]
+      },
+      {
+        "title": "Medical Power Systems",
+        "description": "Certified power solutions for healthcare applications",
+        "industries": ["healthcare"]
       },
       {
         "title": "Data Center Power",
-        "description": "High-reliability solutions for critical infrastructure",
-        "icon": "Server"
+        "description": "High-efficiency power conversion for server infrastructure",
+        "industries": ["datacenter"]
       },
       {
-        "title": "Medical Equipment",
-        "description": "Certified power systems for healthcare applications",
-        "icon": "HeartPulse"
+        "title": "Power Supplies",
+        "description": "Reliable AC/DC and DC/DC power conversion solutions",
+        "industries": ["industrial", "automotive", "datacenter"]
+      },
+      {
+        "title": "Aerospace Power Systems",
+        "description": "Ruggedized power solutions for aerospace applications",
+        "industries": ["aerospace"]
+      },
+      {
+        "title": "Defense Power Solutions",
+        "description": "Secure power systems for defense applications",
+        "industries": ["aerospace"]
+      },
+      {
+        "title": "Custom Power Systems",
+        "description": "Tailored power solutions for unique requirements",
+        "industries": ["all"]
       }
     ],
-    "caseStudies": {
-      "title": "Success Stories",
-      "subtitle": "How we've helped industry leaders innovate",
-      "items": [
-        {
-          "title": "Automotive Manufacturing Upgrade",
-          "description": "Implemented energy-saving solutions for leading car manufacturer",
-          "result": "Reduced energy costs by 35% while increasing production output"
-        },
-        {
-          "title": "Data Center Power Optimization",
-          "description": "Designed custom power distribution for hyperscale data center",
-          "result": "Achieved 99.999% uptime with 20% lower cooling costs"
-        }
-      ]
-    }
-  },
-  "industries": {
-    "automotive": "Automotive",
-    "aerospace": "Aerospace",
-    "healthcare": "Healthcare",
-    "datacenter": "Data Center",
-    "renewable": "Renewable Energy",
-    "industrial": "Industrial Manufacturing"
-  },
-  "customSolutions": "Custom Solutions",
-  "customSolutionsDescription": "When off-the-shelf products don't meet your requirements, our engineering team can develop tailored solutions to address your specific challenges.",
-  "customSolutionsBenefit1": "Bespoke designs to match your exact specifications",
-  "customSolutionsBenefit2": "Integration with existing systems and infrastructure",
-  "customSolutionsBenefit3": "Scalable architectures for future growth",
-  "customSolutionsBenefit4": "Dedicated engineering support throughout the lifecycle",
-  "customSolutionProcess": "Our Custom Solution Development Process",
-  "step1": "Requirement Analysis",
-  "step2": "Design & Prototyping",
-  "step3": "Implementation & Testing",
-  "requestConsultation": "Request a Consultation",
-  "viewAllCaseStudies": "View All Case Studies",
-  "result": "Achieved Result",
-  "readCaseStudy": "Read Full Case Study",
-  "learnMore": "Learn More",
-  "filterByIndustry": "Filter by Industry",
-  "allIndustries": "All Industries",
-  "contactSection": {
-    "title": "Ready to Transform Your Operations?",
-    "description": "Our solution experts are ready to discuss your specific requirements and design a customized approach for your business.",
-    "ctaText": "Contact Our Solutions Team"
-  },
-  "cases": {
-    "title": "Success Stories",
-    "subtitle": "How we've helped industry leaders innovate",
-    "items": [
+    
+    "caseStudies": [
       {
-        "title": "Automotive Manufacturing Upgrade",
-        "description": "Implemented energy-saving solutions for leading car manufacturer",
-        "result": "Reduced energy costs by 35% while increasing production output"
+        "id": "automotive",
+        "title": "High-Efficiency Power for EV Charging Stations",
+        "description": "Developed custom power modules for next-generation electric vehicle charging infrastructure, reducing power loss by 35%.",
+        "stats": "Result: 35% higher efficiency, 50% smaller footprint"
       },
       {
-        "title": "Data Center Power Optimization",
-        "description": "Designed custom power distribution for hyperscale data center",
-        "result": "Achieved 99.999% uptime with 20% lower cooling costs"
+        "id": "aerospace",
+        "title": "Rugged Power Systems for Satellite Communications",
+        "description": "Designed and manufactured radiation-hardened power supplies for satellite communication systems operating in extreme environments.",
+        "stats": "Result: 99.99% reliability in space conditions"
+      },
+      {
+        "id": "healthcare",
+        "title": "Medical-Grade Power for Imaging Equipment",
+        "description": "Created specialized power solutions for MRI machines with ultra-low electromagnetic interference.",
+        "stats": "Result: 60% reduction in electromagnetic interference"
+      },
+      {
+        "id": "datacenter",
+        "title": "High-Density Power for Cloud Data Centers",
+        "description": "Implemented modular power systems for hyperscale data centers, improving power density by 40%.",
+        "stats": "Result: 40% higher power density, 25% lower cooling costs"
+      }
+    ],
+    
+    "testimonials": [
+      {
+        "company": "TechCorp Industries",
+        "quote": "Radiance Future's power solutions have transformed our manufacturing efficiency. Their custom engineering team delivered exactly what we needed under tight deadlines.",
+        "name": "Sarah Johnson",
+        "position": "CTO"
+      },
+      {
+        "company": "AeroSystems International",
+        "quote": "The reliability of Radiance Future's aerospace power systems is unmatched. We've deployed their solutions in 50+ satellites without a single power-related failure.",
+        "name": "Michael Rodriguez",
+        "position": "Lead Engineer"
       }
     ]
   },
   "support": {
-    "title": "Technical Support",
-    "subtitle": "Expert assistance when you need it most",
+  "title": "Support & Resources",
+    "subtitle": "Find the resources and support you need to get the most out of our products",
+    "supportTagline": "Premium Support Services",
     "resources": {
       "title": "Resources",
+      "description": "Access our comprehensive resources to get the most out of our products",
       "downloads": "Downloads",
+      "downloadsDescription": "Access manuals, software, and documentation for our products",
       "documentation": "Documentation",
-      "faq": "FAQ"
+      "documentationDescription": "Comprehensive guides and technical specifications",
+      "faq": "Frequently Asked Questions",
+      "faqDescription": "Find answers to common questions about our products and services"
     },
     "services": {
-      "title": "Services",
+      "title": "Professional Services",
+      "description": "Professional services to enhance your experience and maximize value",
       "training": "Training",
+      "trainingDescription": "Customized training programs for your team",
       "consulting": "Consulting",
-      "maintenance": "Maintenance"
+      "consultingDescription": "Expert guidance for your specific needs",
+      "maintenance": "Maintenance",
+      "maintenanceDescription": "Ongoing support and maintenance services"
     },
     "contact": {
-       "title": "Let's Talk",
-    "subtitle": "We'd love to hear about your project. Drop us a line and we'll get back within 24 hours.",
-    "name": "Name",
-    "namePlaceholder": "John Doe",
-    "email": "Email",
-    "emailPlaceholder": "john@example.com",
-    "company": "Company",
-    "companyPlaceholder": "Acme Inc.",
-    "phone": "Phone",
-    "phonePlaceholder": "+1 (555) 123-4567",
-    "message": "Message",
-    "messagePlaceholder": "Tell us more about your needs...",
-    "send": "Send Message",
-    "getInTouch": "Get in Touch",
-    "officeHours": "Mon - Fri: 9:00 AM - 6:00 PM (PST)",
-    "followUs": "Follow Us"
-    }
+      "title": "Contact Support",
+      "description": "Our support team is ready to help you with any questions or issues you may have",
+      "supportHours": "Support Hours",
+      "criticalSupport": "Critical support available",
+      "businessHours": "Business hours: Mon-Fri 9AM-5PM",
+      "responseTime": "Response Time",
+      "criticalResponse": "Critical issues response within",
+      "hours": "hours",
+      "liveChat": "Live Chat",
+      "callSupport": "Call Support",
+      "emailSupport": "Email Support",
+      "scheduleCall": "Schedule a Call"
+    },
+    "additionalSupport": "For enterprise support plans, please contact our sales team"
   },
+
   "about": {
     "hero": {
       "title": "About Us",
@@ -396,5 +488,289 @@
     "salesContactDescription": "Contact our sales team for product inquiries and pricing details.",
     "supportDepartment": "Support Department",
     "supportContactDescription": "Get in touch with our support team for technical assistance."
+  },
+  "commonPage": {
+    "ctaPrimary": "Get Started",
+    "ctaSecondary": "Learn More",
+    "supportHours": "24/7",
+    "criticalSupport": "24/7 critical support",
+    "businessHours": "business hours support",
+    "responseTime": "Response Time",
+    "hours": "hours",
+    "liveChat": "Live Chat",
+    "callSupport": "Call Support",
+    "emailSupport": "Email Support",
+    "scheduleCall": "Schedule a Call",
+    "support": "Support",
+    "Contact": {
+      "title":"Contact"
+    },
+    "testimonials": {
+      "title": "What our clients say",
+      "items": [
+        {
+          "quote": "The products and services provided by Shenzhen Hengyunchang Vacuum Technology Co., Ltd. have significantly improved our production efficiency.",
+          "author": "John Doe",
+          "position": "CEO, TechCorp"
+        },
+        {
+          "quote": "I am extremely satisfied with the quality and performance of the products. Highly recommended!",
+          "author": "Jane Smith",
+          "position": "CTO, Innovatech"
+        }
+      ]
+    },
+    "solutions": {
+      "title": "Our Solutions",
+      "subtitle": "Comprehensive solutions for your needs",
+      "items": [
+        {
+          "title": "RF Power Solutions",
+          "description": "Advanced RF power solutions for semiconductor and industrial applications."
+        },
+        {
+          "title": "Vacuum Technology",
+          "description": "High-quality vacuum technology for research and manufacturing."
+        },
+        {
+          "title": "Custom Engineering",
+          "description": "Tailored engineering solutions to meet specific requirements."
+        }
+      ]
+    },
+    "homeContact": {
+      "title": "Get in Touch",
+      "subtitle": "We're here to assist you with any questions or requirements."
+    }
+  },
+  "heroPage": {
+    "title": "Advanced RF Power and Vacuum Technology Solutions",
+    "subtitle": "We specialize in providing high-quality RF power and vacuum technology solutions for semiconductor, photovoltaic, and research fields.",
+    "ctaPrimary": "Explore Products",
+    "ctaSecondary": "Contact Us"
+  },
+  "homeProduct": {
+    "title": "Our RF Power Products",
+    "subtitle": "Explore our advanced RF power products designed for various industrial applications.",
+    "company": {
+      "name": "Shenzhen Hengyunchang Vacuum Technology Co., Ltd.",
+      "description": "Specializing in the development and manufacturing of high-quality vacuum and RF power products for semiconductor, photovoltaic, and research fields."
+    },
+    "categories": {
+      "rfPowerSupply": "RF Power Supply",
+      "vacuumPump": "Vacuum Pump",
+      "vacuumChamber": "Vacuum Chamber",
+      "vacuumValve": "Vacuum Valve"
+    },
+    "items": [
+      {
+        "id": 1,
+        "name": "High-Power RF Generator",
+        "description": "Our high-power RF generator is designed to deliver stable and efficient RF power for plasma processing in semiconductor manufacturing.",
+        "category": "RF Power Supply",
+        "features": [
+          "Output power up to 10,000W",
+          "Frequency range: 13.56MHz ± 500kHz",
+          "High efficiency and stability",
+          "Advanced cooling system",
+          "User-friendly control interface"
+        ],
+        "applications": ["Semiconductor manufacturing", "Plasma etching", "Material processing"]
+      },
+      {
+        "id": 2,
+        "name": "Precision RF Matching Network",
+        "description": "The precision RF matching network ensures optimal power transfer and impedance matching for various RF applications.",
+        "category": "RF Power Supply",
+        "features": [
+          "Broadband matching",
+          "High power handling capability",
+          "Fast tuning speed",
+          "High precision and reliability",
+          "Compact design"
+        ],
+        "applications": ["RF plasma systems", "Material treatment", "Research laboratories"]
+      },
+      {
+        "id": 3,
+        "name": "RF Power Measurement System",
+        "description": "Our RF power measurement system provides accurate and reliable power measurement for RF applications.",
+        "category": "RF Power Supply",
+        "features": [
+          "Wide measurement range",
+          "High precision sensors",
+          "Real-time monitoring",
+          "Data logging and analysis",
+          "Easy integration"
+        ],
+        "applications": ["RF power control", "Process monitoring", "Quality assurance"]
+      },
+      {
+        "id": 4,
+        "name": "Advanced Vacuum Pump",
+        "description": "High-performance vacuum pump designed for industrial and research applications.",
+        "category": "Vacuum Pump",
+        "features": [
+          "Efficient and reliable performance",
+          "Durable construction with corrosion-resistant materials",
+          "Easy maintenance and operation"
+        ],
+        "applications": ["Semiconductor manufacturing", "Vacuum coating", "Research"]
+      },
+      {
+        "id": 5,
+        "name": "Precision Vacuum Chamber",
+        "description": "High-quality vacuum chamber designed for various vacuum applications.",
+        "category": "Vacuum Chamber",
+        "features": [
+          "Durable and leak-proof construction",
+          "Customizable dimensions and ports",
+          "High vacuum compatibility",
+          "Easy integration with other systems"
+        ],
+        "applications": ["Semiconductor processing", "Vacuum coating", "Research"]
+      },
+      {
+        "id": 6,
+        "name": "Controlled Vacuum Valve",
+        "description": "Precision-controlled vacuum valve for accurate pressure regulation.",
+        "category": "Vacuum Valve",
+        "features": [
+          "High precision control",
+          "Durable construction",
+          "Wide pressure range",
+          "Fast response time"
+        ],
+        "applications": ["Semiconductor manufacturing", "Vacuum coating", "Research"]
+      }
+    ]
+  }, "productShowcase": {
+    "title": "Our RF Power Products",
+    "subtitle": "Explore our advanced RF power products designed for various industrial applications.",
+    "searchPlaceholder": "Search products...",
+    "categoryFilter": "Select category",
+    "applyFilters": "Apply Filters"
+  },
+  "products": {
+    "items": [
+      {
+        "id": 1,
+        "name": "Advanced Vacuum Pump",
+        "description": "High-performance vacuum pump designed for industrial and research applications.",
+        "category": "Vacuum Pump",
+        "features": [
+          "Efficient and reliable performance",
+          "Durable construction with corrosion-resistant materials",
+          "Easy maintenance and operation"
+        ],
+        "applications": ["Semiconductor manufacturing", "Vacuum coating", "Research"]
+      },
+      {
+        "id": 2,
+        "name": "Precision Vacuum Chamber",
+        "description": "High-quality vacuum chamber designed for various vacuum applications.",
+        "category": "Vacuum Chamber",
+        "features": [
+          "Durable and leak-proof construction",
+          "Customizable dimensions and ports",
+          "High vacuum compatibility",
+          "Easy integration with other systems"
+        ],
+        "applications": ["Semiconductor processing", "Vacuum coating", "Research"]
+      },
+      {
+        "id": 3,
+        "name": "Controlled Vacuum Valve",
+        "description": "Precision-controlled vacuum valve for accurate pressure regulation.",
+        "category": "Vacuum Valve",
+        "features": [
+          "High precision control",
+          "Durable construction",
+          "Wide pressure range",
+          "Fast response time"
+        ],
+        "applications": ["Semiconductor manufacturing", "Vacuum coating", "Research"]
+      }
+    ]
+  },
+  "slideHero": {
+    "prevButton": "Previous",
+    "nextButton": "Next",
+    "slide1": {
+      "title": "New Generation RF Power System Released",
+      "subtitle": "Innovative RF power solution with 40% higher power density and 25% lower energy consumption, suitable for semiconductor manufacturing and material processing.",
+      "ctaPrimary": "View Details",
+      "ctaSecondary": "Technical White Paper"
+    },
+    "slide2": {
+      "title": "Company Wins Technology Innovation Award",
+      "subtitle": "Awarded the 2025 Industry Technology Innovation Gold Medal for breakthrough innovations in RF power technology.",
+      "ctaPrimary": "News Details",
+      "ctaSecondary": "Awarded Technology"
+    },
+    "slide3": {
+      "title": "RF Power Applications in Medical Equipment",
+      "title": "RF Power Applications in Medical Equipment",
+      "subtitle": "Next-generation medical-grade RF power systems provide stable and reliable energy solutions for high-end medical devices.",
+      "ctaPrimary": "Application Cases",
+      "ctaSecondary": "Medical Solutions"
+    },
+    "slide4": {
+      "title": "Industry 4.0 RF Power Solutions",
+      "subtitle": "Intelligent RF power management systems enabling remote monitoring, predictive maintenance, and energy efficiency optimization.",
+      "ctaPrimary": "Solutions",
+      "ctaSecondary": "Success Stories"
+    }
+  },
+  "casesPage": {
+    "title": "Case Studies",
+    "subtitle": "Explore Our RF Power Solutions",
+    "description": "Shenzhen Hengyunchang Vacuum Technology Co., Ltd. provides innovative RF power solutions for various industries. Here are our successful case studies:",
+    "caseStudy1": {
+      "title": "5G Base Station Power Solution",
+      "description": "High-efficiency RF power supply for next-gen 5G base stations",
+      "content": "We developed an efficient and stable RF power solution for a major telecommunications equipment manufacturer for their 5G base station equipment. This solution utilizes advanced power conversion technology, maintaining over 95% efficiency even in high-temperature environments, significantly reducing base station energy consumption and cooling requirements.",
+      "technologies": ["High-frequency Power Conversion", "Temperature Compensation Technology", "Digital Control Circuitry"]
+    },
+    "caseStudy2": {
+      "title": "Military Radar System",
+      "description": "RF amplification system for military radar",
+      "content": "Developed for defense clients, this RF amplification system is used in next-generation military radar. The power system features extremely high power density (>1kW/L) and excellent electromagnetic compatibility, operating stably in extreme environments while meeting stringent military standards.",
+      "technologies": ["High Power Density Design", "EMI Shielding Technology", "Military-grade Reliability"]
+    },
+    "caseStudy3": {
+      "title": "Medical Imaging Equipment",
+      "description": "Dedicated power supply for medical imaging devices",
+      "content": "Developed for high-end medical imaging equipment, this specialized RF power solution is used in MRI and CT scanners. The solution achieves ultra-low noise (<0.1% ripple) and precise power control, ensuring imaging quality while complying with medical device safety standards.",
+      "technologies": ["Ultra-low Noise Design", "Precision Power Control", "Medical Safety Certification"]
+    },
+    "viewDetails": "View Details",
+    "learnMore": "Explore More Cases",
+    "contactUs": "Contact Us for Custom Solutions"
+  },
+  "auth":{
+  "login": {
+    "title": "Sign In",
+    "email": "Email",
+    "password": "Password",
+    "signIn": "Sign In"
+  },
+  "register": {
+    "title": "Register",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "register": "Register",
+    "passwordMismatch": "Passwords do not match",
+    "registrationSuccess": "Registration successful!"
   }
+},
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome, {name}!",
+    "signOut": "Sign Out"
+  }
+
+
+
 }

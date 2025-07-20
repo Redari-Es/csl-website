@@ -19,7 +19,7 @@ export default function IndustrySelector({
   onSelect,
   className = ""
 }: IndustrySelectorProps) {
-  const t = useTranslations();
+  const t = useTranslations('solution.industries');
   const [selectedIndustry, setSelectedIndustry] = useState<string | null>(null);
   
   const handleSelect = (id: string | null) => {
@@ -35,7 +35,7 @@ export default function IndustrySelector({
           variant={selectedIndustry === null ? 'default' : 'outline'}
           onClick={() => handleSelect(null)}
         >
-          {t('allIndustries')}
+          {t('industries')}
         </Button>
         
         {industries.map((industry) => (

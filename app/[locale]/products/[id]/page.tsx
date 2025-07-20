@@ -7,10 +7,14 @@ import { Download, FileText, Settings, BarChart } from 'lucide-react';
 import SpecificationsTable from '@/components/SpecificationsTable';
 import RelatedProducts from '@/components/RelatedProducts';
 import TechnicalDocs from '@/components/TechnicalDocs';
+import Image from 'next/image';
 
 export default function ProductDetailPage({ params }: { params: { id: string } }) {
-  const t = useTranslations();
-  const productsT = useTranslations('products');
+  // 使用 products.detail 命名空间的翻译
+  const t = useTranslations('products.detail');
+  
+  // 使用 products.product 命名空间的翻译
+  const productsT = useTranslations('products.product');
   
   // 模拟产品数据
   const product = {
@@ -24,12 +28,17 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
       `${productsT('items.0.features.2')}`
     ],
     specifications: [
-      { name: t('specifications.inputVoltage'), value: "100-240V AC" },
-      { name: t('specifications.outputPower'), value: "500W" },
-      { name: t('specifications.efficiency'), value: "≥95%" },
-      { name: t('specifications.operatingTemp'), value: "-20°C to +70°C" },
-      { name: t('specifications.dimensions'), value: "150 x 80 x 40 mm" },
-      { name: t('specifications.weight'), value: "0.8 kg" }
+      { name: t('specificationsList.inputVoltage'), value: "100-240V AC" },
+      { name: t('specificationsList.outputPower'), value: "500W" },
+      { name: t('specificationsList.efficiency'), value: "≥95%" },
+      { name: t('specificationsList.operatingTemp'), value: "-20°C to +70°C" },
+      { name: t('specificationsList.dimensions'), value: "150 x 80 x 40 mm" },
+      { name: t('specificationsList.weight'), value: "0.8 kg" }
+    ],
+    images: [
+      "/images/pic-2.png",
+      "/images/pic-2.png", 
+      "/images/pic-2.png",
     ]
   };
 
@@ -39,9 +48,39 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
         {/* 左侧产品信息 */}
         <div className="lg:col-span-2">
           <div className="flex flex-col md:flex-row gap-8 mb-12">
-            {/* 产品图片 */}
-            <div className="bg-muted rounded-xl w-full md:w-1/2 h-80 flex items-center justify-center">
-              <div className="bg-gray-200 border-2 border-dashed rounded-xl w-64 h-64" />
+            {/* 产品图片 - 添加悬停放大效果 */}
+            <div className="w-full md:w-1/2">
+              {/* 主图容器 */}
+              <div className="group relative overflow-hidden rounded-xl bg-muted aspect-square w-full h-80 mb-4">
+                {/* 实际应用中替换为您的产品图片 */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10"></div>
+                
+                {/* 图片占位符 - 实际使用时替换为 Image 组件 */}
+                <div className="w-full h-full flex items-center justify-center">
+                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-64 h-64 transition-transform duration-500 group-hover:scale-110" />
+                </div>
+                
+                {/* 产品名称水印 */}
+                <div className="absolute bottom-4 left-4 bg-background/80 px-3 py-1 rounded-md backdrop-blur-sm">
+                  <span className="font-medium text-primary">{product.name}</span>
+                </div>
+              </div>
+              
+              {/* 缩略图列表 */}
+              <div className="flex gap-3 mt-4">
+                {product.images.map((img, index) => (
+                  <div 
+                    key={index}
+                    className="group relative cursor-pointer rounded-md overflow-hidden w-16 h-16 border-2 border-muted"
+                  >
+                    {/* 实际应用中替换为缩略图 */}
+                    <div className="w-full h-full bg-gray-200 border border-muted-foreground/20 transition-transform duration-300 group-hover:scale-110" />
+                    
+                    {/* 悬停时的高亮边框 */}
+                    <div className="absolute inset-0 border-2 border-transparent group-hover:border-primary transition-colors rounded-md"></div>
+                  </div>
+                ))}
+              </div>
             </div>
             
             {/* 产品详情 */}

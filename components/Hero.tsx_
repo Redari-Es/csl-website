@@ -1,0 +1,369 @@
+'use client';
+
+import { useState, useEffect, useRef } from 'react';
+import { Button } from '@/components/ui/button';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import gsap from 'gsap';
+import { useTheme } from 'next-themes';
+
+// 导入主题配置
+import { themeColors } from '@/config/themeConfig';
+
+interface HeroSlide {
+  id: number;
+  title: string;
+  subtitle: string;
+  imageUrl: string;
+  ctaPrimary: string;
+  ctaSecondary: string;
+  accentColor: string;
+  indicatorColor: string;
+}
+
+export default function HeroSlider() {
+  const { theme, setTheme } = useTheme();
+  const themeConfig = themeColors[theme as 'light' | 'dark'] || themeColors.dark;
+  
+  const slides: HeroSlide[] = [
+    {
+      id: 1,
+      title: "真空技术解决方案",
+      subtitle: "专业提供高性能真空设备和定制解决方案，满足工业、医疗和科研领域需求",
+      ctaPrimary: "查看产品",
+      ctaSecondary: "了解更多",
+      imageUrl: "/vacuum-tech.jpg",
+      accentColor: "bg-cyan-500",
+      indicatorColor: "bg-red-500"
+    },
+    {
+      id: 2,
+      title: "等离子电源系统",
+      subtitle: "高效、稳定的等离子电源设备，适用于各种复杂工业环境",
+      ctaPrimary: "技术规格",
+      ctaSecondary: "应用案例",
+      imageUrl: "/plasma-power.jpg",
+      accentColor: "bg-blue-500",
+      indicatorColor: "bg-green-500"
+    },
+    {
+      id: 3,
+      title: "半导体制造设备",
+      subtitle: "精密半导体制造设备，助力芯片产业发展",
+      ctaPrimary: "产品目录",
+      ctaSecondary: "定制方案",
+      imageUrl: "/semiconductor.jpg",
+      accentColor: "bg-emerald-500",
+      indicatorColor: "bg-blue-500"
+    }
+  ];
+  
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [isHovering, setIsHovering] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  
+  const currentSlide = slides[activeIndex];
+  
+  // 左右滑动动画
+  const goToSlide = (index: number) => {
+    if (isAnimating || index === activeIndex) return;
+    
+    setIsAnimating(true);
+    
+    // 确定滑动方向
+    const direction = index > activeIndex ? 1 : -1;
+    
+    // 创建动画时间线
+    const tl = gsap.timeline({
+      onComplete: () => setIsAnimating(false)
+    });
+    
+    // 当前内容滑出
+    tl.to(contentRef.current, {
+      x: direction * -100,
+      opacity: 0,
+      duration: 0.5,
+      ease: "power2.out"
+    });
+    
+    // 更新幻灯片
+    tl.add(() => setActiveIndex(index), 0);
+    
+    // 新内容滑入
+    tl.fromTo(contentRef.current, 
+      { x: direction * 100, opacity: 0 },
+      { 
+        x: 0, 
+        opacity: 1, 
+        duration: 0.7, 
+        ease: "power2.out"
+      },
+      0.3
+    );
+  };
+  
+  const prevSlide = () => {
+    if (activeIndex > 0) {
+      goToSlide(activeIndex - 1);
+    }
+  };
+  
+  const nextSlide = () => {
+    if (activeIndex < slides.length - 1) {
+      goToSlide(activeIndex + 1);
+    }
+  };
+  
+  // 自动轮播
+  const startAutoSlide = () => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    
+    intervalRef.current = setInterval(() => {
+      if (!isAnimating && !isHovering) {
+        if (activeIndex < slides.length - 1) {
+          goToSlide(activeIndex + 1);
+        } else {
+          goToSlide(0);
+        }
+      }
+    }, 5000);
+  };
+  
+  useEffect(() => {
+    startAutoSlide();
+    
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, [activeIndex, isAnimating, isHovering]);
+  
+  // 触摸滑动支持
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+    
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    const handleTouchStart = (e: TouchEvent) => {
+      touchStartX = e.touches[0].clientX;
+    };
+    
+    const handleTouchMove = (e: TouchEvent) => {
+      touchEndX = e.touches[0].clientX;
+    };
+    
+    const handleTouchEnd = () => {
+      const diff = touchStartX - touchEndX;
+      if (diff > 50) {
+        nextSlide();
+      } else if (diff < -50) {
+        prevSlide();
+      }
+    };
+    
+    container.addEventListener('touchstart', handleTouchStart);
+    container.addEventListener('touchmove', handleTouchMove);
+    container.addEventListener('touchend', handleTouchEnd);
+    
+    return () => {
+      container.removeEventListener('touchstart', handleTouchStart);
+      container.removeEventListener('touchmove', handleTouchMove);
+      container.removeEventListener('touchend', handleTouchEnd);
+    };
+  }, [activeIndex, isAnimating]);
+  
+  // 悬停控制 - 只在内容区域悬停时停止动画
+  const handleContentMouseEnter = () => {
+    setIsHovering(true);
+  };
+  
+  const handleContentMouseLeave = () => {
+    setIsHovering(false);
+  };
+  
+  return (
+    <div 
+      ref={containerRef}
+      className={`relative w-full min-h-[100vh] overflow-hidden flex items-center justify-center ${themeConfig.background}`}
+      style={{
+        backgroundImage: `url(${currentSlide.imageUrl})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+    >
+      {/* 背景遮罩 */}
+      <div className={`absolute inset-0 ${themeConfig.heroBg}`}></div>
+      
+      {/* 毛玻璃底部遮罩 - 波浪形 */}
+      <div 
+        className={`absolute bottom-0 left-0 right-0 h-40 backdrop-blur-md z-10 ${
+          theme === 'dark' ? 'bg-[#0a0e17]/90' : 'bg-white/90'
+        }`}
+        style={{ 
+          clipPath: 'polygon(0 50%, 100% 20%, 100% 100%, 0% 100%)' 
+        }}
+      >
+        {/* 波浪装饰 */}
+        <div className="absolute top-0 left-0 w-full overflow-hidden h-8">
+          <svg 
+            className="w-full h-full"
+            viewBox="0 0 1200 120" 
+            preserveAspectRatio="none"
+          >
+            <path 
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" 
+              opacity=".25" 
+              className={theme === 'dark' ? 'fill-cyan-900' : 'fill-cyan-200'}
+            ></path>
+            <path 
+              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" 
+              opacity=".5" 
+              className={theme === 'dark' ? 'fill-cyan-800' : 'fill-cyan-300'}
+            ></path>
+            <path 
+              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" 
+              className={theme === 'dark' ? 'fill-cyan-600' : 'fill-cyan-400'}
+            ></path>
+          </svg>
+        </div>
+      </div>
+      
+      {/* 内容容器 - 修复移动端溢出问题 */}
+      <div 
+        className="relative z-10 w-full max-w-5xl px-4 md:px-8 flex flex-col gap-4 items-center justify-start py-12 mt-16"
+        onMouseEnter={handleContentMouseEnter}
+        onMouseLeave={handleContentMouseLeave}
+      >
+        {/* 幻灯片内容 - 应用左右动画 */}
+        <div 
+          ref={contentRef}
+          className="w-full max-w-3xl text-center px-4"
+        >
+          {/* 标题 */}
+          <h1 className={`text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 leading-tight ${
+            theme === 'light' ? 'text-gray-900' : 'text-white'
+          }`}>
+            {currentSlide.title}
+          </h1>
+          
+          {/* 副标题 - 增加底部间距 */}
+          <p className={`text-lg md:text-xl lg:text-2xl mb-8 md:mb-12 max-w-2xl mx-auto ${
+            theme === 'light' ? 'text-gray-700' : 'text-gray-300'
+          }`}>
+            {currentSlide.subtitle}
+          </p>
+          
+          {/* 按钮容器 - 优化移动端布局 */}
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center">
+            {/* 主要按钮 - 移除动画效果 */}
+            <Button 
+              size="lg" 
+              className={`
+                px-6 py-5 md:px-8 md:py-6 rounded-full 
+                transition-colors shadow-lg
+                text-base md:text-lg font-semibold
+                w-full sm:w-auto
+                ${themeConfig.searchFocus ? `focus:ring ${themeConfig.searchFocus}` : ''}
+                ${theme === 'dark' ? 
+                  `${themeConfig.accent} hover:bg-cyan-300 text-gray-900 shadow-cyan-500/30` : 
+                  `${themeConfig.accent} hover:bg-sky-400 text-white shadow-sky-500/30`}
+              `}
+            >
+              {currentSlide.ctaPrimary}
+            </Button>
+            
+            {/* 次要按钮 - 移除动画效果 */}
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className={`
+                px-6 py-5 md:px-8 md:py-6 rounded-full text-base md:text-lg font-semibold
+                w-full sm:w-auto
+                ${theme === 'dark' ? 
+                  `border-${themeConfig.textSecondary.split('-')[1]}-${themeConfig.textSecondary.split('-')[2]} text-${themeConfig.textSecondary.split('-')[1]}-${themeConfig.textSecondary.split('-')[2]} hover:bg-cyan-400/10 hover:text-cyan-200` : 
+                  `border-${themeConfig.textSecondary.split('-')[1]}-${themeConfig.textSecondary.split('-')[2]} text-${themeConfig.textSecondary.split('-')[1]}-${themeConfig.textSecondary.split('-')[2]} hover:bg-sky-100 hover:text-sky-700`}
+              `}
+            >
+              {currentSlide.ctaSecondary}
+            </Button>
+          </div>
+        </div>
+        
+        {/* 圆形箭头导航 */}
+        <div className="relative z-10 mt-14 md:mt-20 w-full max-w-3xl flex justify-center">
+          <div className="flex items-center space-x-4 md:space-x-8">
+            {/* 左箭头 */}
+            <button 
+              onClick={prevSlide}
+              disabled={activeIndex === 0}
+              className={`
+                w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center
+                transition-all duration-300
+                border-2 ${theme === 'dark' ? 'border-cyan-400' : 'border-sky-500'} 
+                ${themeConfig.bgHover}
+                ${activeIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}
+                shadow-md hover:shadow-lg
+              `}
+              aria-label="上一张"
+            >
+              <ChevronLeft 
+                size={24} 
+                className={`font-bold ${theme === 'dark' ? 'text-cyan-300' : 'text-sky-500'}`} 
+              />
+            </button>
+            
+            {/* 当前指示器 */}
+            <div className="flex space-x-1 md:space-x-2">
+              {slides.map((slide, index) => (
+                <div 
+                  key={slide.id}
+                  onClick={() => goToSlide(index)}
+                  className={`
+                    h-1.5 rounded-full transition-all duration-300 cursor-pointer
+                    ${index === activeIndex 
+                      ? slide.indicatorColor + ' w-6 md:w-8' 
+                      : (theme === 'dark' ? 'bg-cyan-400/30 w-3 md:w-4' : 'bg-sky-500/30 w-3 md:w-4')
+                    }
+                  `}
+                />
+              ))}
+            </div>
+            
+            {/* 右箭头 */}
+            <button 
+              onClick={nextSlide}
+              disabled={activeIndex === slides.length - 1}
+              className={`
+                w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center
+                transition-all duration-300
+                border-2 ${theme === 'dark' ? 'border-cyan-400' : 'border-sky-500'} 
+                ${themeConfig.bgHover}
+                ${activeIndex === slides.length - 1 ? 'opacity-50 cursor-not-allowed' : ''}
+                shadow-md hover:shadow-lg
+              `}
+              aria-label="下一张"
+            >
+              <ChevronRight 
+                size={24} 
+                className={`font-bold ${theme === 'dark' ? 'text-cyan-300' : 'text-sky-500'}`} 
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      {/* 细线进度条 */}
+      <div className="absolute bottom-0 left-0 right-0 h-1 z-20">
+        <div 
+          className={`h-full ${themeConfig.accent} transition-all duration-1000`}
+          style={{ width: `${((activeIndex + 1) / slides.length) * 100}%` }}
+        />
+      </div>
+    </div>
+  );
+}

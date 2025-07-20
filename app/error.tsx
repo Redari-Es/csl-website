@@ -18,8 +18,7 @@ export default function GlobalError({ error, reset }: any) {
   }, [error]);
 
   return (
-    <html>
-      <body>
+  
     <CyberBackground>
       <div
         ref={panelRef}
@@ -30,7 +29,7 @@ export default function GlobalError({ error, reset }: any) {
           CSL SYSTEM ERROR
         </h1>
         <p className="mt-2 text-sm text-slate-300">
-          系统页面异常，请确认后重试
+          当前系统页面异常，请稍后重试
         </p>
         <hr className="my-4 border-slate-700" />
         <p className="font-mono text-xs text-slate-300">
@@ -55,7 +54,6 @@ export default function GlobalError({ error, reset }: any) {
         </div>
       </div>
     </CyberBackground>
-    </body>
-    </html>
+
   );
 }

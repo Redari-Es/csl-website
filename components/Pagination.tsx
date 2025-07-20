@@ -1,85 +1,45 @@
-import { Button } from '@/components/ui/button';
-import { ChevronLeft, ChevronRight, MoreHorizontal } from 'lucide-react';
+'use client';
+
+import { useEffect } from 'react';
+import { gsap } from 'gsap';
 
 interface PaginationProps {
   currentPage: number;
   totalPages: number;
-  onPageChange?: (page: number) => void;
+  className?: string;
 }
 
-export default function Pagination({ 
-  currentPage, 
-  totalPages,
-  onPageChange 
-}: PaginationProps) {
-  const getPageNumbers = () => {
-    const pages = [];
-    
-    // 总是显示第一页
-    pages.push(1);
-    
-    // 当前页前后各显示1页
-    const start = Math.max(2, currentPage - 1);
-    const end = Math.min(totalPages - 1, currentPage + 1);
-    
-    // 添加省略号或页码
-    if (start > 2) {
-      pages.push('...');
-    }
-    
-    for (let i = start; i <= end; i++) {
-      pages.push(i);
-    }
-    
-    // 添加结尾的省略号或页码
-    if (end < totalPages - 1) {
-      pages.push('...');
-    }
-    
-    // 总是显示最后一页
-    if (totalPages > 1) {
-      pages.push(totalPages);
-    }
-    
-    return pages;
-  };
+export default function Pagination({ currentPage, totalPages, className }: PaginationProps) {
+  useEffect(() => {
+    gsap.fromTo(
+      '.page-item',
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, stagger: 0.1, duration: 0.3 }
+    );
+  }, []);
 
   return (
-    <div className="flex items-center justify-center space-x-2">
-      <Button 
-        variant="outline" 
-        size="icon" 
-        disabled={currentPage === 1}
-        onClick={() => onPageChange?.(currentPage - 1)}
-      >
-        <ChevronLeft className="h-4 w-4" />
-      </Button>
-      
-      {getPageNumbers().map((page, index) => (
-        page === '...' ? (
-          <Button key={index} variant="ghost" size="icon" disabled>
-            <MoreHorizontal className="h-4 w-4" />
-          </Button>
-        ) : (
-          <Button
+    <div className={`${className ?? ''}`}>
+      <nav className="flex justify-center items-center gap-2">
+        <button className="page-item flex items-center justify-center w-8 h-8 rounded-full bg-cyan-600 hover:bg-cyan-700 text-white">
+          <span>←</span>
+        </button>
+        {[...Array(totalPages)].map((_, index) => (
+          <button
             key={index}
-            variant={currentPage === page ? 'default' : 'outline'}
-            size="icon"
-            onClick={() => onPageChange?.(page as number)}
+            className={`page-item flex items-center justify-center w-8 h-8 rounded-full ${
+              index + 1 === currentPage
+                ? 'bg-cyan-700'
+                : 'bg-transparent border border-cyan-500 hover:bg-cyan-600'
+            }`}
           >
-            {page}
-          </Button>
-        )
-      ))}
-      
-      <Button 
-        variant="outline" 
-        size="icon" 
-        disabled={currentPage === totalPages}
-        onClick={() => onPageChange?.(currentPage + 1)}
-      >
-        <ChevronRight className="h-4 w-4" />
-      </Button>
+            {index + 1}
+          </button>
+        ))}
+        <button className="page-item flex items-center justify-center w-8 h-8 rounded-full bg-cyan-600 hover:bg-cyan-700 text-white">
+            <span>→</span>
+        </button>
+      </nav>
     </div>
   );
 }

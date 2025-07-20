@@ -18,6 +18,8 @@ const config: Config = {
 	  },
   	extend: {
   		colors: {
+        'dark-bg': '#0a0e17',
+        'dark-menu-bg': '#0e1523',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -77,9 +79,37 @@ const config: Config = {
 			animation: {
 				'accordion-down':'accordion-down 0.2s ease-out',
 				'accordion-up':'accordion-up 0.2s ease-out',
-			}
+				 // 添加自定义动画
+        'blob-dark': 'blob 12s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955)',
+        'blob-light': 'blob 10s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955)',
+			},
+			 backgroundImage: {
+        // 添加网格背景
+        'grid-dark': `linear-gradient(to right, rgba(56, 189, 248, 0.1) 1px, transparent 1px), 
+                     linear-gradient(to bottom, rgba(56, 189, 248, 0.1) 1px, transparent 1px)`,
+        'grid-light': `linear-gradient(to right, rgba(14, 165, 233, 0.1) 1px, transparent 1px), 
+                      linear-gradient(to bottom, rgba(14, 165, 233, 0.1) 1px, transparent 1px)`,
+      },
+      textShadow: {
+        // 添加文字发光效果
+        'glow-dark': '0 0 8px rgba(103, 232, 249, 0.8)',
+        'glow-light': '0 0 6px rgba(56, 189, 248, 0.6)',
+      }
   	}
   },
-  plugins: [require("tailwindcss-animate"),require('@tailwindcss/typography')],
+  plugins: [
+	 // 添加文字阴影插件
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.text-glow-dark': {
+          textShadow: '0 0 8px rgba(103, 232, 249, 0.8)',
+        },
+        '.text-glow-light': {
+          textShadow: '0 0 6px rgba(56, 189, 248, 0.6)',
+        },
+      }
+      addUtilities(newUtilities, ['responsive', 'hover'])
+    },
+	require("tailwindcss-animate"),require('@tailwindcss/typography')],
 } satisfies Config
 export default config;

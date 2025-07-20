@@ -73,7 +73,7 @@ const Footer = () => {
 
 				<div className='pt-4 mt-8 md:order-1 md:mt-0'>
 					<p className='text-center text-xs leading-5 text-muted-foreground'>
-						&copy; {new Date().getFullYear()}  <span>深圳市恒运昌真空技术有限公司</span>. All rights
+						&copy; {new Date().getFullYear()}  <span>深圳市恒运昌真空技术股份有限公司</span>. All rights
 						reserved.
 					</p>
 
