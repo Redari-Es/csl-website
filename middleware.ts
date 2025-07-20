@@ -3,8 +3,8 @@ import createMiddleware from 'next-intl/middleware';
 import { routing } from './i18n/routing';
 
 export default createMiddleware(routing);
-export const config = {
-	// 支持的语言列表
+export const config = u {
+	// 支持的语言列表u
 	locales: ['en', 'zh', 'ja', 'de'],
 
 	// 默认语言

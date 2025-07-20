@@ -1,9 +1,7 @@
 // app/api/auth/[...nextauth]/route.ts
 import NextAuth from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
-import { handlers } from '@/config/auth';
 
-export const { GET, POST } = handlers;
 export const authOptions = {
 	providers: [
 		CredentialsProvider({
@@ -13,19 +11,57 @@ export const authOptions = {
 				password: { label: "Password", type: "password" }
 			},
 			async authorize(credentials) {
-				// 这里应该是你的用户验证逻辑
-				// 例如，查询数据库或调用API验证用户
-				// 这里只是一个示例
-				if (credentials?.email === 'user@example.com' && credentials?.password === 'password') {
-					return { id: '1', name: 'John Doe', email: credentials.email };
+				try {
+					// 实际验证逻辑应该替换这里
+					// 示例：调用你的API或数据库验证
+					const user = await authenticateUser(
+						credentials?.email,
+						credentials?.password
+					);
+
+					return user ? {
+						id: user.id,
+						name: user.name,
+						email: user.email,
+						// 可以添加更多需要存储在session中的字段
+					} : null;
+
+				} catch (error) {
+					console.error('Authentication error:', error);
+					return null;
 				}
-				return null;
 			}
 		})
 	],
 	pages: {
-		signIn: '/[locale]/login',
+		signIn: '/login', // 注意：移除了[locale]，需配合国际化调整
+		error: '/login/error'
 	},
+	callbacks: {
+		async jwt({ token, user }) {
+			if (user) {
+				token.id = user.id;
+				// 可以添加其他需要传递到session的字段
+			}
+			return token;
+		},
+		async session({ session, token }) {
+			session.user.id = token.id;
+			// 可以添加其他session字段
+			return session;
+		}
+	},
+	secret: process.env.NEXTAUTH_SECRET,
+	debug: process.env.NODE_ENV === 'development'
 };
 
 const handler = NextAuth(authOptions);
+// app/api/auth/[...nextauth]/route.ts
+export async function GET() {
+	return new Response('Auth disabled', { status: 200 });
+}
+
+export async function POST() {
+	return new Response('Auth disabled', { status: 200 });
+}
+
