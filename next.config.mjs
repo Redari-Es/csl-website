@@ -15,21 +15,19 @@ const nextConfig = {
 		domains: ['images.unsplash.com'],
 		deviceSizes: [640, 750, 828, 1080, 1200, 1920],
 	},
-	// output: 'standalone',
+	output: 'standalone',
 	eslint: {
 		ignoreDuringBuilds: true,
 	},
 	typescript: {
 		ignoreBuildErrors: true,
 	},
-	// skipTrailingSlashRedirect: true,
-	// skipMiddlewareUrlNormalize: true,
-	// experimental: {
-	// 强制忽略所有模块问题
-	// missingSuspenseWithCSRBailout: false,
-	// esmExternals: 'loose',
-	// serverComponentsExternalPackages: ['next-intl'],
-	// },
+	experimental: {
+		// 强制忽略所有模块问题
+		missingSuspenseWithCSRBailout: false,
+		esmExternals: 'loose',
+		serverComponentsExternalPackages: ['next-intl'],
+	},
 }
 
 
