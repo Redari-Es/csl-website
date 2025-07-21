@@ -25,48 +25,48 @@ export const config = {
 		'/products': {
 			en: '/products',
 			zh: '/products',
-			ja: '/seihin',
-			ko: '/produkte'
+			ja: '/products',
+			ko: '/products',
 		},
 
 		// 解决方案页面映射
 		'/solutions': {
 			en: '/solutions',
 			zh: '/solutions',
-			ja: '/kaisetsu',
-			ko: '/loesungen'
+			ja: '/solutions',
+			ko: '/solutions',
 		},
 
 		// 案例研究页面映射
 		'/cases': {
 			en: '/cases',
 			zh: '/cases',
-			ja: '/jirei',
-			ko: '/fallstudien'
+			ja: '/cases',
+			ko: '/cases',
 		},
 
 		// 支持页面映射
 		'/support': {
 			en: '/support',
 			zh: '/support',
-			ja: '/sapoto',
-			ko: '/unterstuetzung'
+			ja: '/support',
+			ko: '/support',
 		},
 
 		// 关于我们页面映射
 		'/about': {
 			en: '/about',
 			zh: '/about',
-			ja: '/ni-tsuite',
-			ko: '/ueber-uns'
+			ja: '/about',
+			ko: '/about',
 		},
 
 		// 联系我们页面映射
 		'/contact': {
 			en: '/contact',
 			zh: '/contact',
-			ja: '/renraku',
-			ko: '/kontakt'
+			ja: '/contact',
+			ko: '/contact',
 		}
 	},
 	// 匹配所有路径，排除API路由、Next.js内部路径和静态文件
