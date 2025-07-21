@@ -3,9 +3,9 @@ import createMiddleware from 'next-intl/middleware';
 import { routing } from './i18n/routing';
 
 export default createMiddleware(routing);
-export const config = u {
+export const config = {
 	// 支持的语言列表u
-	locales: ['en', 'zh', 'ja', 'de'],
+	locales: ['en', 'zh', 'ja', 'ko'],
 
 	// 默认语言
 	defaultLocale: 'en',
@@ -26,7 +26,7 @@ export const config = u {
 			en: '/products',
 			zh: '/products',
 			ja: '/seihin',
-			de: '/produkte'
+			ko: '/produkte'
 		},
 
 		// 解决方案页面映射
@@ -34,7 +34,7 @@ export const config = u {
 			en: '/solutions',
 			zh: '/solutions',
 			ja: '/kaisetsu',
-			de: '/loesungen'
+			ko: '/loesungen'
 		},
 
 		// 案例研究页面映射
@@ -42,7 +42,7 @@ export const config = u {
 			en: '/cases',
 			zh: '/cases',
 			ja: '/jirei',
-			de: '/fallstudien'
+			ko: '/fallstudien'
 		},
 
 		// 支持页面映射
@@ -50,7 +50,7 @@ export const config = u {
 			en: '/support',
 			zh: '/support',
 			ja: '/sapoto',
-			de: '/unterstuetzung'
+			ko: '/unterstuetzung'
 		},
 
 		// 关于我们页面映射
@@ -58,7 +58,7 @@ export const config = u {
 			en: '/about',
 			zh: '/about',
 			ja: '/ni-tsuite',
-			de: '/ueber-uns'
+			ko: '/ueber-uns'
 		},
 
 		// 联系我们页面映射
@@ -66,7 +66,7 @@ export const config = u {
 			en: '/contact',
 			zh: '/contact',
 			ja: '/renraku',
-			de: '/kontakt'
+			ko: '/kontakt'
 		}
 	},
 	// 匹配所有路径，排除API路由、Next.js内部路径和静态文件

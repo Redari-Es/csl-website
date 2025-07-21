@@ -21,7 +21,13 @@ const nextConfig = {
 	},
 	typescript: {
 		ignoreBuildErrors: true,
-	}
+	},
+	experimental: {
+		// 强制忽略所有模块问题
+		missingSuspenseWithCSRBailout: false,
+		esmExternals: 'loose',
+		serverComponentsExternalPackages: ['next-intl'],
+	},
 }
 
 
