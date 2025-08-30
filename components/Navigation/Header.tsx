@@ -51,6 +51,12 @@ export default function Header() {
 			hasSubItems: false
 		},
 		{
+			key: 'about',
+			name: navT('about'),
+			href: '/about',
+			hasSubItems: false
+		},
+		{
 			key: 'products',
 			name: navT('products.title'),
 			href: '/products',
@@ -146,12 +152,6 @@ export default function Header() {
 			]
 		},
 		{
-			key: 'about',
-			name: navT('about'),
-			href: '/about',
-			hasSubItems: false
-		},
-		{
 			key: 'contact',
 			name: navT('contact'),
 			href: '/contact',
@@ -209,16 +209,16 @@ export default function Header() {
 			<div className="container mx-auto px-4">
 				<div className="flex justify-between items-center h-16 p-4">
 					<div className="absolute left-0 w-full">
-					{/* Logo 组件 - 在左侧 */}
-					<div className="flex-shrink-0 p-4">
-						<Logo
-							companyName={globalT('companyName')}
-							slogan={globalT('slogan')}
-							isDarkTheme={isDarkTheme}
-							onClick={closeMobileMenu}
-							className="hover:scale-105 transition-all duration-300"
-						/>
-					</div>
+						{/* Logo 组件 - 在左侧 */}
+						<div className="flex-shrink-0 p-4">
+							<Logo
+								companyName={globalT('companyName')}
+								slogan={globalT('slogan')}
+								isDarkTheme={isDarkTheme}
+								onClick={closeMobileMenu}
+								className="hover:scale-105 transition-all duration-300"
+							/>
+						</div>
 					</div>
 
 					{/* 桌面导航 - 居中显示 */}
